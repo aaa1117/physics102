@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Physics II Final — Electricity & Magnetism Study Site</title>
+<meta name="description" content="Complete study site for the General Physics II (Electricity & Magnetism) final exam: theory, worked examples, and practice for every topic.">
+<link rel="stylesheet" href="assets/katex/katex.min.css">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body data-root="" data-topic="home">
+
+<main class="content">
+<div class="page">
+
+  <section class="hero">
+    <p class="eyebrow" style="color:#c7d2fe">PHYS102 / PHYS104 · Final Exam</p>
+    <h1>Everything you need to ace the Physics&nbsp;II final</h1>
+    <p>A complete, self-contained study guide for General Physics II — Electricity &amp; Magnetism. Every topic is taught from first principles, with fully worked examples and practice problems. Work through it all and the exam holds no surprises.</p>
+    <div class="meta">
+      <span class="chip">11 topics · 4 units</span>
+      <span class="chip">Theory + worked solutions</span>
+      <span class="chip">Practice with solutions</span>
+      <span class="chip">Works offline</span>
+    </div>
+  </section>
+
+  <p class="lead">The course runs from electric charge all the way to inductance. Pick a topic from the sidebar, or start at Unit&nbsp;1 and go in order. Each page follows the same rhythm: <strong>understand the concept → learn the formulas → see it worked out → practice it yourself.</strong></p>
+
+  <!-- ===== Unit cards ===== -->
+  <section class="unit-block">
+    <h2>Unit 1 · Electrostatics</h2>
+    <div class="cards">
+      <a class="topic-card" href="topics/01-coulombs-law.html"><span class="tc-num">01</span><h3>Coulomb's Law</h3><p>Charge, the force between charges, superposition, vector form.</p></a>
+      <a class="topic-card" href="topics/02-electric-field.html"><span class="tc-num">02</span><h3>The Electric Field</h3><p>Field of point charges, superposition, continuous distributions, field lines.</p></a>
+      <a class="topic-card" href="topics/03-gauss-law.html"><span class="tc-num">03</span><h3>Gauss's Law &amp; Conductors</h3><p>Flux, symmetry, conductors and induced surface charge.</p></a>
+      <a class="topic-card" href="topics/04-electric-potential.html"><span class="tc-num">04</span><h3>Electric Potential</h3><p>Potential &amp; energy, parallel plates, V↔E, the electron-volt.</p></a>
+      <a class="topic-card" href="topics/05-capacitance.html"><span class="tc-num">05</span><h3>Capacitance &amp; Dielectrics</h3><p>Capacitors in series/parallel, stored energy, dielectrics.</p></a>
+    </div>
+  </section>
+
+  <section class="unit-block">
+    <h2>Unit 2 · Circuits</h2>
+    <div class="cards">
+      <a class="topic-card" href="topics/06-current-resistance.html"><span class="tc-num">06</span><h3>Current &amp; Resistance</h3><p>Current, Ohm's law, resistivity, power, counting electrons.</p></a>
+      <a class="topic-card" href="topics/07-dc-circuits.html"><span class="tc-num">07</span><h3>DC Circuits</h3><p>EMF, internal resistance, Kirchhoff's laws, RC circuits.</p></a>
+    </div>
+  </section>
+
+  <section class="unit-block">
+    <h2>Unit 3 · Magnetism</h2>
+    <div class="cards">
+      <a class="topic-card" href="topics/08-magnetic-force.html"><span class="tc-num">08</span><h3>Magnetic Field &amp; Force</h3><p>F = qv×B, charges in fields, force &amp; torque on currents.</p></a>
+      <a class="topic-card" href="topics/09-magnetic-field-sources.html"><span class="tc-num">09</span><h3>Sources of Magnetic Field</h3><p>Biot–Savart law, wires, loops, solenoids, Ampère's law.</p></a>
+    </div>
+  </section>
+
+  <section class="unit-block">
+    <h2>Unit 4 · Induction</h2>
+    <div class="cards">
+      <a class="topic-card" href="topics/10-induction.html"><span class="tc-num">10</span><h3>Electromagnetic Induction</h3><p>Magnetic flux, Faraday's law, Lenz's law, motional EMF.</p></a>
+      <a class="topic-card" href="topics/11-inductance.html"><span class="tc-num">11</span><h3>Inductance</h3><p>Self/mutual inductance, RL circuits, LC oscillation, magnetic energy.</p></a>
+    </div>
+  </section>
+
+  <!-- ===== Master formula sheet ===== -->
+  <h2 id="formula-sheet">Master formula sheet</h2>
+  <p>Every formula on the exam, in one place. Each is explained on its topic page.</p>
+
+  <div class="callout note">
+    <p class="c-head">Constants</p>
+    <p>
+      $k=\dfrac{1}{4\pi\varepsilon_0}=8.99\times10^{9}\ \mathrm{N\cdot m^2/C^2}$ &nbsp;·&nbsp;
+      $\varepsilon_0=8.85\times10^{-12}\ \mathrm{C^2/(N\cdot m^2)}$ &nbsp;·&nbsp;
+      $e=1.6\times10^{-19}\ \mathrm{C}$ &nbsp;·&nbsp;
+      $\mu_0=4\pi\times10^{-7}\ \mathrm{T\cdot m/A}$ &nbsp;·&nbsp;
+      $1\ \mathrm{eV}=1.6\times10^{-19}\ \mathrm{J}$
+    </p>
+  </div>
+
+  <h3>Unit 1 — Electrostatics</h3>
+  <div class="formula-grid">
+    <div class="formula">$F=k\dfrac{|q_1q_2|}{r^2}$<span class="label">Coulomb's law (magnitude)</span></div>
+    <div class="formula">$\vec E=k\dfrac{q}{r^2}\hat r,\qquad \vec F=q\vec E$<span class="label">Electric field of a point charge; force on a charge</span></div>
+    <div class="formula">$\Phi_E=\oint \vec E\cdot d\vec A=\dfrac{q_{\text{in}}}{\varepsilon_0}$<span class="label">Gauss's law</span></div>
+    <div class="formula">$V=k\dfrac{q}{r},\qquad U=k\dfrac{q_1q_2}{r}$<span class="label">Potential and potential energy of point charges</span></div>
+    <div class="formula">$E=\dfrac{V}{d}\ \text{(uniform)},\qquad \Delta U=q\,\Delta V$<span class="label">Field between plates; energy change</span></div>
+    <div class="formula">$C=\dfrac{Q}{\Delta V},\qquad U=\tfrac12 C(\Delta V)^2=\dfrac{Q^2}{2C}$<span class="label">Capacitance and stored energy</span></div>
+    <div class="formula">$C_\text{parallel}=\textstyle\sum C_i,\qquad \dfrac{1}{C_\text{series}}=\textstyle\sum\dfrac{1}{C_i}$<span class="label">Capacitor combinations</span></div>
+  </div>
+
+  <h3>Unit 2 — Circuits</h3>
+  <div class="formula-grid">
+    <div class="formula">$I=\dfrac{\Delta Q}{\Delta t},\qquad V=IR$<span class="label">Current; Ohm's law</span></div>
+    <div class="formula">$R=\rho\dfrac{L}{A}$<span class="label">Resistance from resistivity</span></div>
+    <div class="formula">$P=IV=I^2R=\dfrac{V^2}{R}$<span class="label">Electrical power</span></div>
+    <div class="formula">$R_\text{series}=\textstyle\sum R_i,\qquad \dfrac{1}{R_\text{parallel}}=\textstyle\sum\dfrac{1}{R_i}$<span class="label">Resistor combinations</span></div>
+    <div class="formula">$\tau=RC,\qquad q(t)=Q\!\left(1-e^{-t/RC}\right)$<span class="label">RC charging</span></div>
+  </div>
+
+  <h3>Unit 3 — Magnetism</h3>
+  <div class="formula-grid">
+    <div class="formula">$\vec F=q\vec v\times\vec B,\qquad F=qvB\sin\theta$<span class="label">Magnetic force on a moving charge</span></div>
+    <div class="formula">$r=\dfrac{mv}{qB}$<span class="label">Radius of circular motion in a field</span></div>
+    <div class="formula">$\vec F=I\vec L\times\vec B,\qquad \tau=NIAB\sin\theta$<span class="label">Force on a wire; torque on a loop</span></div>
+    <div class="formula">$B=\dfrac{\mu_0 I}{2\pi r}\ \text{(wire)},\quad B=\dfrac{\mu_0 I}{2R}\ \text{(loop centre)}$<span class="label">Fields from currents</span></div>
+    <div class="formula">$\oint\vec B\cdot d\vec\ell=\mu_0 I_\text{enc},\qquad B=\mu_0 n I\ \text{(solenoid)}$<span class="label">Ampère's law; solenoid</span></div>
+  </div>
+
+  <h3>Unit 4 — Induction</h3>
+  <div class="formula-grid">
+    <div class="formula">$\Phi_B=\int \vec B\cdot d\vec A=BA\cos\theta$<span class="label">Magnetic flux</span></div>
+    <div class="formula">$\varepsilon=-N\dfrac{d\Phi_B}{dt}$<span class="label">Faraday's law (Lenz's law = the minus sign)</span></div>
+    <div class="formula">$\varepsilon=BLv$<span class="label">Motional EMF</span></div>
+    <div class="formula">$\varepsilon=-L\dfrac{dI}{dt},\qquad U=\tfrac12 LI^2$<span class="label">Inductance; energy stored</span></div>
+    <div class="formula">$\tau=\dfrac{L}{R},\qquad \omega=\dfrac{1}{\sqrt{LC}}$<span class="label">RL time constant; LC angular frequency</span></div>
+  </div>
+
+  <!-- ===== Exam-day strategy ===== -->
+  <h2 id="strategy">Exam-day strategy</h2>
+
+  <div class="callout tip">
+    <p class="c-head">A 6-step routine for every problem</p>
+    <ol style="margin-bottom:0">
+      <li><strong>Read twice &amp; list givens</strong> with units. Note what's asked, in what form (e.g. "in unit-vector notation", "in eV").</li>
+      <li><strong>Draw a diagram.</strong> Mark charges/currents, directions, and a coordinate axis. Most lost points come from sign and direction mistakes a sketch prevents.</li>
+      <li><strong>Pick the formula</strong> that links givens to the unknown. Write it symbolically first.</li>
+      <li><strong>Solve algebraically,</strong> then substitute numbers with units last. Keep $k$, $\varepsilon_0$, $\mu_0$ as needed.</li>
+      <li><strong>Check the answer:</strong> right units? sensible magnitude? correct sign/direction?</li>
+      <li><strong>Box it</strong> and state the units. Partial credit lives in shown steps — always show your work.</li>
+    </ol>
+  </div>
+
+  <div class="callout pitfall">
+    <p class="c-head">Top mistakes that cost points</p>
+    <ul style="margin-bottom:0">
+      <li>Forgetting that the field <strong>inside a conductor is zero</strong> in electrostatics.</li>
+      <li>Mixing up <strong>series vs parallel</strong> — capacitors add in <em>parallel</em>, resistors add in <em>series</em>.</li>
+      <li>Sign of work/energy: a positive charge speeds up moving from <em>high</em> to <em>low</em> potential.</li>
+      <li>Using diameter instead of radius, or mm instead of m. Convert everything to SI first.</li>
+      <li>Dropping the direction in $\vec v\times\vec B$ — use the right-hand rule, and flip for negative charges.</li>
+    </ul>
+  </div>
+
+  <div class="callout concept">
+    <p class="c-head">How to use this site</p>
+    <p>Read each topic's <strong>Concept</strong> section once for understanding, memorize the <strong>Formulas</strong>, then close the page and try to reproduce the <strong>Worked Examples</strong> on paper before reading the steps. Finish with the <strong>Practice</strong> problems — only reveal each solution after a genuine attempt. That last habit is what turns an 80 into a 100.</p>
+  </div>
+
+</div>
+</main>
+
+<script src="assets/katex/katex.min.js"></script>
+<script src="assets/katex/auto-render.min.js"></script>
+<script src="assets/app.js"></script>
+</body>
+</html>

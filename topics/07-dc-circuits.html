@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DC Circuits — Physics II Final</title>
+<link rel="stylesheet" href="../assets/katex/katex.min.css">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body data-root="../" data-topic="dc-circuits">
+
+<main class="content">
+<div class="page">
+
+  <p class="eyebrow">Unit 2 · Circuits — Topic 7</p>
+  <h1>DC Circuits</h1>
+  <p class="lead">Real circuits combine sources and resistors. Kirchhoff's two rules solve any network; RC circuits add the time dimension.</p>
+
+  <h2>Concept</h2>
+  <p>A battery supplies an <strong>EMF</strong> $\varepsilon$ — energy per coulomb. Real batteries have a small <strong>internal resistance</strong> $r$, so the terminal voltage is $V=\varepsilon-Ir$.</p>
+
+  <p>Resistors combine with rules <em>opposite</em> to capacitors:</p>
+  <div class="callout concept">
+    <p class="c-head">Combining resistors</p>
+    <ul style="margin-bottom:0">
+      <li><strong>Series:</strong> same current; resistances add: $R_\text{eq}=\sum R_i$.</li>
+      <li><strong>Parallel:</strong> same voltage; reciprocals add: $\dfrac1{R_\text{eq}}=\sum\dfrac1{R_i}$.</li>
+    </ul>
+  </div>
+
+  <p><strong>Kirchhoff's laws</strong> handle anything more complex:</p>
+  <ul>
+    <li><strong>Junction (current) rule:</strong> charge is conserved, so current in = current out at every node: $\sum I_\text{in}=\sum I_\text{out}$.</li>
+    <li><strong>Loop (voltage) rule:</strong> energy is conserved, so the voltage changes around any closed loop sum to zero: $\sum \Delta V=0$.</li>
+  </ul>
+
+  <p>An <strong>RC circuit</strong> charges or discharges a capacitor through a resistor with a characteristic time $\tau=RC$. After one $\tau$ the capacitor reaches about 63% of its final charge; after $5\tau$ it's essentially done.</p>
+
+  <h2>Key Formulas</h2>
+  <div class="formula-grid">
+    <div class="formula">$\varepsilon=I(R+r),\qquad V_\text{term}=\varepsilon-Ir$<span class="label">EMF with internal resistance</span></div>
+    <div class="formula">$R_\text{series}=\textstyle\sum R_i,\qquad \dfrac1{R_\text{parallel}}=\textstyle\sum\dfrac1{R_i}$<span class="label">Resistor combinations</span></div>
+    <div class="formula">$\sum I_\text{in}=\sum I_\text{out},\qquad \sum_\text{loop}\Delta V=0$<span class="label">Kirchhoff's rules</span></div>
+    <div class="formula">$\tau=RC,\qquad q(t)=Q\!\left(1-e^{-t/\tau}\right)$<span class="label">RC charging</span></div>
+  </div>
+  <p class="symbol-list"><b>ε</b> = EMF (V) &nbsp;·&nbsp; <b>r</b> = internal resistance (Ω) &nbsp;·&nbsp; <b>τ</b> = time constant (s).</p>
+
+  <div class="example">
+    <div class="ex-head"><span class="tag">Worked example</span> Series–parallel resistor network</div>
+    <div class="ex-body">
+      <p>A $12\,\mathrm V$ battery connects to a $4\,\Omega$ resistor in series with a parallel pair of $6\,\Omega$ and $3\,\Omega$. Find the total current from the battery and the voltage across the parallel section.</p>
+      <div class="step"><span class="step-label">Step 1 — parallel pair</span>
+        <p>$\dfrac1{R_p}=\dfrac16+\dfrac13=\dfrac12\Rightarrow R_p=2\,\Omega$.</p></div>
+      <div class="step"><span class="step-label">Step 2 — total resistance</span>
+        <p>$R_\text{eq}=4+2=6\,\Omega$.</p></div>
+      <div class="step"><span class="step-label">Step 3 — total current</span>
+        <p>$I=\dfrac{V}{R_\text{eq}}=\dfrac{12}{6}=2.0\,\mathrm A$.</p></div>
+      <div class="step"><span class="step-label">Step 4 — voltage across the parallel part</span>
+        <p>$V_p=I\,R_p=(2.0)(2)=4.0\,\mathrm V$ (the $4\,\Omega$ drops the other $8\,\mathrm V$).</p></div>
+      <span class="answer"><span class="a-label">Answer</span>$I=2.0\,\mathrm A$, $V_p=4.0\,\mathrm V$</span>
+    </div>
+  </div>
+
+  <h2>Practice</h2>
+
+  <div class="practice">
+    <div class="q">
+      <p><span class="qno">Practice 1</span></p>
+      <p>Three $9\,\Omega$ resistors are connected in parallel across a $6\,\mathrm V$ battery. Find the equivalent resistance and the total current.</p>
+      <button class="solution-toggle">Show solution</button>
+      <div class="solution">
+        <p>$\dfrac1{R_\text{eq}}=\dfrac19+\dfrac19+\dfrac19=\dfrac39=\dfrac13\Rightarrow R_\text{eq}=3\,\Omega$.</p>
+        <p>$I=\dfrac{V}{R_\text{eq}}=\dfrac{6}{3}=2.0\,\mathrm A$.</p>
+        <span class="answer"><span class="a-label">Answer</span>$R_\text{eq}=3\,\Omega$, $I=2.0\,\mathrm A$</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="practice">
+    <div class="q">
+      <p><span class="qno">Practice 2</span></p>
+      <p>A $2.0\,\mu\mathrm F$ capacitor charges through a $1.0\,\mathrm{M}\Omega$ resistor. What is the time constant, and roughly how long until the capacitor is essentially fully charged?</p>
+      <button class="solution-toggle">Show solution</button>
+      <div class="solution">
+        <p>$\tau=RC=(1.0\times10^{6})(2.0\times10^{-6})=2.0\,\mathrm s$.</p>
+        <p>"Fully" charged $\approx 5\tau=10\,\mathrm s$.</p>
+        <span class="answer"><span class="a-label">Answer</span>$\tau=2.0\,\mathrm s$; fully charged after $\approx10\,\mathrm s$</span>
+      </div>
+    </div>
+  </div>
+
+</div>
+</main>
+
+<script src="../assets/katex/katex.min.js"></script>
+<script src="../assets/katex/auto-render.min.js"></script>
+<script src="../assets/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sources of Magnetic Field — Physics II Final</title>
+<link rel="stylesheet" href="../assets/katex/katex.min.css">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body data-root="../" data-topic="magnetic-field-sources">
+
+<main class="content">
+<div class="page">
+
+  <p class="eyebrow">Unit 3 · Magnetism — Topic 9</p>
+  <h1>Sources of Magnetic Field</h1>
+  <p class="lead">Where do magnetic fields come from? Moving charges and currents. Ampère's law is the magnetic twin of Gauss's law — symmetry makes it easy.</p>
+
+  <h2>Concept</h2>
+  <p>Electric currents create magnetic fields. The <strong>Biot–Savart law</strong> is the fundamental recipe, but for the exam you mostly need its standard results:</p>
+  <ul>
+    <li>A long straight wire: field circles the wire, $B=\dfrac{\mu_0 I}{2\pi r}$, with direction set by the right-hand rule (thumb along $I$, fingers curl along $\vec B$).</li>
+    <li>At the centre of a circular loop of radius $R$: $B=\dfrac{\mu_0 I}{2R}$.</li>
+    <li>Inside a long solenoid with $n$ turns per metre: $B=\mu_0 n I$, uniform and along the axis.</li>
+  </ul>
+
+  <div class="callout concept">
+    <p class="c-head">Ampère's law</p>
+    <p>For currents with enough symmetry, $\displaystyle\oint\vec B\cdot d\vec\ell=\mu_0 I_\text{enc}$ gives $B$ in one step — choose an "Amperian loop" along which $B$ is constant. It's the magnetic analogue of Gauss's law.</p>
+  </div>
+
+  <p>The constant $\mu_0=4\pi\times10^{-7}\,\mathrm{T\cdot m/A}$ is the permeability of free space. Two parallel wires carrying current attract (same direction) or repel (opposite) — the basis of the definition of the ampere.</p>
+
+  <h2>Key Formulas</h2>
+  <div class="formula-grid">
+    <div class="formula">$B=\dfrac{\mu_0 I}{2\pi r}$<span class="label">Long straight wire (distance $r$)</span></div>
+    <div class="formula">$B=\dfrac{\mu_0 I}{2R}$<span class="label">Centre of a circular loop</span></div>
+    <div class="formula">$B=\mu_0 n I$<span class="label">Inside a long solenoid ($n$ = turns/m)</span></div>
+    <div class="formula">$\oint\vec B\cdot d\vec\ell=\mu_0 I_\text{enc}$<span class="label">Ampère's law</span></div>
+  </div>
+  <p class="symbol-list">$\mu_0=4\pi\times10^{-7}\,\mathrm{T\cdot m/A}$ &nbsp;·&nbsp; <b>n</b> = turns per metre &nbsp;·&nbsp; <b>r</b>, <b>R</b> in metres.</p>
+
+  <div class="example">
+    <div class="ex-head"><span class="tag">Worked example</span> Field of a straight wire and a solenoid</div>
+    <div class="ex-body">
+      <p>(i) Find $B$ at $2.0\,\mathrm{cm}$ from a long wire carrying $10\,\mathrm A$. (ii) Find $B$ inside a solenoid with $500$ turns over $0.25\,\mathrm m$ carrying $3.0\,\mathrm A$.</p>
+      <div class="step"><span class="step-label">(i) Straight wire</span>
+        <p>$B=\dfrac{\mu_0 I}{2\pi r}=\dfrac{(4\pi\times10^{-7})(10)}{2\pi(0.020)}=1.0\times10^{-4}\,\mathrm T$.</p></div>
+      <div class="step"><span class="step-label">(ii) Solenoid</span>
+        <p>$n=\dfrac{500}{0.25}=2000\,\mathrm{turns/m}$, so $B=\mu_0 n I=(4\pi\times10^{-7})(2000)(3.0)=7.5\times10^{-3}\,\mathrm T$.</p></div>
+      <span class="answer"><span class="a-label">Answer</span>$B_\text{wire}=1.0\times10^{-4}\,\mathrm T$; $B_\text{solenoid}\approx7.5\times10^{-3}\,\mathrm T$</span>
+    </div>
+  </div>
+
+  <h2>Practice</h2>
+
+  <div class="practice">
+    <div class="q">
+      <p><span class="qno">Practice 1</span></p>
+      <p>What current in a long straight wire gives a field of $5.0\times10^{-5}\,\mathrm T$ at a distance of $4.0\,\mathrm{cm}$?</p>
+      <button class="solution-toggle">Show solution</button>
+      <div class="solution">
+        <p>Solve $B=\dfrac{\mu_0 I}{2\pi r}$ for $I$: $I=\dfrac{2\pi r B}{\mu_0}=\dfrac{2\pi(0.040)(5.0\times10^{-5})}{4\pi\times10^{-7}}=10\,\mathrm A$.</p>
+        <span class="answer"><span class="a-label">Answer</span>$I=10\,\mathrm A$</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="practice">
+    <div class="q">
+      <p><span class="qno">Practice 2</span></p>
+      <p>At the centre of a circular loop of radius $0.10\,\mathrm m$ carrying $5.0\,\mathrm A$, what is the magnetic field?</p>
+      <button class="solution-toggle">Show solution</button>
+      <div class="solution">
+        <p>$B=\dfrac{\mu_0 I}{2R}=\dfrac{(4\pi\times10^{-7})(5.0)}{2(0.10)}=3.1\times10^{-5}\,\mathrm T$.</p>
+        <span class="answer"><span class="a-label">Answer</span>$B\approx3.1\times10^{-5}\,\mathrm T$</span>
+      </div>
+    </div>
+  </div>
+
+</div>
+</main>
+
+<script src="../assets/katex/katex.min.js"></script>
+<script src="../assets/katex/auto-render.min.js"></script>
+<script src="../assets/app.js"></script>
+</body>
+</html>

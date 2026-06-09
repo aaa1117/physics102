@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Current & Resistance — Physics II Final</title>
+<link rel="stylesheet" href="../assets/katex/katex.min.css">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body data-root="../" data-topic="current-resistance">
+
+<main class="content">
+<div class="page">
+
+  <p class="eyebrow">Unit 2 · Circuits — Topic 6</p>
+  <h1>Current &amp; Resistance</h1>
+  <p class="lead">Now charges move. Current, Ohm's law, and power are simple algebra — but they're guaranteed exam points, including the "how many electrons" question.</p>
+
+  <h2>Concept</h2>
+  <p><strong>Electric current</strong> is the rate at which charge flows past a point: $I=\Delta Q/\Delta t$, in amperes (1 A = 1 C/s). By convention current points the way <em>positive</em> charge would move (opposite to the electrons in a metal).</p>
+
+  <p><strong>Resistance</strong> $R$ measures how much a component opposes current. For many materials <strong>Ohm's law</strong> holds: $V=IR$. Resistance grows with length and shrinks with cross-section: $R=\rho L/A$, where $\rho$ is the resistivity of the material.</p>
+
+  <div class="callout concept">
+    <p class="c-head">Power three ways</p>
+    <p>A resistor converts electrical energy to heat at a rate $P=IV$. Using Ohm's law this becomes $P=I^2R=\dfrac{V^2}{R}$ — pick whichever form matches your knowns. Energy delivered over a time $t$ is $E=Pt$.</p>
+  </div>
+
+  <p>To count charge carriers, remember the total charge that flows is $Q=I\,t$, and each electron carries $|e|=1.6\times10^{-19}\,\mathrm C$. So the number of electrons is $N=Q/e$.</p>
+
+  <h2>Key Formulas</h2>
+  <div class="formula-grid">
+    <div class="formula">$I=\dfrac{\Delta Q}{\Delta t}$<span class="label">Current (A)</span></div>
+    <div class="formula">$V=IR$<span class="label">Ohm's law</span></div>
+    <div class="formula">$R=\rho\dfrac{L}{A}$<span class="label">Resistance from geometry</span></div>
+    <div class="formula">$P=IV=I^2R=\dfrac{V^2}{R}$<span class="label">Power dissipated</span></div>
+    <div class="formula">$N=\dfrac{Q}{e}=\dfrac{I\,t}{e}$<span class="label">Number of electrons that pass</span></div>
+  </div>
+  <p class="symbol-list"><b>I</b> in amperes &nbsp;·&nbsp; <b>R</b> in ohms (Ω) &nbsp;·&nbsp; <b>ρ</b> in Ω·m &nbsp;·&nbsp; <b>P</b> in watts &nbsp;·&nbsp; $e=1.6\times10^{-19}\,\mathrm C$.</p>
+
+  <!-- Worked example: Midterm Q5 -->
+  <div class="example">
+    <div class="ex-head"><span class="tag">Midterm Q5</span> Battery, resistor, and electrons</div>
+    <div class="ex-body">
+      <p>A $120\,\mathrm V$ battery drives a current of $0.80\,\mathrm A$ through a resistor.</p>
+
+      <div class="step"><span class="step-label">(a) Resistance</span>
+        <p>$R=\dfrac{V}{I}=\dfrac{120}{0.80}=150\,\Omega$.</p>
+        <span class="answer"><span class="a-label">Answer (a)</span>$R=150\ \Omega$</span>
+      </div>
+
+      <div class="step"><span class="step-label">(b) Energy in one minute</span>
+        <p>$E=P\,t=V I\,t=(120)(0.80)(60)=5760\,\mathrm J$.</p>
+        <span class="answer"><span class="a-label">Answer (b)</span>$E=5760\ \mathrm J\approx5.76\ \mathrm{kJ}$</span>
+      </div>
+
+      <div class="step"><span class="step-label">(c) Electrons in one minute</span>
+        <p>Charge: $Q=I\,t=(0.80)(60)=48\,\mathrm C$. Then $N=\dfrac{Q}{e}=\dfrac{48}{1.6\times10^{-19}}=3.0\times10^{20}$.</p>
+        <span class="answer"><span class="a-label">Answer (c)</span>$N=3.0\times10^{20}$ electrons</span>
+      </div>
+
+      <div class="callout tip" style="margin-top:8px">
+        <p class="c-head">Booklet B ($240\,\mathrm V$)</p>
+        <p>(a) $R=300\,\Omega$ &nbsp; (b) $E=(240)(0.80)(60)=11520\,\mathrm J$ &nbsp; (c) $N=3.0\times10^{20}$ (current &amp; time unchanged).</p>
+      </div>
+    </div>
+  </div>
+
+  <h2>Practice</h2>
+
+  <div class="practice">
+    <div class="q">
+      <p><span class="qno">Practice 1</span></p>
+      <p>A $12\,\mathrm V$ battery pushes $2.0\,\mathrm A$ through a bulb. Find the resistance and the power dissipated.</p>
+      <button class="solution-toggle">Show solution</button>
+      <div class="solution">
+        <p>$R=\dfrac{V}{I}=\dfrac{12}{2.0}=6.0\,\Omega$. &nbsp; $P=IV=(2.0)(12)=24\,\mathrm W$.</p>
+        <span class="answer"><span class="a-label">Answer</span>$R=6.0\,\Omega$, $P=24\,\mathrm W$</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="practice">
+    <div class="q">
+      <p><span class="qno">Practice 2</span></p>
+      <p>How many electrons flow through a wire carrying $3.0\,\mathrm A$ in $10\,\mathrm s$?</p>
+      <button class="solution-toggle">Show solution</button>
+      <div class="solution">
+        <p>$Q=I\,t=(3.0)(10)=30\,\mathrm C$. &nbsp; $N=\dfrac{Q}{e}=\dfrac{30}{1.6\times10^{-19}}=1.875\times10^{20}$.</p>
+        <span class="answer"><span class="a-label">Answer</span>$N\approx1.9\times10^{20}$ electrons</span>
+      </div>
+    </div>
+  </div>
+
+</div>
+</main>
+
+<script src="../assets/katex/katex.min.js"></script>
+<script src="../assets/katex/auto-render.min.js"></script>
+<script src="../assets/app.js"></script>
+</body>
+</html>

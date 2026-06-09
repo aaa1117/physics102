@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Coulomb's Law — Physics II Final</title>
+<link rel="stylesheet" href="../assets/katex/katex.min.css">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body data-root="../" data-topic="coulombs-law">
+
+<main class="content">
+<div class="page">
+
+  <p class="eyebrow">Unit 1 · Electrostatics — Topic 1</p>
+  <h1>Coulomb's Law</h1>
+  <p class="lead">Electric charge is the source of all the phenomena in this course. Coulomb's law tells you the force between two charges — the foundation everything else is built on.</p>
+
+  <h2>Concept</h2>
+  <p>There are two kinds of <strong>electric charge</strong>, positive and negative, measured in coulombs (C). The rule is simple: <strong>like charges repel, opposite charges attract.</strong> Charge is <em>quantized</em> (always a multiple of $e=1.6\times10^{-19}\,\mathrm{C}$) and <em>conserved</em> (never created or destroyed, only moved).</p>
+
+  <p>Two point charges $q_1$ and $q_2$ separated by a distance $r$ push or pull on each other with a force whose size grows with the charges and falls off with the <em>square</em> of the distance. That inverse-square behaviour is the heart of Coulomb's law.</p>
+
+  <div class="callout concept">
+    <p class="c-head">The key idea</p>
+    <p>The force is along the line joining the charges. Its <strong>magnitude</strong> comes from the formula; its <strong>direction</strong> comes from the signs (repel if same, attract if opposite). Always handle size and direction separately.</p>
+  </div>
+
+  <p>When several charges act on one target, use <strong>superposition</strong>: compute the force from each source charge separately, then add the force <em>vectors</em>. The presence of a third charge never changes the force between the first two.</p>
+
+  <h2>Key Formulas</h2>
+  <div class="formula-grid">
+    <div class="formula">$F=k\dfrac{|q_1\,q_2|}{r^2}$<span class="label">Magnitude of the Coulomb force</span></div>
+    <div class="formula">$\vec F_{2\text{ on }1}=k\dfrac{q_1 q_2}{r^2}\,\hat r$<span class="label">Vector form — sign of the product gives the direction along $\hat r$</span></div>
+    <div class="formula">$U=k\dfrac{q_1 q_2}{r}$<span class="label">Electric potential energy of a pair (used for separation energy)</span></div>
+  </div>
+  <p class="symbol-list"><b>k</b> = $8.99\times10^{9}\,\mathrm{N\cdot m^2/C^2}$ (Coulomb constant) &nbsp;·&nbsp; <b>q</b> = charge (C) &nbsp;·&nbsp; <b>r</b> = separation (m) &nbsp;·&nbsp; <b>F</b> in newtons, <b>U</b> in joules.</p>
+
+  <div class="callout note">
+    <p class="c-head">Separation energy</p>
+    <p>The energy needed to pull two charges infinitely far apart equals the work against their attraction: $W=U_\infty-U_{r}=0-k\dfrac{q_1q_2}{r}=-k\dfrac{q_1q_2}{r}$. For opposite charges $U$ is negative, so this work is positive — you must supply energy.</p>
+  </div>
+
+  <!-- Worked example: Midterm Q1 -->
+  <div class="example">
+    <div class="ex-head"><span class="tag">Midterm Q1</span> Two charges $+5Q$ and $-Q$ on a line</div>
+    <div class="ex-body">
+      <p>Two point charges, $+5Q$ and $-Q$, sit on the x-axis a distance $2a$ apart: $+5Q$ at $x=-a$, $-Q$ at $x=+a$, with the midpoint $O$ at the origin. Give answers in terms of $k$, $Q$, $a$.</p>
+
+      <div class="step"><span class="step-label">(a) Force on the $-Q$ charge</span>
+        <p>Magnitude: $F=k\dfrac{(5Q)(Q)}{(2a)^2}=\dfrac{5kQ^2}{4a^2}$. The charges are opposite, so $-Q$ is <em>attracted</em> toward $+5Q$ (to the left, $-x$).</p>
+        <span class="answer"><span class="a-label">Answer (a)</span>$\vec F_{-Q}=-\dfrac{5kQ^2}{4a^2}\,\hat i$</span>
+      </div>
+
+      <div class="step"><span class="step-label">(b) Resultant field at midpoint $O$</span>
+        <p>Each charge is a distance $a$ from $O$. The field of $+5Q$ points <em>away</em> from it → $+x$; the field of $-Q$ points <em>toward</em> it → also $+x$. They add:</p>
+        <p>$E_O=k\dfrac{5Q}{a^2}+k\dfrac{Q}{a^2}=\dfrac{6kQ}{a^2}$ (in $+x$).</p>
+        <span class="answer"><span class="a-label">Answer (b)</span>$\vec E_O=\dfrac{6kQ}{a^2}\,\hat i$</span>
+      </div>
+
+      <div class="step"><span class="step-label">(c) Resultant potential at $O$</span>
+        <p>Potential is a scalar — just add (with signs): $V_O=k\dfrac{5Q}{a}+k\dfrac{-Q}{a}=\dfrac{4kQ}{a}$.</p>
+        <span class="answer"><span class="a-label">Answer (c)</span>$V_O=\dfrac{4kQ}{a}$</span>
+      </div>
+
+      <div class="step"><span class="step-label">(d) Energy to separate them to infinity</span>
+        <p>$U=k\dfrac{(5Q)(-Q)}{2a}=-\dfrac{5kQ^2}{2a}$. Work needed $=0-U=\dfrac{5kQ^2}{2a}$.</p>
+        <span class="answer"><span class="a-label">Answer (d)</span>$W=\dfrac{5kQ^2}{2a}$ (positive — energy must be supplied)</span>
+      </div>
+
+      <div class="callout tip" style="margin-top:8px">
+        <p class="c-head">Booklet B (charges $+4Q$ and $-Q$)</p>
+        <p>(a) $\vec F=-\dfrac{kQ^2}{a^2}\hat i$ &nbsp; (b) $\vec E_O=\dfrac{5kQ}{a^2}\hat i$ &nbsp; (c) $V_O=\dfrac{3kQ}{a}$ &nbsp; (d) $W=\dfrac{2kQ^2}{a}$</p>
+      </div>
+    </div>
+  </div>
+
+  <h2>Practice</h2>
+
+  <div class="practice">
+    <div class="q">
+      <p><span class="qno">Practice 1</span></p>
+      <p>Two charges $q_1=+3.0\,\mu\mathrm{C}$ and $q_2=-3.0\,\mu\mathrm{C}$ are $0.20\,\mathrm{m}$ apart. Find the magnitude of the force between them.</p>
+      <button class="solution-toggle">Show solution</button>
+      <div class="solution">
+        <p>$F=k\dfrac{|q_1q_2|}{r^2}=8.99\times10^{9}\dfrac{(3.0\times10^{-6})(3.0\times10^{-6})}{(0.20)^2}$</p>
+        <p>$=8.99\times10^{9}\cdot\dfrac{9.0\times10^{-12}}{0.04}=2.02\ \mathrm{N}$ (attractive).</p>
+        <span class="answer"><span class="a-label">Answer</span>$F\approx2.0\ \mathrm{N}$, attractive</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="practice">
+    <div class="q">
+      <p><span class="qno">Practice 2</span></p>
+      <p>Three charges sit on the x-axis: $+2\,\mu\mathrm{C}$ at $x=0$, $+2\,\mu\mathrm{C}$ at $x=1.0\,\mathrm m$, and a test charge $+1\,\mu\mathrm{C}$ at $x=2.0\,\mathrm m$. What is the net force on the test charge?</p>
+      <button class="solution-toggle">Show solution</button>
+      <div class="solution">
+        <p>Force from the charge at $x=0$ (distance 2 m): $F_a=k\dfrac{(2\times10^{-6})(1\times10^{-6})}{2.0^2}=4.5\times10^{-3}\,\mathrm N$, toward $+x$.</p>
+        <p>Force from the charge at $x=1$ (distance 1 m): $F_b=k\dfrac{(2\times10^{-6})(1\times10^{-6})}{1.0^2}=1.8\times10^{-2}\,\mathrm N$, toward $+x$.</p>
+        <p>Both push the test charge in $+x$ (repulsion). Add: $F=4.5\times10^{-3}+1.8\times10^{-2}$.</p>
+        <span class="answer"><span class="a-label">Answer</span>$F\approx2.2\times10^{-2}\ \mathrm N$ in the $+x$ direction</span>
+      </div>
+    </div>
+  </div>
+
+</div>
+</main>
+
+<script src="../assets/katex/katex.min.js"></script>
+<script src="../assets/katex/auto-render.min.js"></script>
+<script src="../assets/app.js"></script>
+</body>
+</html>

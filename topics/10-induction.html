@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Electromagnetic Induction — Physics II Final</title>
+<link rel="stylesheet" href="../assets/katex/katex.min.css">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body data-root="../" data-topic="induction">
+
+<main class="content">
+<div class="page">
+
+  <p class="eyebrow">Unit 4 · Induction — Topic 10</p>
+  <h1>Electromagnetic Induction</h1>
+  <p class="lead">A <em>changing</em> magnetic field creates an electric field and drives a current. Faraday's law is the principle behind generators, transformers, and induction — likely a heavily-weighted final topic.</p>
+
+  <h2>Concept</h2>
+  <p>First define <strong>magnetic flux</strong> — how much field passes through a loop: $\Phi_B=BA\cos\theta$, where $\theta$ is the angle between $\vec B$ and the loop's normal. Units are webers (1 Wb = 1 T·m²).</p>
+
+  <p><strong>Faraday's law:</strong> an EMF is induced whenever the flux <em>changes</em>:</p>
+  <div class="formula" style="text-align:center">$\varepsilon=-N\dfrac{d\Phi_B}{dt}.$</div>
+  <p>Flux can change three ways: change $B$, change the area $A$, or change the angle $\theta$ (rotate the loop). Any of them induces an EMF.</p>
+
+  <div class="callout concept">
+    <p class="c-head">Lenz's law — the minus sign</p>
+    <p>The induced current flows in the direction that <strong>opposes the change</strong> in flux that created it. If flux through a loop increases, the induced current makes a field to push back; if it decreases, the current tries to maintain it. This is energy conservation in action.</p>
+  </div>
+
+  <p>A special case is <strong>motional EMF</strong>: a rod of length $L$ sliding at speed $v$ across a field $B$ sweeps out area and generates $\varepsilon=BLv$. The free charges in the rod feel the magnetic force and pile up until an electric field balances them.</p>
+
+  <h2>Key Formulas</h2>
+  <div class="formula-grid">
+    <div class="formula">$\Phi_B=BA\cos\theta$<span class="label">Magnetic flux (Wb)</span></div>
+    <div class="formula">$\varepsilon=-N\dfrac{d\Phi_B}{dt}$<span class="label">Faraday's law ($N$ turns)</span></div>
+    <div class="formula">$\varepsilon=BLv$<span class="label">Motional EMF of a sliding rod</span></div>
+    <div class="formula">$I=\dfrac{|\varepsilon|}{R}$<span class="label">Induced current in a loop of resistance $R$</span></div>
+  </div>
+  <p class="symbol-list"><b>$\Phi_B$</b> in webers &nbsp;·&nbsp; <b>θ</b> measured from the loop's normal &nbsp;·&nbsp; the sign of $\varepsilon$ encodes Lenz's law.</p>
+
+  <div class="example">
+    <div class="ex-head"><span class="tag">Worked example</span> Shrinking flux through a coil</div>
+    <div class="ex-body">
+      <p>A coil of $N=200$ turns and area $A=0.010\,\mathrm{m^2}$ sits perpendicular to a field that drops uniformly from $0.40\,\mathrm T$ to $0$ in $0.20\,\mathrm s$. Find the induced EMF, and the current if the coil's resistance is $5.0\,\Omega$.</p>
+      <div class="step"><span class="step-label">Step 1 — rate of flux change</span>
+        <p>$\dfrac{d\Phi_B}{dt}=A\dfrac{dB}{dt}=(0.010)\dfrac{0-0.40}{0.20}=-0.020\,\mathrm{Wb/s}$.</p></div>
+      <div class="step"><span class="step-label">Step 2 — EMF (magnitude)</span>
+        <p>$|\varepsilon|=N\left|\dfrac{d\Phi_B}{dt}\right|=200(0.020)=4.0\,\mathrm V$.</p></div>
+      <div class="step"><span class="step-label">Step 3 — induced current</span>
+        <p>$I=\dfrac{|\varepsilon|}{R}=\dfrac{4.0}{5.0}=0.80\,\mathrm A$. By Lenz's law it flows so as to oppose the <em>decrease</em> in flux.</p></div>
+      <span class="answer"><span class="a-label">Answer</span>$|\varepsilon|=4.0\,\mathrm V$, $I=0.80\,\mathrm A$</span>
+    </div>
+  </div>
+
+  <h2>Practice</h2>
+
+  <div class="practice">
+    <div class="q">
+      <p><span class="qno">Practice 1</span></p>
+      <p>A $0.50\,\mathrm m$ rod slides at $4.0\,\mathrm{m/s}$ across a $0.20\,\mathrm T$ field, perpendicular to it. What EMF is generated?</p>
+      <button class="solution-toggle">Show solution</button>
+      <div class="solution">
+        <p>$\varepsilon=BLv=(0.20)(0.50)(4.0)=0.40\,\mathrm V$.</p>
+        <span class="answer"><span class="a-label">Answer</span>$\varepsilon=0.40\,\mathrm V$</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="practice">
+    <div class="q">
+      <p><span class="qno">Practice 2</span></p>
+      <p>A magnet is pushed toward a coil, increasing the flux. Which way does the induced current flow, and what does it do to the magnet?</p>
+      <button class="solution-toggle">Show solution</button>
+      <div class="solution">
+        <p>By Lenz's law the induced current opposes the increasing flux, so it creates a magnetic field that <em>repels</em> the incoming magnet (the coil face toward the magnet becomes the same pole). You must do work to push the magnet in — that work becomes the electrical energy.</p>
+        <span class="answer"><span class="a-label">Answer</span>Current opposes the change; the coil repels the approaching magnet.</span>
+      </div>
+    </div>
+  </div>
+
+</div>
+</main>
+
+<script src="../assets/katex/katex.min.js"></script>
+<script src="../assets/katex/auto-render.min.js"></script>
+<script src="../assets/app.js"></script>
+</body>
+</html>

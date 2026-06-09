@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Magnetic Field & Force — Physics II Final</title>
+<link rel="stylesheet" href="../assets/katex/katex.min.css">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body data-root="../" data-topic="magnetic-force">
+
+<main class="content">
+<div class="page">
+
+  <p class="eyebrow">Unit 3 · Magnetism — Topic 8</p>
+  <h1>Magnetic Field &amp; Force</h1>
+  <p class="lead">Moving charges feel a sideways force in a magnetic field. The cross product and the right-hand rule are everything here.</p>
+
+  <h2>Concept</h2>
+  <p>A magnetic field $\vec B$ (tesla, T) exerts a force on a <em>moving</em> charge — but only on the part of the velocity perpendicular to $\vec B$. The force is</p>
+  <div class="formula" style="text-align:center">$\vec F=q\,\vec v\times\vec B,\qquad F=qvB\sin\theta.$</div>
+  <p>The force is always <strong>perpendicular</strong> to both $\vec v$ and $\vec B$. Because it's perpendicular to the motion, it does <em>no work</em> and never changes the speed — only the direction.</p>
+
+  <div class="callout concept">
+    <p class="c-head">Right-hand rule</p>
+    <p>Point your fingers along $\vec v$, curl them toward $\vec B$; your thumb gives $\vec v\times\vec B$. For a <strong>positive</strong> charge that's the force direction; for a <strong>negative</strong> charge, reverse it.</p>
+  </div>
+
+  <p>A charge moving perpendicular to a uniform $\vec B$ goes in a <strong>circle</strong>: the magnetic force supplies the centripetal force, $qvB=\dfrac{mv^2}{r}$, giving radius $r=\dfrac{mv}{qB}$.</p>
+
+  <p>A current is just moving charge, so a wire of length $L$ carrying current $I$ feels $\vec F=I\vec L\times\vec B$. A current <strong>loop</strong> in a field feels a <strong>torque</strong> that tries to align it — the principle of the electric motor.</p>
+
+  <h2>Key Formulas</h2>
+  <div class="formula-grid">
+    <div class="formula">$F=qvB\sin\theta$<span class="label">Force on a moving charge</span></div>
+    <div class="formula">$r=\dfrac{mv}{qB}$<span class="label">Radius of circular motion</span></div>
+    <div class="formula">$F=BIL\sin\theta$<span class="label">Force on a current-carrying wire</span></div>
+    <div class="formula">$\tau=NIAB\sin\theta$<span class="label">Torque on an $N$-turn loop of area $A$</span></div>
+  </div>
+  <p class="symbol-list"><b>B</b> in tesla (T) &nbsp;·&nbsp; <b>θ</b> = angle between $\vec v$ (or wire) and $\vec B$ &nbsp;·&nbsp; <b>A</b> = loop area (m²).</p>
+
+  <div class="callout pitfall">
+    <p class="c-head">Watch out</p>
+    <p>If $\vec v\parallel\vec B$ ($\theta=0$) the force is <strong>zero</strong>. Maximum force is at $\theta=90^\circ$. And don't forget to flip the direction for negative charges.</p>
+  </div>
+
+  <div class="example">
+    <div class="ex-head"><span class="tag">Worked example</span> Proton in a magnetic field</div>
+    <div class="ex-body">
+      <p>A proton ($q=1.6\times10^{-19}\,\mathrm C$, $m=1.67\times10^{-27}\,\mathrm{kg}$) moves at $v=2.0\times10^{6}\,\mathrm{m/s}$ perpendicular to a $0.50\,\mathrm T$ field. Find the force and the radius of its circular path.</p>
+      <div class="step"><span class="step-label">Step 1 — force</span>
+        <p>$F=qvB\sin90^\circ=(1.6\times10^{-19})(2.0\times10^{6})(0.50)=1.6\times10^{-13}\,\mathrm N$.</p></div>
+      <div class="step"><span class="step-label">Step 2 — radius</span>
+        <p>$r=\dfrac{mv}{qB}=\dfrac{(1.67\times10^{-27})(2.0\times10^{6})}{(1.6\times10^{-19})(0.50)}=4.2\times10^{-2}\,\mathrm m$.</p></div>
+      <span class="answer"><span class="a-label">Answer</span>$F=1.6\times10^{-13}\,\mathrm N$, $r\approx4.2\,\mathrm{cm}$</span>
+    </div>
+  </div>
+
+  <h2>Practice</h2>
+
+  <div class="practice">
+    <div class="q">
+      <p><span class="qno">Practice 1</span></p>
+      <p>A wire of length $0.25\,\mathrm m$ carries $4.0\,\mathrm A$ perpendicular to a $0.30\,\mathrm T$ field. What force acts on it?</p>
+      <button class="solution-toggle">Show solution</button>
+      <div class="solution">
+        <p>$F=BIL\sin90^\circ=(0.30)(4.0)(0.25)=0.30\,\mathrm N$.</p>
+        <span class="answer"><span class="a-label">Answer</span>$F=0.30\,\mathrm N$</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="practice">
+    <div class="q">
+      <p><span class="qno">Practice 2</span></p>
+      <p>An electron moves <em>parallel</em> to a magnetic field. What magnetic force does it feel, and why?</p>
+      <button class="solution-toggle">Show solution</button>
+      <div class="solution">
+        <p>$F=qvB\sin\theta$ with $\theta=0^\circ$, so $\sin\theta=0$ and $F=0$. The magnetic force only acts on the component of velocity perpendicular to $\vec B$; here there is none.</p>
+        <span class="answer"><span class="a-label">Answer</span>Zero force ($\vec v\parallel\vec B$).</span>
+      </div>
+    </div>
+  </div>
+
+</div>
+</main>
+
+<script src="../assets/katex/katex.min.js"></script>
+<script src="../assets/katex/auto-render.min.js"></script>
+<script src="../assets/app.js"></script>
+</body>
+</html>

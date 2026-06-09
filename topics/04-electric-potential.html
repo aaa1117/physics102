@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Electric Potential — Physics II Final</title>
+<link rel="stylesheet" href="../assets/katex/katex.min.css">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body data-root="../" data-topic="electric-potential">
+
+<main class="content">
+<div class="page">
+
+  <p class="eyebrow">Unit 1 · Electrostatics — Topic 4</p>
+  <h1>Electric Potential &amp; Energy</h1>
+  <p class="lead">Potential is "electrical height" — energy per unit charge. It turns vector field problems into easy scalar arithmetic and powers every circuit in this course.</p>
+
+  <h2>Concept</h2>
+  <p>Moving a charge through a field does work and changes its <strong>potential energy</strong> $U$. Dividing by the charge gives the <strong>electric potential</strong> $V=U/q$, measured in volts (1 V = 1 J/C). Only <em>differences</em> in potential matter physically.</p>
+
+  <p>Because $V$ is a <strong>scalar</strong>, the potential of several charges is just the algebraic sum $V=\sum k q_i/r_i$ — no vectors, no angles. A positive charge released in a field "falls" from high $V$ to low $V$, gaining kinetic energy.</p>
+
+  <div class="callout concept">
+    <p class="c-head">Field ↔ potential</p>
+    <p>For a <strong>uniform</strong> field (like between parallel plates) the link is simply $E=\dfrac{V}{d}$, and the energy a charge gains crossing the gap is $\Delta U=q\,\Delta V$. This is the engine behind Q3 of the midterm.</p>
+  </div>
+
+  <p>The <strong>electron-volt</strong> (eV) is the energy one elementary charge gains across 1 volt: $1\,\mathrm{eV}=1.6\times10^{-19}\,\mathrm J$. For a charge of magnitude $e$ crossing a potential difference of $V$ volts, the energy in eV is just the number $V$.</p>
+
+  <h2>Key Formulas</h2>
+  <div class="formula-grid">
+    <div class="formula">$V=k\dfrac{q}{r}\qquad V_\text{net}=\textstyle\sum_i k\dfrac{q_i}{r_i}$<span class="label">Potential of point charges (scalar sum)</span></div>
+    <div class="formula">$U=k\dfrac{q_1 q_2}{r}\qquad \Delta U=q\,\Delta V$<span class="label">Pair energy; energy change of a charge</span></div>
+    <div class="formula">$E=\dfrac{V}{d}$<span class="label">Uniform field between plates ($d$ = gap)</span></div>
+    <div class="formula">$\text{KE}_\text{gained}=q\,\Delta V$<span class="label">Work–energy theorem in a field</span></div>
+  </div>
+  <p class="symbol-list">$1\,\mathrm{V}=1\,\mathrm{J/C}$ &nbsp;·&nbsp; $1\,\mathrm{eV}=1.6\times10^{-19}\,\mathrm J$ &nbsp;·&nbsp; proton charge $=+e$, mass $=1.67\times10^{-27}\,\mathrm{kg}$.</p>
+
+  <!-- Worked example: Midterm Q3 -->
+  <div class="example">
+    <div class="ex-head"><span class="tag">Midterm Q3</span> Proton across parallel plates</div>
+    <div class="ex-body">
+      <p>A potential difference $V=80\,\mathrm V$ is applied across two parallel plates separated by $d=4.0\,\mathrm{mm}=4.0\times10^{-3}\,\mathrm m$. A proton is released from the positive plate.</p>
+
+      <div class="step"><span class="step-label">(a) Field between the plates</span>
+        <p>$E=\dfrac{V}{d}=\dfrac{80}{4.0\times10^{-3}}=2.0\times10^{4}\,\mathrm{V/m}$.</p>
+        <span class="answer"><span class="a-label">Answer (a)</span>$E=2.0\times10^{4}\ \mathrm{V/m}$</span>
+      </div>
+
+      <div class="step"><span class="step-label">(b) Kinetic energy at the negative plate</span>
+        <p>All the electrical PE converts to KE: $\text{KE}=qV=e\,V=(1.6\times10^{-19})(80)=1.28\times10^{-17}\,\mathrm J$. In eV: $80\,\mathrm{eV}$.</p>
+        <span class="answer"><span class="a-label">Answer (b)</span>$\text{KE}=1.28\times10^{-17}\ \mathrm J = 80\ \mathrm{eV}$</span>
+      </div>
+
+      <div class="step"><span class="step-label">(c) Work done by the electric force</span>
+        <p>The work equals the KE gained (energy conservation), so it's identical to part (b).</p>
+        <span class="answer"><span class="a-label">Answer (c)</span>$W=1.28\times10^{-17}\ \mathrm J = 80\ \mathrm{eV}$</span>
+      </div>
+
+      <div class="callout tip" style="margin-top:8px">
+        <p class="c-head">Booklet B ($V=60\,\mathrm V$)</p>
+        <p>(a) $E=1.5\times10^{4}\,\mathrm{V/m}$ &nbsp; (b),(c) $\text{KE}=W=9.6\times10^{-18}\,\mathrm J=60\,\mathrm{eV}$.</p>
+      </div>
+    </div>
+  </div>
+
+  <h2>Practice</h2>
+
+  <div class="practice">
+    <div class="q">
+      <p><span class="qno">Practice 1</span></p>
+      <p>An electron is accelerated from rest through a potential difference of $150\,\mathrm V$. What kinetic energy does it gain, in joules and in eV?</p>
+      <button class="solution-toggle">Show solution</button>
+      <div class="solution">
+        <p>$\text{KE}=eV=(1.6\times10^{-19})(150)=2.4\times10^{-17}\,\mathrm J$. In eV that's simply $150\,\mathrm{eV}$.</p>
+        <span class="answer"><span class="a-label">Answer</span>$2.4\times10^{-17}\ \mathrm J = 150\ \mathrm{eV}$</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="practice">
+    <div class="q">
+      <p><span class="qno">Practice 2</span></p>
+      <p>Find the potential at a point $0.20\,\mathrm m$ from a $+5.0\,\mathrm{nC}$ charge and $0.40\,\mathrm m$ from a $-5.0\,\mathrm{nC}$ charge.</p>
+      <button class="solution-toggle">Show solution</button>
+      <div class="solution">
+        <p>$V=k\dfrac{q_1}{r_1}+k\dfrac{q_2}{r_2}=8.99\times10^{9}\!\left(\dfrac{5.0\times10^{-9}}{0.20}+\dfrac{-5.0\times10^{-9}}{0.40}\right)$</p>
+        <p>$=8.99\times10^{9}(2.5\times10^{-8}-1.25\times10^{-8})=112\,\mathrm V$.</p>
+        <span class="answer"><span class="a-label">Answer</span>$V\approx+112\ \mathrm V$</span>
+      </div>
+    </div>
+  </div>
+
+</div>
+</main>
+
+<script src="../assets/katex/katex.min.js"></script>
+<script src="../assets/katex/auto-render.min.js"></script>
+<script src="../assets/app.js"></script>
+</body>
+</html>

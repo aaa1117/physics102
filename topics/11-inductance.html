@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Inductance — Physics II Final</title>
+<link rel="stylesheet" href="../assets/katex/katex.min.css">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body data-root="../" data-topic="inductance">
+
+<main class="content">
+<div class="page">
+
+  <p class="eyebrow">Unit 4 · Induction — Topic 11</p>
+  <h1>Inductance</h1>
+  <p class="lead">The last topic. An inductor opposes <em>changes</em> in current and stores energy in its magnetic field — the magnetic counterpart of a capacitor.</p>
+
+  <h2>Concept</h2>
+  <p>When the current in a coil changes, its own flux changes, inducing an EMF that fights the change (Lenz again). This <strong>self-inductance</strong> $L$ (henries, H) is defined by</p>
+  <div class="formula" style="text-align:center">$\varepsilon=-L\dfrac{dI}{dt}.$</div>
+  <p>A large $L$ means the coil strongly resists any change in current — current in an inductor can't jump instantly.</p>
+
+  <div class="callout concept">
+    <p class="c-head">Energy in the magnetic field</p>
+    <p>Charging an inductor stores energy $U=\tfrac12 LI^2$ in its magnetic field — exactly parallel to a capacitor's $U=\tfrac12 CV^2$. Inductor ↔ capacitor, current ↔ charge, $L$ ↔ $C$.</p>
+  </div>
+
+  <p>An <strong>RL circuit</strong> has a time constant $\tau=L/R$: current rises (or falls) exponentially over that timescale, just like charge in an RC circuit.</p>
+
+  <p>An <strong>LC circuit</strong> trades energy back and forth between the capacitor's electric field and the inductor's magnetic field, oscillating at angular frequency $\omega=\dfrac{1}{\sqrt{LC}}$ — an electrical version of a mass on a spring.</p>
+
+  <h2>Key Formulas</h2>
+  <div class="formula-grid">
+    <div class="formula">$\varepsilon=-L\dfrac{dI}{dt}$<span class="label">Self-induced EMF (defines $L$)</span></div>
+    <div class="formula">$U=\tfrac12 LI^2$<span class="label">Energy stored in an inductor</span></div>
+    <div class="formula">$\tau=\dfrac{L}{R}$<span class="label">RL time constant</span></div>
+    <div class="formula">$\omega=\dfrac{1}{\sqrt{LC}},\qquad f=\dfrac{\omega}{2\pi}$<span class="label">LC oscillation frequency</span></div>
+  </div>
+  <p class="symbol-list"><b>L</b> in henries (H) &nbsp;·&nbsp; <b>τ</b> in seconds &nbsp;·&nbsp; <b>ω</b> in rad/s.</p>
+
+  <div class="example">
+    <div class="ex-head"><span class="tag">Worked example</span> Inductor energy, RL time, LC frequency</div>
+    <div class="ex-body">
+      <p>An inductor has $L=0.50\,\mathrm H$. (i) Find the energy stored when it carries $2.0\,\mathrm A$. (ii) Find the RL time constant with $R=100\,\Omega$. (iii) Find the oscillation frequency if connected to a $C=2.0\,\mu\mathrm F$ capacitor.</p>
+      <div class="step"><span class="step-label">(i) Energy</span>
+        <p>$U=\tfrac12 LI^2=\tfrac12(0.50)(2.0)^2=1.0\,\mathrm J$.</p></div>
+      <div class="step"><span class="step-label">(ii) RL time constant</span>
+        <p>$\tau=\dfrac{L}{R}=\dfrac{0.50}{100}=5.0\times10^{-3}\,\mathrm s$.</p></div>
+      <div class="step"><span class="step-label">(iii) LC frequency</span>
+        <p>$\omega=\dfrac{1}{\sqrt{LC}}=\dfrac{1}{\sqrt{(0.50)(2.0\times10^{-6})}}=1.0\times10^{3}\,\mathrm{rad/s}$, so $f=\dfrac{\omega}{2\pi}\approx159\,\mathrm{Hz}$.</p></div>
+      <span class="answer"><span class="a-label">Answer</span>$U=1.0\,\mathrm J$, $\tau=5.0\,\mathrm{ms}$, $f\approx159\,\mathrm{Hz}$</span>
+    </div>
+  </div>
+
+  <h2>Practice</h2>
+
+  <div class="practice">
+    <div class="q">
+      <p><span class="qno">Practice 1</span></p>
+      <p>The current in a $0.20\,\mathrm H$ inductor changes at $50\,\mathrm{A/s}$. What is the magnitude of the self-induced EMF?</p>
+      <button class="solution-toggle">Show solution</button>
+      <div class="solution">
+        <p>$|\varepsilon|=L\left|\dfrac{dI}{dt}\right|=(0.20)(50)=10\,\mathrm V$.</p>
+        <span class="answer"><span class="a-label">Answer</span>$|\varepsilon|=10\,\mathrm V$</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="practice">
+    <div class="q">
+      <p><span class="qno">Practice 2</span></p>
+      <p>How much energy is stored in a $2.0\,\mathrm H$ inductor carrying $3.0\,\mathrm A$? Compare conceptually with a charged capacitor.</p>
+      <button class="solution-toggle">Show solution</button>
+      <div class="solution">
+        <p>$U=\tfrac12 LI^2=\tfrac12(2.0)(3.0)^2=9.0\,\mathrm J$. Like a capacitor stores energy in its electric field ($\tfrac12 CV^2$), an inductor stores it in its magnetic field — released when the current is interrupted.</p>
+        <span class="answer"><span class="a-label">Answer</span>$U=9.0\,\mathrm J$</span>
+      </div>
+    </div>
+  </div>
+
+</div>
+</main>
+
+<script src="../assets/katex/katex.min.js"></script>
+<script src="../assets/katex/auto-render.min.js"></script>
+<script src="../assets/app.js"></script>
+</body>
+</html>

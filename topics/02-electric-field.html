@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Electric Field — Physics II Final</title>
+<link rel="stylesheet" href="../assets/katex/katex.min.css">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body data-root="../" data-topic="electric-field">
+
+<main class="content">
+<div class="page">
+
+  <p class="eyebrow">Unit 1 · Electrostatics — Topic 2</p>
+  <h1>The Electric Field</h1>
+  <p class="lead">Instead of asking "what force does charge A feel from charge B," we say every charge fills space with a <strong>field</strong>. Any charge placed in that field feels a force. This shift makes every later topic possible.</p>
+
+  <h2>Concept</h2>
+  <p>The <strong>electric field</strong> $\vec E$ at a point is the force per unit positive charge that a tiny test charge would feel there: $\vec E=\vec F/q_0$. Its units are newtons per coulomb (N/C), equivalently volts per metre. The field points the way a <em>positive</em> charge would be pushed: <strong>away from positive</strong> source charges, <strong>toward negative</strong> ones.</p>
+
+  <div class="callout concept">
+    <p class="c-head">Why a field?</p>
+    <p>A field lets you describe the influence of a charge distribution <em>once</em>, then find the force on any charge with a single multiplication $\vec F=q\vec E$. It also carries energy and travels at finite speed — the seed of electromagnetic waves.</p>
+  </div>
+
+  <p><strong>Superposition</strong> again rules: the total field is the vector sum of the fields from each source charge. For a continuous charge distribution you slice it into tiny pieces $dq$, write $d\vec E=k\,dq/r^2\,\hat r$, and integrate.</p>
+
+  <p><strong>Field lines</strong> are a picture of $\vec E$: they start on positive charge, end on negative charge, never cross, and crowd together where the field is strong.</p>
+
+  <h2>Key Formulas</h2>
+  <div class="formula-grid">
+    <div class="formula">$\vec E=\dfrac{\vec F}{q_0}\qquad \vec F=q\vec E$<span class="label">Definition of the field; force on a charge in a field</span></div>
+    <div class="formula">$E=k\dfrac{|q|}{r^2}$<span class="label">Field magnitude of a point charge</span></div>
+    <div class="formula">$\vec E_\text{net}=\textstyle\sum_i k\dfrac{q_i}{r_i^2}\,\hat r_i$<span class="label">Superposition of point-charge fields</span></div>
+    <div class="formula">$E=\dfrac{\sigma}{2\varepsilon_0}\ \text{(sheet)},\quad E=\dfrac{\lambda}{2\pi\varepsilon_0 r}\ \text{(line)}$<span class="label">Useful continuous distributions</span></div>
+  </div>
+  <p class="symbol-list"><b>σ</b> = surface charge density (C/m²) &nbsp;·&nbsp; <b>λ</b> = linear charge density (C/m) &nbsp;·&nbsp; <b>q₀</b> = test charge.</p>
+
+  <div class="callout pitfall">
+    <p class="c-head">Watch out</p>
+    <p>Field is a <strong>vector</strong> — you cannot add magnitudes unless the contributions point the same way. Break each contribution into components, sum components, then recombine.</p>
+  </div>
+
+  <div class="example">
+    <div class="ex-head"><span class="tag">Worked example</span> Field on the axis between two charges</div>
+    <div class="ex-body">
+      <p>A charge $+4.0\,\mathrm{nC}$ is at $x=0$ and a charge $-4.0\,\mathrm{nC}$ is at $x=0.30\,\mathrm m$. Find $\vec E$ at the midpoint $x=0.15\,\mathrm m$.</p>
+      <div class="step"><span class="step-label">Step 1 — distances</span><p>Each charge is $r=0.15\,\mathrm m$ from the midpoint.</p></div>
+      <div class="step"><span class="step-label">Step 2 — each field</span>
+        <p>$E=k\dfrac{|q|}{r^2}=8.99\times10^{9}\dfrac{4.0\times10^{-9}}{(0.15)^2}=1.6\times10^{3}\,\mathrm{N/C}$ each.</p></div>
+      <div class="step"><span class="step-label">Step 3 — directions</span>
+        <p>Field from $+4$ nC points away → $+x$. Field from $-4$ nC points toward it → also $+x$. They add.</p></div>
+      <span class="answer"><span class="a-label">Answer</span>$\vec E=3.2\times10^{3}\ \mathrm{N/C}$ in the $+x$ direction</span>
+    </div>
+  </div>
+
+  <h2>Practice</h2>
+
+  <div class="practice">
+    <div class="q">
+      <p><span class="qno">Practice 1</span></p>
+      <p>What is the magnitude of the electric field $0.50\,\mathrm m$ from a $+2.0\,\mu\mathrm C$ point charge? What force would a $-1.0\,\mathrm{nC}$ charge feel there?</p>
+      <button class="solution-toggle">Show solution</button>
+      <div class="solution">
+        <p>$E=k\dfrac{q}{r^2}=8.99\times10^{9}\dfrac{2.0\times10^{-6}}{0.25}=7.2\times10^{4}\,\mathrm{N/C}$ (away from the charge).</p>
+        <p>$F=|q|E=(1.0\times10^{-9})(7.2\times10^{4})=7.2\times10^{-5}\,\mathrm N$, directed <em>toward</em> the source (negative charge).</p>
+        <span class="answer"><span class="a-label">Answer</span>$E\approx7.2\times10^{4}\,\mathrm{N/C}$, $F\approx7.2\times10^{-5}\,\mathrm N$</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="practice">
+    <div class="q">
+      <p><span class="qno">Practice 2</span></p>
+      <p>Two equal charges $+q$ sit at $x=\pm a$. Explain why $\vec E=0$ at the origin, and where the field would <em>not</em> be zero.</p>
+      <button class="solution-toggle">Show solution</button>
+      <div class="solution">
+        <p>At the origin each charge produces a field of the same magnitude $kq/a^2$ but pointing in opposite directions (each points away from its source, i.e. toward the origin's opposite side). They cancel: $\vec E=0$.</p>
+        <p>Anywhere off the centre — e.g. on the y-axis — the two contributions no longer cancel; the x-components cancel by symmetry but the y-components add, giving a field pointing away from the axis.</p>
+        <span class="answer"><span class="a-label">Answer</span>Cancellation at the centre by symmetry; nonzero elsewhere (e.g. along $y$, pointing $\pm y$).</span>
+      </div>
+    </div>
+  </div>
+
+</div>
+</main>
+
+<script src="../assets/katex/katex.min.js"></script>
+<script src="../assets/katex/auto-render.min.js"></script>
+<script src="../assets/app.js"></script>
+</body>
+</html>

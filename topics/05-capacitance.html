@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Capacitance & Dielectrics — Physics II Final</title>
+<link rel="stylesheet" href="../assets/katex/katex.min.css">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body data-root="../" data-topic="capacitance">
+
+<main class="content">
+<div class="page">
+
+  <p class="eyebrow">Unit 1 · Electrostatics — Topic 5</p>
+  <h1>Capacitance &amp; Dielectrics</h1>
+  <p class="lead">A capacitor stores charge and energy in an electric field. Mastering series/parallel combinations is the single highest-yield skill for this part of the exam.</p>
+
+  <h2>Concept</h2>
+  <p>A <strong>capacitor</strong> is two conductors holding equal and opposite charge $\pm Q$. The charge it holds is proportional to the voltage across it: $Q=C\,\Delta V$. The constant $C$ is the <strong>capacitance</strong> (farads, F), set by geometry alone.</p>
+
+  <div class="callout concept">
+    <p class="c-head">Series vs parallel — get this right</p>
+    <ul style="margin-bottom:0">
+      <li><strong>Parallel:</strong> same voltage across each; capacitances <em>add</em>: $C_\text{eq}=\sum C_i$.</li>
+      <li><strong>Series:</strong> same charge on each; reciprocals add: $\dfrac1{C_\text{eq}}=\sum\dfrac1{C_i}$.</li>
+    </ul>
+    <p style="margin:8px 0 0">This is the <em>opposite</em> of resistors — a classic trap.</p>
+  </div>
+
+  <p>In a <strong>series</strong> chain the charge $Q$ is the same through every capacitor, and the voltages divide. In a <strong>parallel</strong> bank the voltage is shared and the charges divide. Energy is stored in the field and can be written three equivalent ways.</p>
+
+  <h2>Key Formulas</h2>
+  <div class="formula-grid">
+    <div class="formula">$C=\dfrac{Q}{\Delta V}$<span class="label">Definition of capacitance</span></div>
+    <div class="formula">$C_\text{parallel}=\textstyle\sum C_i\qquad \dfrac1{C_\text{series}}=\textstyle\sum\dfrac1{C_i}$<span class="label">Combinations</span></div>
+    <div class="formula">$U=\tfrac12 C(\Delta V)^2=\dfrac{Q^2}{2C}=\tfrac12 Q\,\Delta V$<span class="label">Energy stored</span></div>
+    <div class="formula">$C=\kappa C_0$<span class="label">A dielectric of constant $\kappa$ multiplies the capacitance</span></div>
+  </div>
+  <p class="symbol-list"><b>C</b> in farads (F); $1\,\mu\mathrm F=10^{-6}\,\mathrm F$ &nbsp;·&nbsp; <b>Q</b> in coulombs &nbsp;·&nbsp; <b>ΔV</b> in volts &nbsp;·&nbsp; <b>U</b> in joules.</p>
+
+  <!-- Worked example: Midterm Q4 -->
+  <div class="example">
+    <div class="ex-head"><span class="tag">Midterm Q4</span> A three-capacitor network</div>
+    <div class="ex-body">
+      <p>$C_1=8.0\,\mu\mathrm F$ sits directly across the source. $C_2=15\,\mu\mathrm F$ and $C_3=30\,\mu\mathrm F$ are in series with each other, and that series pair is in parallel with $C_1$. The source is $V_0=12\,\mathrm V$.</p>
+
+      <div class="step"><span class="step-label">(a) Equivalent capacitance</span>
+        <p>Series of $C_2,C_3$: $C_{23}=\dfrac{C_2 C_3}{C_2+C_3}=\dfrac{15\cdot30}{45}=10\,\mu\mathrm F$.</p>
+        <p>In parallel with $C_1$: $C_\text{eq}=C_1+C_{23}=8.0+10=18\,\mu\mathrm F$.</p>
+        <span class="answer"><span class="a-label">Answer (a)</span>$C_\text{eq}=18\ \mu\mathrm F$</span>
+      </div>
+
+      <div class="step"><span class="step-label">(b) Charge on $C_1$</span>
+        <p>$C_1$ has the full $V_0$ across it: $Q_1=C_1 V_0=(8.0)(12)=96\,\mu\mathrm C$.</p>
+        <span class="answer"><span class="a-label">Answer (b)</span>$Q_1=96\ \mu\mathrm C$</span>
+      </div>
+
+      <div class="step"><span class="step-label">(c) Voltage across $C_2$</span>
+        <p>The series branch carries $Q_{23}=C_{23}V_0=(10)(12)=120\,\mu\mathrm C$, the same charge on both $C_2$ and $C_3$.</p>
+        <p>$V_2=\dfrac{Q_{23}}{C_2}=\dfrac{120}{15}=8.0\,\mathrm V$.</p>
+        <span class="answer"><span class="a-label">Answer (c)</span>$V_2=8.0\ \mathrm V$</span>
+      </div>
+
+      <div class="step"><span class="step-label">(d) Energy stored in $C_3$</span>
+        <p>$V_3=\dfrac{Q_{23}}{C_3}=\dfrac{120}{30}=4.0\,\mathrm V$, so $U_3=\tfrac12 C_3 V_3^2=\tfrac12(30\times10^{-6})(4.0)^2=2.4\times10^{-4}\,\mathrm J$.</p>
+        <span class="answer"><span class="a-label">Answer (d)</span>$U_3=2.4\times10^{-4}\ \mathrm J$</span>
+      </div>
+
+      <div class="callout tip" style="margin-top:8px">
+        <p class="c-head">Booklet B ($V_0=24\,\mathrm V$)</p>
+        <p>(a) $C_\text{eq}=18\,\mu\mathrm F$ &nbsp; (b) $Q_1=192\,\mu\mathrm C$ &nbsp; (c) $V_2=16\,\mathrm V$ &nbsp; (d) $U_3=9.6\times10^{-4}\,\mathrm J$.</p>
+      </div>
+    </div>
+  </div>
+
+  <h2>Practice</h2>
+
+  <div class="practice">
+    <div class="q">
+      <p><span class="qno">Practice 1</span></p>
+      <p>Two capacitors, $6\,\mu\mathrm F$ and $3\,\mu\mathrm F$, are connected (i) in parallel, (ii) in series. Find $C_\text{eq}$ for each.</p>
+      <button class="solution-toggle">Show solution</button>
+      <div class="solution">
+        <p>Parallel: $C_\text{eq}=6+3=9\,\mu\mathrm F$.</p>
+        <p>Series: $\dfrac1{C_\text{eq}}=\dfrac16+\dfrac13=\dfrac12\Rightarrow C_\text{eq}=2\,\mu\mathrm F$.</p>
+        <span class="answer"><span class="a-label">Answer</span>Parallel $9\,\mu\mathrm F$; series $2\,\mu\mathrm F$</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="practice">
+    <div class="q">
+      <p><span class="qno">Practice 2</span></p>
+      <p>A $10\,\mu\mathrm F$ capacitor is charged to $50\,\mathrm V$. How much charge and energy does it store?</p>
+      <button class="solution-toggle">Show solution</button>
+      <div class="solution">
+        <p>$Q=C\,\Delta V=(10\times10^{-6})(50)=5.0\times10^{-4}\,\mathrm C$.</p>
+        <p>$U=\tfrac12 C(\Delta V)^2=\tfrac12(10\times10^{-6})(50)^2=1.25\times10^{-2}\,\mathrm J$.</p>
+        <span class="answer"><span class="a-label">Answer</span>$Q=5.0\times10^{-4}\,\mathrm C$, $U=1.25\times10^{-2}\,\mathrm J$</span>
+      </div>
+    </div>
+  </div>
+
+</div>
+</main>
+
+<script src="../assets/katex/katex.min.js"></script>
+<script src="../assets/katex/auto-render.min.js"></script>
+<script src="../assets/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gauss's Law & Conductors — Physics II Final</title>
+<link rel="stylesheet" href="../assets/katex/katex.min.css">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body data-root="../" data-topic="gauss-law">
+
+<main class="content">
+<div class="page">
+
+  <p class="eyebrow">Unit 1 · Electrostatics — Topic 3</p>
+  <h1>Gauss's Law &amp; Conductors</h1>
+  <p class="lead">Gauss's law turns a hard integral into a one-line calculation whenever the charge has symmetry. It's also the fastest route to understanding conductors.</p>
+
+  <h2>Concept</h2>
+  <p>The <strong>electric flux</strong> through a surface measures how much field "flows" through it: $\Phi_E=\int\vec E\cdot d\vec A$. For a flat area in a uniform field, $\Phi_E=EA\cos\theta$, where $\theta$ is the angle between $\vec E$ and the surface's normal.</p>
+
+  <p><strong>Gauss's law</strong> says the net flux out of any <em>closed</em> surface depends only on the charge enclosed:</p>
+  <div class="formula" style="text-align:center">$\displaystyle\oint\vec E\cdot d\vec A=\dfrac{q_\text{enc}}{\varepsilon_0}$</div>
+  <p>Charge outside the surface contributes zero net flux. Choose a clever "Gaussian surface" matching the symmetry (sphere, cylinder, or pillbox) so $E$ is constant over it and comes out of the integral.</p>
+
+  <div class="callout concept">
+    <p class="c-head">Conductors in electrostatic equilibrium — four facts</p>
+    <ul style="margin-bottom:0">
+      <li>The field <strong>inside the conducting material is zero</strong> (charges rearrange until it is).</li>
+      <li>Any net charge sits <strong>on the surface</strong>.</li>
+      <li>A charge in a cavity induces $-q$ on the inner wall and $+q$ on the outer wall.</li>
+      <li>Just outside the surface, $E=\sigma/\varepsilon_0$, perpendicular to the surface.</li>
+    </ul>
+  </div>
+
+  <h2>Key Formulas</h2>
+  <div class="formula-grid">
+    <div class="formula">$\Phi_E=\oint\vec E\cdot d\vec A=\dfrac{q_\text{enc}}{\varepsilon_0}$<span class="label">Gauss's law</span></div>
+    <div class="formula">$E=k\dfrac{q_\text{enc}}{r^2}=\dfrac{q_\text{enc}}{4\pi\varepsilon_0 r^2}$<span class="label">Spherical symmetry (field outside enclosed charge)</span></div>
+    <div class="formula">$E_\text{inside conductor}=0$<span class="label">Electrostatic equilibrium</span></div>
+  </div>
+  <p class="symbol-list"><b>$\Phi_E$</b> in $\mathrm{N\cdot m^2/C}$ &nbsp;·&nbsp; <b>$q_\text{enc}$</b> = charge inside the chosen closed surface &nbsp;·&nbsp; $\varepsilon_0=8.85\times10^{-12}\,\mathrm{C^2/(N\cdot m^2)}$.</p>
+
+  <!-- Worked example: Midterm Q2 -->
+  <div class="example">
+    <div class="ex-head"><span class="tag">Midterm Q2</span> Point charge inside a conducting shell</div>
+    <div class="ex-body">
+      <p>A point charge $+Q$ sits at the centre of an <em>uncharged</em> conducting spherical shell of inner radius $R$ and outer radius $\tfrac{3R}{2}$.</p>
+
+      <div class="step"><span class="step-label">(a) Field at $r=R/2$, and inside the metal</span>
+        <p>Draw a Gaussian sphere of radius $r=R/2$ (in the hollow cavity). It encloses only $+Q$:</p>
+        <p>$E\cdot4\pi r^2=\dfrac{Q}{\varepsilon_0}\Rightarrow E=k\dfrac{Q}{(R/2)^2}=\dfrac{4kQ}{R^2}$ (radially outward).</p>
+        <p>Inside the conducting material ($R<r<\tfrac{3R}{2}$): a Gaussian sphere there must give $E=0$, because the field inside any conductor in equilibrium is zero.</p>
+        <span class="answer"><span class="a-label">Answer (a)</span>$E(R/2)=\dfrac{4kQ}{R^2}$ outward; &nbsp; $E_\text{in metal}=0$</span>
+      </div>
+
+      <div class="step"><span class="step-label">(b) Flux through a sphere at $r=2R$</span>
+        <p>This surface encloses the point charge $+Q$ plus the whole (neutral) shell, so $q_\text{enc}=+Q$:</p>
+        <span class="answer"><span class="a-label">Answer (b)</span>$\Phi_E=\dfrac{Q}{\varepsilon_0}$</span>
+      </div>
+
+      <div class="step"><span class="step-label">(c) Charges on the inner and outer surfaces</span>
+        <p>The field inside the metal is zero, so a Gaussian sphere inside the metal must enclose zero net charge → the inner wall carries $-Q$. The shell is neutral overall, so the outer wall carries $+Q$.</p>
+        <span class="answer"><span class="a-label">Answer (c)</span>Inner surface: $-Q$. &nbsp; Outer surface: $+Q$.</span>
+      </div>
+    </div>
+  </div>
+
+  <h2>Practice</h2>
+
+  <div class="practice">
+    <div class="q">
+      <p><span class="qno">Practice 1</span></p>
+      <p>A charge of $+8.85\,\mathrm{nC}$ is enclosed by a closed surface. What is the total electric flux through that surface?</p>
+      <button class="solution-toggle">Show solution</button>
+      <div class="solution">
+        <p>$\Phi_E=\dfrac{q_\text{enc}}{\varepsilon_0}=\dfrac{8.85\times10^{-9}}{8.85\times10^{-12}}=1.0\times10^{3}\,\mathrm{N\cdot m^2/C}$. The shape of the surface doesn't matter.</p>
+        <span class="answer"><span class="a-label">Answer</span>$\Phi_E=1.0\times10^{3}\ \mathrm{N\cdot m^2/C}$</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="practice">
+    <div class="q">
+      <p><span class="qno">Practice 2</span></p>
+      <p>A solid conducting sphere carries a charge $+Q$. What is the field at a point inside the metal, and just outside the surface (radius $R$)?</p>
+      <button class="solution-toggle">Show solution</button>
+      <div class="solution">
+        <p>Inside the conductor: $E=0$ (all charge lives on the surface, and equilibrium demands zero internal field).</p>
+        <p>Just outside: a Gaussian sphere of radius $R$ encloses all $+Q$, so $E=k\dfrac{Q}{R^2}$, pointing radially outward — exactly as if all the charge were a point at the centre.</p>
+        <span class="answer"><span class="a-label">Answer</span>$E_\text{inside}=0$; &nbsp; $E_\text{surface}=kQ/R^2$</span>
+      </div>
+    </div>
+  </div>
+
+</div>
+</main>
+
+<script src="../assets/katex/katex.min.js"></script>
+<script src="../assets/katex/auto-render.min.js"></script>
+<script src="../assets/app.js"></script>
+</body>
+</html>
