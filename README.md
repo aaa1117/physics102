@@ -4,7 +4,7 @@ A complete, self-contained study website for the **General Physics II (Electrici
 
 ## What's inside
 
-11 topics across 4 units, each page following the same rhythm — **Concept → Key Formulas → Worked Examples → Practice (with show/hide solutions)**:
+11 topics across 4 units, each page following the same rhythm — **Concept → Key Formulas → Worked Examples → 10 Practice questions (with show/hide solutions)**:
 
 **Unit 1 · Electrostatics**
 1. Coulomb's Law
@@ -25,7 +25,11 @@ A complete, self-contained study website for the **General Physics II (Electrici
 10. Electromagnetic Induction
 11. Inductance
 
-The home page also has a **master formula sheet** and an **exam-day strategy** section. The five midterm questions appear as verified worked examples in their matching topics, solved for both booklet A and booklet B value sets.
+Every topic page now carries **ten exam-style practice questions** (medium difficulty, the kinds that actually show up), each with a numbered step-by-step solution and a one-line "why this approach" cue.
+
+**★ The solved Final Exam.** `topics/final-exam.html` reproduces all **20 questions of the May 2026 final (booklet EN-A)** — each re-typed cleanly with a redrawn SVG figure, a plain-language "what's really going on" note, the four choices, a reveal-on-demand step-by-step solution that highlights the correct answer, and a collapsible link to the original scan. Every question links back to its topic page. There's a question-jump grid and a "reveal all" toggle at the top.
+
+The home page also has a **master formula sheet** and an **exam-day strategy** section.
 
 ## How to use it
 
@@ -36,12 +40,14 @@ To host it (e.g. GitHub Pages), serve the folder as static files; the entry poin
 ## Project layout
 
 ```
-index.html              Home: overview, formula sheet, exam-day strategy
-topics/                 One page per topic (01–11)
+index.html              Home: overview, formula sheet, exam-day strategy, final-exam CTA
+topics/01–11-*.html     One page per topic, each with 10 practice questions
+topics/final-exam.html  The 20-question May 2026 final, fully solved
 assets/style.css        Shared theme
-assets/app.js           Sidebar nav, prev/next, solution toggles, math rendering
+assets/app.js           Sidebar nav, prev/next, solution toggles, reveal-all, math rendering
 assets/katex/           Vendored KaTeX (offline math)
-docs/superpowers/specs/ Design spec
+assets/exam/            Original exam scans (q01-cover … q18-20), rotated upright
+docs/superpowers/specs/ Design specs
 ```
 
 ## Constants used

@@ -89,7 +89,7 @@ existing vendored KaTeX. Must keep working offline and on GitHub Pages.
 | 3 | R from V–I slope | **C** 5.0 Ω | 13 | B of long wire | **B** 4.0×10⁻⁵ T |
 | 4 | resistivity from P | **A** 1.2×10⁻⁶ | 14 | parallel wires force | **A** attract |
 | 5 | 3 resistors ∥ | **A** 2.0 Ω | 15 | Biot–Savart dl×r̂ | **A** dl & r |
-| 6 | RC at t=0 | **A** I max, V_C=0 | 16 | solenoid I | **B** 1.25 A |
+| 6 | RC **fully charged** | **B** I=0, V_C=ε | 16 | solenoid I | **B** 1.25 A |
 | 7 | opposing emfs | **A** 1.0 A | 17 | Lenz direction | **B** opposite |
 | 8 | τ=RC → R | **A** 2.0×10³ Ω | 18 | motional emf BLv | **B** 4.0 V |
 | 9 | F on electron RHR | **A** +y | 19 | emf from Φ–t slope | **B** 0.20 V |
