@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Final Exam (Solved) — Physics II Final</title>
+<link rel="stylesheet" href="../assets/katex/katex.min.css">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body data-root="../" data-topic="final-exam">
+
+<main class="content">
+<div class="page">
+
+  <p class="eyebrow">PHYS102 · Booklet EN-A · 15 May 2026</p>
+  <h1>The Final Exam — fully solved</h1>
+  <p class="lead">All 20 questions from the real General Physics II final, re-typed cleanly with a plain-language read, a redrawn figure, and a step-by-step solution that ends on the correct choice. Treat it as a mock exam: try each question first, then reveal the solution.</p>
+
+  <div class="callout note">
+    <p class="c-head">Exam at a glance</p>
+    <p>OSTİM Technical University · <strong>PHYS102</strong> · Booklet <strong>EN-A</strong> · 15&nbsp;May&nbsp;2026 · 90&nbsp;minutes · 20 multiple-choice questions. No electrostatics this time — it is <strong>all circuits, magnetism, and induction</strong>. Constants you may need: $k=8.99\times10^{9}$, $\mu_0=4\pi\times10^{-7}$, $e=1.6\times10^{-19}\,\mathrm C$.</p>
+  </div>
+
+  <div class="exam-toolbar">
+    <div class="tb-row">
+      <p>Jump to a question</p>
+      <button class="reveal-all" id="reveal-all">Reveal all solutions</button>
+    </div>
+    <div class="qjump">
+      <a href="#q1">1</a><a href="#q2">2</a><a href="#q3">3</a><a href="#q4">4</a><a href="#q5">5</a>
+      <a href="#q6">6</a><a href="#q7">7</a><a href="#q8">8</a><a href="#q9">9</a><a href="#q10">10</a>
+      <a href="#q11">11</a><a href="#q12">12</a><a href="#q13">13</a><a href="#q14">14</a><a href="#q15">15</a>
+      <a href="#q16">16</a><a href="#q17">17</a><a href="#q18">18</a><a href="#q19">19</a><a href="#q20">20</a>
+    </div>
+  </div>
+
+  <!-- shared arrowhead markers for all diagrams -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+    <marker id="ah"  markerWidth="9" markerHeight="9" refX="7.5" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#1c2430"/></marker>
+    <marker id="ahb" markerWidth="9" markerHeight="9" refX="7.5" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#2563eb"/></marker>
+    <marker id="ahg" markerWidth="9" markerHeight="9" refX="7.5" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#059669"/></marker>
+    <marker id="ahr" markerWidth="9" markerHeight="9" refX="7.5" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#dc2626"/></marker>
+  </defs></svg>
+
+  <!-- ===================== UNIT A: CIRCUITS ===================== -->
+  <h2>Current, Resistance &amp; DC Circuits — Q1–Q8</h2>
+
+  <!-- Q1 -->
+  <article class="exam-q" id="q1">
+    <div class="eq-head"><span class="eq-n">Question 1</span><a class="eq-topic" href="06-current-resistance.html">Topic 6 · Current &amp; Resistance</a></div>
+    <div class="eq-body">
+      <p>The current through a conducting wire is kept <strong>constant</strong>. If the wire's cross-sectional area is <strong>halved</strong>, how does the drift velocity of the electrons change?</p>
+      <div class="figure"><svg viewBox="0 0 360 110" role="img" aria-label="Wire narrowing from area A to area A/2">
+        <rect x="20" y="30" width="150" height="50" fill="#eef3ff" stroke="#2563eb" stroke-width="1.5"/>
+        <rect x="170" y="42" width="160" height="26" fill="#eef3ff" stroke="#2563eb" stroke-width="1.5"/>
+        <text x="95" y="98" text-anchor="middle" font-size="12" fill="#48566a">area A</text>
+        <text x="250" y="98" text-anchor="middle" font-size="12" fill="#48566a">area A/2</text>
+        <line x1="45" y1="55" x2="95" y2="55" stroke="#2563eb" stroke-width="2" marker-end="url(#ahb)"/>
+        <line x1="215" y1="55" x2="280" y2="55" stroke="#2563eb" stroke-width="2" marker-end="url(#ahb)"/>
+        <text x="120" y="50" font-size="13" fill="#1e40af">I</text>
+        <text x="300" y="50" font-size="13" fill="#1e40af">I</text>
+      </svg><span class="cap">Same current squeezed through half the opening.</span></div>
+      <div class="callout intuition"><p class="c-head">💡 What's really going on</p><p>The same number of electrons must pass each second, but now through a smaller doorway — so each electron has to move <em>faster</em>.</p></div>
+      <ol class="choices"><li>Remains the same</li><li>Halves</li><li class="correct">Doubles</li><li>Quadruples</li></ol>
+      <button class="solution-toggle">Show solution</button>
+      <div class="solution">
+        <div class="step"><span class="step-label">Step 1 — the link</span><p>Current is $I=nqA v_\text{d}$, where $n$ (electron density) and $q$ are fixed for copper.</p></div>
+        <div class="step"><span class="step-label">Step 2 — hold I constant</span><p>So $A\,v_\text{d}=\text{constant}$. They trade off inversely.</p></div>
+        <div class="step"><span class="step-label">Step 3 — halve the area</span><p>$A\to\tfrac12 A \Rightarrow v_\text{d}\to 2v_\text{d}$.</p></div>
+        <span class="answer"><span class="a-label">Answer — C</span>The drift velocity <strong>doubles</strong>.</span>
+        <p class="why"><b>Why:</b> in $I=nqAv_\text{d}$ with $I$ fixed, area and drift speed are inversely proportional.</p>
+      </div>
+      <details class="original"><summary>View original exam photo (Q1)</summary><p class="scan-note">Cover page + Question 1.</p><img src="../assets/exam/q01-cover.jpg" alt="Original scan, Question 1"></details>
+    </div>
+  </article>
+
+  <!-- Q2 -->
+  <article class="exam-q" id="q2">
+    <div class="eq-head"><span class="eq-n">Question 2</span><a class="eq-topic" href="06-current-resistance.html">Topic 6 · Current &amp; Resistance</a></div>
+    <div class="eq-body">
+      <p>A steady current of $5.0\,\mathrm A$ flows through a cylindrical copper wire of <strong>radius $2.0\,\mathrm{mm}$</strong>. What is the approximate current density $J$? (Take $\pi\approx3.0$.)</p>
+      <div class="figure"><svg viewBox="0 0 220 120" role="img" aria-label="Wire cross-section, radius 2 mm">
+        <circle cx="70" cy="60" r="40" fill="#eef3ff" stroke="#2563eb" stroke-width="1.5"/>
+        <line x1="70" y1="60" x2="110" y2="60" stroke="#1c2430" stroke-width="1.3"/>
+        <text x="84" y="54" font-size="11" fill="#48566a">r = 2.0 mm</text>
+        <line x1="150" y1="60" x2="200" y2="60" stroke="#2563eb" stroke-width="2" marker-end="url(#ahb)"/>
+        <text x="158" y="50" font-size="12" fill="#1e40af">I = 5.0 A</text>
+      </svg><span class="cap">Current density = current per unit cross-section.</span></div>
+      <div class="callout intuition"><p class="c-head">💡 What's really going on</p><p>$J$ is just "how crowded" the current is — amps spread over the wire's face $A=\pi r^2$.</p></div>
+      <ol class="choices"><li class="correct">$4.2\times10^{5}\ \mathrm{A/m^2}$</li><li>$8.3\times10^{5}\ \mathrm{A/m^2}$</li><li>$1.2\times10^{6}\ \mathrm{A/m^2}$</li><li>$4.2\times10^{4}\ \mathrm{A/m^2}$</li></ol>
+      <button class="solution-toggle">Show solution</button>
+      <div class="solution">
+        <div class="step"><span class="step-label">Step 1 — area</span><p>$A=\pi r^2=3.0\,(2.0\times10^{-3})^2=1.2\times10^{-5}\,\mathrm{m^2}$.</p></div>
+        <div class="step"><span class="step-label">Step 2 — divide</span><p>$J=\dfrac{I}{A}=\dfrac{5.0}{1.2\times10^{-5}}\approx4.2\times10^{5}\,\mathrm{A/m^2}$.</p></div>
+        <span class="answer"><span class="a-label">Answer — A</span>$J\approx4.2\times10^{5}\,\mathrm{A/m^2}$</span>
+        <p class="why"><b>Why:</b> $J=I/A$ with $A=\pi r^2$; convert mm → m first.</p>
+      </div>
+      <details class="original"><summary>View original exam photo (Q2)</summary><p class="scan-note">Page with Questions 2–5.</p><img src="../assets/exam/q02-05.jpg" alt="Original scan, Questions 2-5"></details>
+    </div>
+  </article>
+
+  <!-- Q3 -->
+  <article class="exam-q" id="q3">
+    <div class="eq-head"><span class="eq-n">Question 3</span><a class="eq-topic" href="06-current-resistance.html">Topic 6 · Current &amp; Resistance</a></div>
+    <div class="eq-body">
+      <p>The $V\!-\!I$ graph of an ohmic material is a straight line through $(I=2\,\mathrm A,\,V=10\,\mathrm V)$ and $(I=4\,\mathrm A,\,V=20\,\mathrm V)$. What is the resistance $R$?</p>
+      <div class="figure"><svg viewBox="0 0 240 160" role="img" aria-label="Linear V versus I graph">
+        <line x1="40" y1="130" x2="220" y2="130" stroke="#1c2430" marker-end="url(#ah)"/>
+        <line x1="40" y1="130" x2="40" y2="15" stroke="#1c2430" marker-end="url(#ah)"/>
+        <text x="222" y="134" font-size="11" fill="#48566a">I (A)</text>
+        <text x="20" y="20" font-size="11" fill="#48566a">V (V)</text>
+        <line x1="40" y1="130" x2="190" y2="35" stroke="#2563eb" stroke-width="2"/>
+        <circle cx="115" cy="82.5" r="3" fill="#2563eb"/><text x="120" y="80" font-size="10" fill="#1e40af">(2, 10)</text>
+        <circle cx="190" cy="35" r="3" fill="#2563eb"/><text x="150" y="32" font-size="10" fill="#1e40af">(4, 20)</text>
+        <text x="113" y="145" font-size="10" fill="#48566a">2</text><text x="186" y="145" font-size="10" fill="#48566a">4</text>
+      </svg><span class="cap">For an ohmic device the slope is the resistance.</span></div>
+      <div class="callout intuition"><p class="c-head">💡 What's really going on</p><p>Ohm's law $V=IR$ is a straight line through the origin; its <em>slope</em> $V/I$ is exactly $R$.</p></div>
+      <ol class="choices"><li>$0.2\,\Omega$</li><li>$2.0\,\Omega$</li><li class="correct">$5.0\,\Omega$</li><li>$10.0\,\Omega$</li></ol>
+      <button class="solution-toggle">Show solution</button>
+      <div class="solution">
+        <div class="step"><span class="step-label">Step 1 — slope</span><p>$R=\dfrac{\Delta V}{\Delta I}=\dfrac{20-10}{4-2}=\dfrac{10}{2}$.</p></div>
+        <span class="answer"><span class="a-label">Answer — C</span>$R=5.0\,\Omega$</span>
+        <p class="why"><b>Why:</b> on a $V$–$I$ plot, resistance = slope $=V/I$.</p>
+      </div>
+      <details class="original"><summary>View original exam photo (Q3)</summary><p class="scan-note">Page with Questions 2–5.</p><img src="../assets/exam/q02-05.jpg" alt="Original scan, Questions 2-5"></details>
+    </div>
+  </article>
+
+  <!-- Q4 -->
+  <article class="exam-q" id="q4">
+    <div class="eq-head"><span class="eq-n">Question 4</span><a class="eq-topic" href="06-current-resistance.html">Topic 6 · Current &amp; Resistance</a></div>
+    <div class="eq-body">
+      <p>Applying $12\,\mathrm V$ across a wire of length $10.0\,\mathrm m$ and cross-section $2.0\times10^{-6}\,\mathrm{m^2}$ dissipates $24\,\mathrm W$. What is the material's resistivity $\rho$?</p>
+      <div class="figure"><svg viewBox="0 0 360 90" role="img" aria-label="Wire with length L and area A across 12 V">
+        <rect x="60" y="35" width="240" height="20" fill="#eef3ff" stroke="#2563eb" stroke-width="1.5"/>
+        <line x1="60" y1="70" x2="300" y2="70" stroke="#48566a"/>
+        <line x1="60" y1="66" x2="60" y2="74" stroke="#48566a"/><line x1="300" y1="66" x2="300" y2="74" stroke="#48566a"/>
+        <text x="170" y="84" font-size="11" fill="#48566a">L = 10.0 m,  A = 2.0×10⁻⁶ m²</text>
+        <text x="150" y="28" font-size="11" fill="#1e40af">12 V → P = 24 W</text>
+      </svg></div>
+      <div class="callout intuition"><p class="c-head">💡 What's really going on</p><p>The power tells you the resistance; the geometry then converts that resistance into the material property $\rho$.</p></div>
+      <ol class="choices"><li class="correct">$1.2\times10^{-6}\ \Omega\!\cdot\!\mathrm m$</li><li>$2.4\times10^{-7}\ \Omega\!\cdot\!\mathrm m$</li><li>$1.2\times10^{-7}\ \Omega\!\cdot\!\mathrm m$</li><li>$6.0\times10^{-4}\ \Omega\!\cdot\!\mathrm m$</li></ol>
+      <button class="solution-toggle">Show solution</button>
+      <div class="solution">
+        <div class="step"><span class="step-label">Step 1 — resistance from power</span><p>$P=\dfrac{V^2}{R}\Rightarrow R=\dfrac{V^2}{P}=\dfrac{12^2}{24}=6.0\,\Omega$.</p></div>
+        <div class="step"><span class="step-label">Step 2 — resistivity from geometry</span><p>$R=\rho\dfrac{L}{A}\Rightarrow \rho=\dfrac{RA}{L}=\dfrac{6.0\,(2.0\times10^{-6})}{10.0}=1.2\times10^{-6}\,\Omega\!\cdot\!\mathrm m$.</p></div>
+        <span class="answer"><span class="a-label">Answer — A</span>$\rho=1.2\times10^{-6}\ \Omega\!\cdot\!\mathrm m$</span>
+        <p class="why"><b>Why:</b> get $R$ from $V^2/P$, then invert $R=\rho L/A$.</p>
+      </div>
+      <details class="original"><summary>View original exam photo (Q4)</summary><p class="scan-note">Page with Questions 2–5.</p><img src="../assets/exam/q02-05.jpg" alt="Original scan, Questions 2-5"></details>
+    </div>
+  </article>
+
+  <!-- Q5 -->
+  <article class="exam-q" id="q5">
+    <div class="eq-head"><span class="eq-n">Question 5</span><a class="eq-topic" href="07-dc-circuits.html">Topic 7 · DC Circuits</a></div>
+    <div class="eq-body">
+      <p>Three resistors of $4.0\,\Omega$, $6.0\,\Omega$, and $12.0\,\Omega$ are connected <strong>in parallel</strong>. What is the equivalent resistance?</p>
+      <div class="figure"><svg viewBox="0 0 300 150" role="img" aria-label="Three resistors in parallel">
+        <circle cx="30" cy="75" r="3" fill="#1c2430"/><text x="18" y="79" font-size="12" fill="#48566a">A</text>
+        <circle cx="270" cy="75" r="3" fill="#1c2430"/><text x="278" y="79" font-size="12" fill="#48566a">B</text>
+        <line x1="30" y1="75" x2="30" y2="30" stroke="#1c2430"/><line x1="30" y1="75" x2="30" y2="120" stroke="#1c2430"/>
+        <line x1="270" y1="75" x2="270" y2="30" stroke="#1c2430"/><line x1="270" y1="75" x2="270" y2="120" stroke="#1c2430"/>
+        <g stroke="#2563eb" stroke-width="2" fill="none">
+          <path d="M30,30 H110 l6,-7 l10,14 l10,-14 l10,14 l10,-14 l6,7 H270"/>
+          <path d="M30,75 H110 l6,-7 l10,14 l10,-14 l10,14 l10,-14 l6,7 H270"/>
+          <path d="M30,120 H110 l6,-7 l10,14 l10,-14 l10,14 l10,-14 l6,7 H270"/>
+        </g>
+        <text x="200" y="26" font-size="11" fill="#1e40af">4.0 Ω</text>
+        <text x="200" y="71" font-size="11" fill="#1e40af">6.0 Ω</text>
+        <text x="195" y="138" font-size="11" fill="#1e40af">12.0 Ω</text>
+      </svg><span class="cap">Same voltage across each branch.</span></div>
+      <div class="callout intuition"><p class="c-head">💡 What's really going on</p><p>Adding parallel paths gives current more ways through, so the combined resistance is <em>smaller than the smallest</em> resistor.</p></div>
+      <ol class="choices"><li class="correct">$2.0\,\Omega$</li><li>$22.0\,\Omega$</li><li>$0.5\,\Omega$</li><li>$4.0\,\Omega$</li></ol>
+      <button class="solution-toggle">Show solution</button>
+      <div class="solution">
+        <div class="step"><span class="step-label">Step 1 — reciprocals add</span><p>$\dfrac1{R_\text{eq}}=\dfrac14+\dfrac16+\dfrac1{12}=\dfrac{3+2+1}{12}=\dfrac{6}{12}=\dfrac12$.</p></div>
+        <div class="step"><span class="step-label">Step 2 — invert</span><p>$R_\text{eq}=2.0\,\Omega$.</p></div>
+        <span class="answer"><span class="a-label">Answer — A</span>$R_\text{eq}=2.0\,\Omega$ — note it is below the $4\,\Omega$ branch, as expected.</span>
+        <p class="why"><b>Why:</b> parallel ⇒ add reciprocals, then flip.</p>
+      </div>
+      <details class="original"><summary>View original exam photo (Q5)</summary><p class="scan-note">Page with Questions 2–5.</p><img src="../assets/exam/q02-05.jpg" alt="Original scan, Questions 2-5"></details>
+    </div>
+  </article>
+
+  <!-- Q6 -->
+  <article class="exam-q" id="q6">
+    <div class="eq-head"><span class="eq-n">Question 6</span><a class="eq-topic" href="07-dc-circuits.html">Topic 7 · DC Circuits</a></div>
+    <div class="eq-body">
+      <p>An uncharged capacitor $C$ is in series with a resistor $R$ and a battery; the switch is closed. <strong>Once the capacitor is fully charged</strong>, what are the current and the voltage $V_C$ across the capacitor?</p>
+      <div class="figure"><svg viewBox="0 0 260 170" role="img" aria-label="Series RC circuit">
+        <!-- loop wires -->
+        <g stroke="#1c2430" stroke-width="1.6" fill="none">
+          <path d="M55,40 H100"/><path d="M150,40 H205 V70"/>
+          <path d="M205,100 V140 H55 V60"/>
+        </g>
+        <!-- resistor on top -->
+        <path d="M100,40 l6,-8 l10,16 l10,-16 l10,16 l10,-16 l6,8 H150" stroke="#2563eb" stroke-width="2" fill="none"/>
+        <text x="118" y="22" font-size="12" fill="#1e40af">R</text>
+        <!-- capacitor on right -->
+        <line x1="195" y1="70" x2="215" y2="70" stroke="#7c3aed" stroke-width="2.4"/>
+        <line x1="195" y1="100" x2="215" y2="100" stroke="#7c3aed" stroke-width="2.4"/>
+        <text x="220" y="89" font-size="12" fill="#7c3aed">C</text>
+        <!-- battery bottom -->
+        <line x1="120" y1="131" x2="120" y2="149" stroke="#1c2430" stroke-width="2"/>
+        <line x1="135" y1="135" x2="135" y2="145" stroke="#1c2430" stroke-width="4"/>
+        <text x="100" y="162" font-size="12" fill="#48566a">ε</text>
+        <!-- switch left -->
+        <line x1="55" y1="60" x2="48" y2="48" stroke="#059669" stroke-width="2"/>
+        <text x="30" y="55" font-size="12" fill="#059669">S</text>
+      </svg><span class="cap">A charged capacitor blocks steady current.</span></div>
+      <div class="callout intuition"><p class="c-head">💡 What's really going on</p><p>While charging, current flows and $V_C$ climbs. When the capacitor's voltage finally <em>matches the battery</em>, there is nothing left to push charge — current stops.</p></div>
+      <ol class="choices"><li>Current is maximum, $V_C$ is zero.</li><li class="correct">Current is zero, $V_C$ equals the battery emf $\varepsilon$.</li><li>Current is zero, $V_C$ is zero.</li><li>Current is maximum, $V_C$ equals the battery emf $\varepsilon$.</li></ol>
+      <button class="solution-toggle">Show solution</button>
+      <div class="solution">
+        <div class="step"><span class="step-label">Step 1 — steady state</span><p>"Fully charged" means $q$ no longer changes, so $I=\dfrac{dq}{dt}=0$.</p></div>
+        <div class="step"><span class="step-label">Step 2 — loop rule</span><p>With $I=0$ there is no drop across $R$, so the whole emf sits on the capacitor: $V_C=\varepsilon$.</p></div>
+        <span class="answer"><span class="a-label">Answer — B</span>Current $=0$, and $V_C=\varepsilon$.</span>
+        <p class="why"><b>Why:</b> at full charge a capacitor acts like an open switch ($I=0$); contrast with $t=0$, when it acts like a wire ($I$ max, $V_C=0$).</p>
+      </div>
+      <details class="original"><summary>View original exam photo (Q6)</summary><p class="scan-note">Page with Questions 6–9.</p><img src="../assets/exam/q06-09.jpg" alt="Original scan, Questions 6-9"></details>
+    </div>
+  </article>
+
+  <!-- Q7 -->
+  <article class="exam-q" id="q7">
+    <div class="eq-head"><span class="eq-n">Question 7</span><a class="eq-topic" href="07-dc-circuits.html">Topic 7 · DC Circuits</a></div>
+    <div class="eq-body">
+      <p>Two batteries, $10\,\mathrm V$ and $5\,\mathrm V$ (negligible internal resistance), are in series with <strong>opposing polarities</strong>, along with resistors $2.0\,\Omega$ and $3.0\,\Omega$ in series. What current flows?</p>
+      <div class="figure"><svg viewBox="0 0 260 170" role="img" aria-label="Loop with two opposing batteries and two resistors">
+        <g stroke="#1c2430" stroke-width="1.6" fill="none"><rect x="45" y="40" width="170" height="90"/></g>
+        <!-- top battery 5V -->
+        <line x1="120" y1="34" x2="120" y2="46" stroke="#1c2430" stroke-width="2"/>
+        <line x1="135" y1="37" x2="135" y2="43" stroke="#1c2430" stroke-width="4"/>
+        <text x="120" y="26" font-size="11" fill="#48566a">5 V</text>
+        <!-- bottom battery 10V (opposing) -->
+        <line x1="135" y1="124" x2="135" y2="136" stroke="#1c2430" stroke-width="2"/>
+        <line x1="120" y1="127" x2="120" y2="133" stroke="#1c2430" stroke-width="4"/>
+        <text x="118" y="150" font-size="11" fill="#48566a">10 V</text>
+        <!-- left resistor 2 ohm (vertical) -->
+        <path d="M45,70 l-7,6 l14,10 l-14,10 l14,10 l-7,6" stroke="#2563eb" stroke-width="2" fill="none"/>
+        <text x="8" y="92" font-size="11" fill="#1e40af">2 Ω</text>
+        <!-- right resistor 3 ohm (vertical) -->
+        <path d="M215,70 l7,6 l-14,10 l14,10 l-14,10 l7,6" stroke="#2563eb" stroke-width="2" fill="none"/>
+        <text x="226" y="92" font-size="11" fill="#1e40af">3 Ω</text>
+      </svg><span class="cap">Opposing emfs subtract.</span></div>
+      <div class="callout intuition"><p class="c-head">💡 What's really going on</p><p>The batteries push against each other, so only the <em>difference</em> in their voltages drives the loop through the total resistance.</p></div>
+      <ol class="choices"><li class="correct">$1.0\,\mathrm A$</li><li>$3.0\,\mathrm A$</li><li>$2.5\,\mathrm A$</li><li>$5.0\,\mathrm A$</li></ol>
+      <button class="solution-toggle">Show solution</button>
+      <div class="solution">
+        <div class="step"><span class="step-label">Step 1 — net emf</span><p>Opposing: $\varepsilon_\text{net}=10-5=5\,\mathrm V$.</p></div>
+        <div class="step"><span class="step-label">Step 2 — total resistance</span><p>Series: $R=2.0+3.0=5.0\,\Omega$.</p></div>
+        <div class="step"><span class="step-label">Step 3 — Ohm's law</span><p>$I=\dfrac{\varepsilon_\text{net}}{R}=\dfrac{5}{5}=1.0\,\mathrm A$.</p></div>
+        <span class="answer"><span class="a-label">Answer — A</span>$I=1.0\,\mathrm A$</span>
+        <p class="why"><b>Why:</b> opposing emfs ⇒ subtract; aiding ⇒ add. Then $I=\varepsilon_\text{net}/\sum R$.</p>
+      </div>
+      <details class="original"><summary>View original exam photo (Q7)</summary><p class="scan-note">Page with Questions 6–9.</p><img src="../assets/exam/q06-09.jpg" alt="Original scan, Questions 6-9"></details>
+    </div>
+  </article>
+
+  <!-- Q8 -->
+  <article class="exam-q" id="q8">
+    <div class="eq-head"><span class="eq-n">Question 8</span><a class="eq-topic" href="07-dc-circuits.html">Topic 7 · DC Circuits</a></div>
+    <div class="eq-body">
+      <p>In an RC circuit the charge $Q$ grows exponentially and reaches <strong>63%</strong> of its maximum in $4.0\,\mathrm{ms}$. If $C=2.0\,\mu\mathrm F$, what is the resistance?</p>
+      <div class="figure"><svg viewBox="0 0 240 150" role="img" aria-label="Charging curve reaching 63% at one time constant">
+        <line x1="40" y1="120" x2="220" y2="120" stroke="#1c2430" marker-end="url(#ah)"/>
+        <line x1="40" y1="120" x2="40" y2="15" stroke="#1c2430" marker-end="url(#ah)"/>
+        <text x="210" y="135" font-size="10" fill="#48566a">t (ms)</text><text x="20" y="20" font-size="10" fill="#48566a">Q</text>
+        <path d="M40,120 Q70,55 130,40 T210,33" stroke="#7c3aed" stroke-width="2" fill="none"/>
+        <line x1="40" y1="63" x2="110" y2="63" stroke="#059669" stroke-dasharray="4 3"/>
+        <line x1="110" y1="63" x2="110" y2="120" stroke="#059669" stroke-dasharray="4 3"/>
+        <text x="44" y="60" font-size="9" fill="#059669">0.63 Q_max</text>
+        <text x="100" y="134" font-size="10" fill="#059669">4.0</text>
+      </svg><span class="cap">63% reached after one time constant τ.</span></div>
+      <div class="callout intuition"><p class="c-head">💡 What's really going on</p><p>The "63% time" <em>is</em> the time constant $\tau=RC$ by definition. Knowing $\tau$ and $C$ pins down $R$.</p></div>
+      <ol class="choices"><li class="correct">$2.0\times10^{3}\ \Omega$</li><li>$4.0\times10^{3}\ \Omega$</li><li>$2.0\times10^{2}\ \Omega$</li><li>$8.0\times10^{3}\ \Omega$</li></ol>
+      <button class="solution-toggle">Show solution</button>
+      <div class="solution">
+        <div class="step"><span class="step-label">Step 1 — identify τ</span><p>Time to reach 63% $=\tau=RC=4.0\times10^{-3}\,\mathrm s$.</p></div>
+        <div class="step"><span class="step-label">Step 2 — solve for R</span><p>$R=\dfrac{\tau}{C}=\dfrac{4.0\times10^{-3}}{2.0\times10^{-6}}=2.0\times10^{3}\,\Omega$.</p></div>
+        <span class="answer"><span class="a-label">Answer — A</span>$R=2.0\times10^{3}\,\Omega$</span>
+        <p class="why"><b>Why:</b> 63% ↔ one $\tau$; then $R=\tau/C$.</p>
+      </div>
+      <details class="original"><summary>View original exam photo (Q8)</summary><p class="scan-note">Page with Questions 6–9.</p><img src="../assets/exam/q06-09.jpg" alt="Original scan, Questions 6-9"></details>
+    </div>
+  </article>
+
+  <!-- ===================== UNIT B: MAGNETIC FORCE ===================== -->
+  <h2>Magnetic Force on Moving Charges — Q9–Q12</h2>
+
+  <!-- Q9 -->
+  <article class="exam-q" id="q9">
+    <div class="eq-head"><span class="eq-n">Question 9</span><a class="eq-topic" href="08-magnetic-force.html">Topic 8 · Magnetic Force</a></div>
+    <div class="eq-body">
+      <p>An <strong>electron</strong> moves in the $+x$ direction into a magnetic field pointing <strong>out of the page</strong> ($+z$). What is the initial direction of the magnetic force on it?</p>
+      <div class="figure"><svg viewBox="0 0 220 160" role="img" aria-label="Electron moving in +x, B out of page">
+        <g fill="#7a8699"><circle cx="40" cy="40" r="2"/><circle cx="90" cy="40" r="2"/><circle cx="140" cy="40" r="2"/><circle cx="40" cy="120" r="2"/><circle cx="90" cy="120" r="2"/><circle cx="140" cy="120" r="2"/></g>
+        <text x="165" y="44" font-size="11" fill="#7a8699">B (out)</text>
+        <circle cx="90" cy="80" r="9" fill="#fdecec" stroke="#dc2626"/><text x="86" y="84" font-size="11" fill="#dc2626">e⁻</text>
+        <line x1="100" y1="80" x2="150" y2="80" stroke="#1c2430" stroke-width="2" marker-end="url(#ah)"/><text x="128" y="74" font-size="12" fill="#1c2430">v</text>
+        <line x1="90" y1="72" x2="90" y2="30" stroke="#2563eb" stroke-width="2" marker-end="url(#ahb)"/><text x="96" y="40" font-size="12" fill="#1e40af">F</text>
+      </svg><span class="cap">Right-hand rule, then flip for the negative charge.</span></div>
+      <div class="callout intuition"><p class="c-head">💡 What's really going on</p><p>Point fingers along $\vec v$ ($+x$), curl toward $\vec B$ ($+z$): the rule gives $-y$ for a <em>positive</em> charge — so for the negative electron it flips to $+y$.</p></div>
+      <ol class="choices"><li class="correct">$+y$ direction</li><li>$-y$ direction</li><li>$+z$ direction</li><li>$-x$ direction</li></ol>
+      <button class="solution-toggle">Show solution</button>
+      <div class="solution">
+        <div class="step"><span class="step-label">Step 1 — cross product</span><p>$\hat x\times\hat z=-\hat y$, so $\vec v\times\vec B$ points in $-y$.</p></div>
+        <div class="step"><span class="step-label">Step 2 — negative charge</span><p>$\vec F=q\vec v\times\vec B$ with $q=-e$ flips it: $\vec F$ points in $+y$.</p></div>
+        <span class="answer"><span class="a-label">Answer — A</span>$+y$ direction.</span>
+        <p class="why"><b>Why:</b> do the right-hand rule for $\vec v\times\vec B$, then reverse because the electron is negative.</p>
+      </div>
+      <details class="original"><summary>View original exam photo (Q9)</summary><p class="scan-note">Page with Questions 6–9.</p><img src="../assets/exam/q06-09.jpg" alt="Original scan, Questions 6-9"></details>
+    </div>
+  </article>
+
+  <!-- Q10 -->
+  <article class="exam-q" id="q10">
+    <div class="eq-head"><span class="eq-n">Question 10</span><a class="eq-topic" href="08-magnetic-force.html">Topic 8 · Magnetic Force</a></div>
+    <div class="eq-body">
+      <p>A proton ($q=1.6\times10^{-19}\,\mathrm C$, $m=1.67\times10^{-27}\,\mathrm{kg}$) enters a $0.50\,\mathrm T$ field perpendicularly at $3.0\times10^{6}\,\mathrm{m/s}$. What is its orbital radius?</p>
+      <div class="figure"><svg viewBox="0 0 220 160" role="img" aria-label="Proton on a circular path in a field into the page">
+        <g fill="none" stroke="#7a8699"><path d="M36,36 l8,8 M44,36 l-8,8"/><path d="M176,36 l8,8 M184,36 l-8,8"/><path d="M36,120 l8,8 M44,120 l-8,8"/><path d="M176,120 l8,8 M184,120 l-8,8"/></g>
+        <text x="150" y="146" font-size="10" fill="#7a8699">B (into page)</text>
+        <circle cx="110" cy="80" r="40" fill="none" stroke="#2563eb" stroke-width="1.6" stroke-dasharray="5 4"/>
+        <circle cx="150" cy="80" r="5" fill="#dbe6ff" stroke="#1e40af"/><text x="145" y="84" font-size="9" fill="#1e40af">p</text>
+        <line x1="150" y1="70" x2="150" y2="40" stroke="#1c2430" stroke-width="2" marker-end="url(#ah)"/><text x="155" y="56" font-size="11">v</text>
+        <line x1="110" y1="80" x2="150" y2="80" stroke="#059669" stroke-dasharray="3 3"/><text x="120" y="76" font-size="10" fill="#059669">r</text>
+      </svg><span class="cap">The magnetic force curves the proton into a circle.</span></div>
+      <div class="callout intuition"><p class="c-head">💡 What's really going on</p><p>The magnetic force always points to the center, acting as the centripetal force — so $qvB=mv^2/r$, which solves for $r$.</p></div>
+      <ol class="choices"><li>$0.031\,\mathrm m$</li><li class="correct">$0.063\,\mathrm m$</li><li>$0.126\,\mathrm m$</li><li>$0.252\,\mathrm m$</li></ol>
+      <button class="solution-toggle">Show solution</button>
+      <div class="solution">
+        <div class="step"><span class="step-label">Step 1 — formula</span><p>$qvB=\dfrac{mv^2}{r}\Rightarrow r=\dfrac{mv}{qB}$.</p></div>
+        <div class="step"><span class="step-label">Step 2 — plug in</span><p>$r=\dfrac{(1.67\times10^{-27})(3.0\times10^{6})}{(1.6\times10^{-19})(0.50)}=\dfrac{5.0\times10^{-21}}{8.0\times10^{-20}}\approx0.063\,\mathrm m$.</p></div>
+        <span class="answer"><span class="a-label">Answer — B</span>$r\approx0.063\,\mathrm m$</span>
+        <p class="why"><b>Why:</b> magnetic force = centripetal force ⇒ $r=mv/qB$.</p>
+      </div>
+      <details class="original"><summary>View original exam photo (Q10)</summary><p class="scan-note">Page with Questions 10–13.</p><img src="../assets/exam/q10-13.jpg" alt="Original scan, Questions 10-13"></details>
+    </div>
+  </article>
+
+  <!-- Q11 -->
+  <article class="exam-q" id="q11">
+    <div class="eq-head"><span class="eq-n">Question 11</span><a class="eq-topic" href="10-induction.html">Topic 10 · Induction (flux)</a></div>
+    <div class="eq-body">
+      <p>A loop of area $0.40\,\mathrm{m^2}$ sits in a uniform $2.0\,\mathrm T$ field. The angle between the loop's <strong>normal</strong> and $\vec B$ is $60^\circ$. What is the magnetic flux?</p>
+      <div class="figure"><svg viewBox="0 0 240 150" role="img" aria-label="Loop normal at 60 degrees to B">
+        <ellipse cx="90" cy="95" rx="60" ry="22" fill="#eef3ff" stroke="#2563eb"/>
+        <text x="60" y="128" font-size="10" fill="#48566a">A = 0.40 m²</text>
+        <line x1="90" y1="95" x2="90" y2="35" stroke="#059669" stroke-width="2" marker-end="url(#ahg)"/><text x="78" y="32" font-size="12" fill="#059669">n̂</text>
+        <line x1="90" y1="95" x2="142" y2="65" stroke="#1c2430" stroke-width="2" marker-end="url(#ah)"/><text x="146" y="62" font-size="12">B</text>
+        <path d="M90,60 A 35 35 0 0 1 116 77" fill="none" stroke="#7a8699"/><text x="104" y="58" font-size="10" fill="#7a8699">60°</text>
+      </svg><span class="cap">Flux counts only the field component along the normal.</span></div>
+      <div class="callout intuition"><p class="c-head">💡 What's really going on</p><p>Flux is "how much field pokes straight through" the loop, so it uses $\cos\theta$ with the angle to the <em>normal</em>.</p></div>
+      <ol class="choices"><li>$0.0\,\mathrm{Wb}$</li><li class="correct">$0.4\,\mathrm{Wb}$</li><li>$0.69\,\mathrm{Wb}$</li><li>$0.8\,\mathrm{Wb}$</li></ol>
+      <button class="solution-toggle">Show solution</button>
+      <div class="solution">
+        <div class="step"><span class="step-label">Step 1 — formula</span><p>$\Phi_B=BA\cos\theta$ with $\theta=60^\circ$ (angle to the normal).</p></div>
+        <div class="step"><span class="step-label">Step 2 — plug in</span><p>$\Phi_B=(2.0)(0.40)\cos60^\circ=0.8\times0.5=0.40\,\mathrm{Wb}$.</p></div>
+        <span class="answer"><span class="a-label">Answer — B</span>$\Phi_B=0.4\,\mathrm{Wb}$</span>
+        <p class="why"><b>Why:</b> $\theta$ is measured from the normal, so use $\cos$ (not $\sin$).</p>
+      </div>
+      <details class="original"><summary>View original exam photo (Q11)</summary><p class="scan-note">Page with Questions 10–13.</p><img src="../assets/exam/q10-13.jpg" alt="Original scan, Questions 10-13"></details>
+    </div>
+  </article>
+
+  <!-- Q12 -->
+  <article class="exam-q" id="q12">
+    <div class="eq-head"><span class="eq-n">Question 12</span><a class="eq-topic" href="08-magnetic-force.html">Topic 8 · Magnetic Force</a></div>
+    <div class="eq-body">
+      <p>A particle passes <strong>undeflected</strong> through crossed fields: $E=4.0\times10^{4}\,\mathrm{V/m}$ and $B$ are mutually perpendicular, and the speed is $2.0\times10^{5}\,\mathrm{m/s}$. What is $B$?</p>
+      <div class="figure"><svg viewBox="0 0 220 150" role="img" aria-label="Velocity selector with crossed E and B">
+        <g fill="none" stroke="#7a8699"><path d="M40,40 l8,8 M48,40 l-8,8"/><path d="M150,40 l8,8 M158,40 l-8,8"/><path d="M40,110 l8,8 M48,110 l-8,8"/><path d="M150,110 l8,8 M158,110 l-8,8"/></g>
+        <text x="120" y="135" font-size="10" fill="#7a8699">B (into page)</text>
+        <circle cx="100" cy="78" r="5" fill="#dbe6ff" stroke="#1e40af"/>
+        <line x1="108" y1="78" x2="158" y2="78" stroke="#1c2430" stroke-width="2" marker-end="url(#ah)"/><text x="135" y="72" font-size="11">v</text>
+        <line x1="100" y1="70" x2="100" y2="38" stroke="#dc2626" stroke-width="2" marker-end="url(#ahr)"/><text x="80" y="50" font-size="11" fill="#dc2626">qE</text>
+        <line x1="100" y1="86" x2="100" y2="118" stroke="#2563eb" stroke-width="2" marker-end="url(#ahb)"/><text x="76" y="110" font-size="11" fill="#1e40af">qvB</text>
+      </svg><span class="cap">Electric and magnetic forces cancel.</span></div>
+      <div class="callout intuition"><p class="c-head">💡 What's really going on</p><p>"Undeflected" means the electric and magnetic forces exactly cancel: $qE=qvB$, so $B=E/v$ — the speed drops out of $q$.</p></div>
+      <ol class="choices"><li class="correct">$0.20\,\mathrm T$</li><li>$0.40\,\mathrm T$</li><li>$5.0\,\mathrm T$</li><li>$8.0\,\mathrm T$</li></ol>
+      <button class="solution-toggle">Show solution</button>
+      <div class="solution">
+        <div class="step"><span class="step-label">Step 1 — balance</span><p>$qE=qvB\Rightarrow B=\dfrac{E}{v}$.</p></div>
+        <div class="step"><span class="step-label">Step 2 — plug in</span><p>$B=\dfrac{4.0\times10^{4}}{2.0\times10^{5}}=0.20\,\mathrm T$.</p></div>
+        <span class="answer"><span class="a-label">Answer — A</span>$B=0.20\,\mathrm T$</span>
+        <p class="why"><b>Why:</b> velocity selector ⇒ $E=vB$, independent of charge or mass.</p>
+      </div>
+      <details class="original"><summary>View original exam photo (Q12)</summary><p class="scan-note">Page with Questions 10–13.</p><img src="../assets/exam/q10-13.jpg" alt="Original scan, Questions 10-13"></details>
+    </div>
+  </article>
+
+  <!-- ===================== UNIT C: SOURCES OF B ===================== -->
+  <h2>Sources of Magnetic Field — Q13–Q16</h2>
+
+  <!-- Q13 -->
+  <article class="exam-q" id="q13">
+    <div class="eq-head"><span class="eq-n">Question 13</span><a class="eq-topic" href="09-magnetic-field-sources.html">Topic 9 · Sources of B</a></div>
+    <div class="eq-body">
+      <p>What is the magnetic field $5.0\,\mathrm{cm}$ ($0.05\,\mathrm m$) from an infinitely long straight wire carrying $10\,\mathrm A$? ($\mu_0=4\pi\times10^{-7}\,\mathrm{T\!\cdot\! m/A}$.)</p>
+      <div class="figure"><svg viewBox="0 0 240 150" role="img" aria-label="Long straight wire and a point P at distance r">
+        <line x1="70" y1="20" x2="70" y2="130" stroke="#2563eb" stroke-width="2.4" marker-end="url(#ahb)"/><text x="48" y="30" font-size="11" fill="#1e40af">I = 10 A</text>
+        <line x1="70" y1="80" x2="170" y2="80" stroke="#059669" stroke-dasharray="4 3"/><text x="100" y="74" font-size="10" fill="#059669">r = 5 cm</text>
+        <circle cx="170" cy="80" r="3" fill="#1c2430"/><text x="176" y="84" font-size="11">P</text>
+      </svg><span class="cap">Field circles the wire; it weakens as 1/r.</span></div>
+      <div class="callout intuition"><p class="c-head">💡 What's really going on</p><p>A straight wire wraps the field in circles around itself; its strength falls off like $1/r$.</p></div>
+      <ol class="choices"><li>$2.0\times10^{-5}\,\mathrm T$</li><li class="correct">$4.0\times10^{-5}\,\mathrm T$</li><li>$2.0\times10^{-4}\,\mathrm T$</li><li>$4.0\times10^{-3}\,\mathrm T$</li></ol>
+      <button class="solution-toggle">Show solution</button>
+      <div class="solution">
+        <div class="step"><span class="step-label">Step 1 — formula</span><p>$B=\dfrac{\mu_0 I}{2\pi r}$.</p></div>
+        <div class="step"><span class="step-label">Step 2 — plug in</span><p>$B=\dfrac{(4\pi\times10^{-7})(10)}{2\pi(0.05)}=\dfrac{4\times10^{-6}}{0.1}=4.0\times10^{-5}\,\mathrm T$.</p></div>
+        <span class="answer"><span class="a-label">Answer — B</span>$B=4.0\times10^{-5}\,\mathrm T$</span>
+        <p class="why"><b>Why:</b> straight wire ⇒ $B=\mu_0 I/2\pi r$; the $\pi$'s cancel.</p>
+      </div>
+      <details class="original"><summary>View original exam photo (Q13)</summary><p class="scan-note">Page with Questions 10–13.</p><img src="../assets/exam/q10-13.jpg" alt="Original scan, Questions 10-13"></details>
+    </div>
+  </article>
+
+  <!-- Q14 -->
+  <article class="exam-q" id="q14">
+    <div class="eq-head"><span class="eq-n">Question 14</span><a class="eq-topic" href="09-magnetic-field-sources.html">Topic 9 · Sources of B</a></div>
+    <div class="eq-body">
+      <p>Two very long parallel wires a distance $d$ apart carry currents $I_1$ and $I_2$ in the <strong>same direction</strong>. What is the magnetic force between them?</p>
+      <div class="figure"><svg viewBox="0 0 240 150" role="img" aria-label="Two parallel wires, currents same direction, attracting">
+        <line x1="80" y1="20" x2="80" y2="130" stroke="#2563eb" stroke-width="2.2" marker-end="url(#ahb)"/><text x="66" y="18" font-size="11" fill="#1e40af">I₁</text>
+        <line x1="160" y1="20" x2="160" y2="130" stroke="#2563eb" stroke-width="2.2" marker-end="url(#ahb)"/><text x="150" y="18" font-size="11" fill="#1e40af">I₂</text>
+        <line x1="86" y1="80" x2="118" y2="80" stroke="#dc2626" stroke-width="2" marker-end="url(#ahr)"/>
+        <line x1="154" y1="80" x2="122" y2="80" stroke="#dc2626" stroke-width="2" marker-end="url(#ahr)"/>
+        <line x1="80" y1="100" x2="160" y2="100" stroke="#7a8699" stroke-dasharray="3 3"/><text x="113" y="114" font-size="10" fill="#7a8699">d</text>
+      </svg><span class="cap">Same-direction currents pull together.</span></div>
+      <div class="callout intuition"><p class="c-head">💡 What's really going on</p><p>Each wire sits in the other's field. Parallel (same-way) currents <em>attract</em>; anti-parallel currents repel.</p></div>
+      <ol class="choices"><li class="correct">The wires attract each other.</li><li>The wires repel each other.</li><li>The force is perpendicular to the wires, causing no attraction/repulsion.</li><li>Since the currents are in the same direction, the force is zero.</li></ol>
+      <button class="solution-toggle">Show solution</button>
+      <div class="solution">
+        <div class="step"><span class="step-label">Step 1 — field of wire 1</span><p>Wire&nbsp;1 makes a field at wire&nbsp;2; apply $\vec F=I_2\vec L\times\vec B_1$.</p></div>
+        <div class="step"><span class="step-label">Step 2 — direction</span><p>The right-hand rule gives a force pointing from each wire toward the other.</p></div>
+        <span class="answer"><span class="a-label">Answer — A</span>They <strong>attract</strong>. (Force per length $=\dfrac{\mu_0 I_1 I_2}{2\pi d}$.)</span>
+        <p class="why"><b>Why:</b> remember "parallel currents attract, anti-parallel repel."</p>
+      </div>
+      <details class="original"><summary>View original exam photo (Q14)</summary><p class="scan-note">Page with Questions 14–17.</p><img src="../assets/exam/q14-17.jpg" alt="Original scan, Questions 14-17"></details>
+    </div>
+  </article>
+
+  <!-- Q15 -->
+  <article class="exam-q" id="q15">
+    <div class="eq-head"><span class="eq-n">Question 15</span><a class="eq-topic" href="09-magnetic-field-sources.html">Topic 9 · Sources of B</a></div>
+    <div class="eq-body">
+      <p>In the Biot–Savart law, the field $d\vec B$ from a small current element $d\vec\ell$ points along the cross product of which two vectors?</p>
+      <div class="figure"><svg viewBox="0 0 240 140" role="img" aria-label="Current element and position vector to P">
+        <path d="M30,110 Q90,70 150,75" fill="none" stroke="#1c2430" stroke-width="1.6"/>
+        <line x1="80" y1="86" x2="112" y2="78" stroke="#2563eb" stroke-width="2.4" marker-end="url(#ahb)"/><text x="84" y="100" font-size="11" fill="#1e40af">I d𝓵</text>
+        <circle cx="195" cy="40" r="3" fill="#1c2430"/><text x="201" y="44" font-size="11">P</text>
+        <line x1="96" y1="82" x2="192" y2="42" stroke="#059669" stroke-width="2" marker-end="url(#ahg)"/><text x="150" y="74" font-size="11" fill="#059669">r</text>
+      </svg><span class="cap">dB ∝ d𝓵 × r̂.</span></div>
+      <div class="callout intuition"><p class="c-head">💡 What's really going on</p><p>Biot–Savart is $d\vec B\propto \dfrac{I\,d\vec\ell\times\hat r}{r^2}$ — the element direction crossed into the line pointing to the field point.</p></div>
+      <ol class="choices"><li class="correct">$d\vec\ell$ and the position vector $\vec r$</li><li>The position vector $\vec r$ and the current $I$</li><li>$d\vec\ell$ and the magnetic field itself</li><li>The position vector $\vec r$ and the electric field $\vec E$</li></ol>
+      <button class="solution-toggle">Show solution</button>
+      <div class="solution">
+        <div class="step"><span class="step-label">The law</span><p>$d\vec B=\dfrac{\mu_0}{4\pi}\dfrac{I\,d\vec\ell\times\hat r}{r^2}$ — the cross product is $d\vec\ell\times\hat r$.</p></div>
+        <span class="answer"><span class="a-label">Answer — A</span>$d\vec\ell$ and the position vector $\vec r$.</span>
+        <p class="why"><b>Why:</b> the only vectors in Biot–Savart are the element $d\vec\ell$ and the direction $\hat r$ to the point.</p>
+      </div>
+      <details class="original"><summary>View original exam photo (Q15)</summary><p class="scan-note">Page with Questions 14–17.</p><img src="../assets/exam/q14-17.jpg" alt="Original scan, Questions 14-17"></details>
+    </div>
+  </article>
+
+  <!-- Q16 -->
+  <article class="exam-q" id="q16">
+    <div class="eq-head"><span class="eq-n">Question 16</span><a class="eq-topic" href="09-magnetic-field-sources.html">Topic 9 · Sources of B</a></div>
+    <div class="eq-body">
+      <p>An ideal solenoid of length $0.50\,\mathrm m$ has $1000$ turns. What current gives a center field of $3.14\times10^{-3}\,\mathrm T$? (Take $\pi\approx3.14$, $\mu_0=4\pi\times10^{-7}$.)</p>
+      <div class="figure"><svg viewBox="0 0 260 110" role="img" aria-label="Solenoid coil">
+        <line x1="30" y1="55" x2="50" y2="55" stroke="#1c2430"/>
+        <g fill="none" stroke="#2563eb" stroke-width="2"><ellipse cx="62" cy="55" rx="8" ry="20"/><ellipse cx="82" cy="55" rx="8" ry="20"/><ellipse cx="102" cy="55" rx="8" ry="20"/><ellipse cx="122" cy="55" rx="8" ry="20"/><ellipse cx="142" cy="55" rx="8" ry="20"/><ellipse cx="162" cy="55" rx="8" ry="20"/><ellipse cx="182" cy="55" rx="8" ry="20"/><ellipse cx="202" cy="55" rx="8" ry="20"/></g>
+        <line x1="210" y1="55" x2="230" y2="55" stroke="#1c2430"/>
+        <text x="70" y="100" font-size="11" fill="#48566a">L = 0.50 m,  N = 1000</text>
+      </svg><span class="cap">Uniform field inside: B = μ₀ n I.</span></div>
+      <div class="callout intuition"><p class="c-head">💡 What's really going on</p><p>Inside a long solenoid the field is uniform and set by the <em>turn density</em> $n=N/L$ times the current.</p></div>
+      <ol class="choices"><li>$0.50\,\mathrm A$</li><li class="correct">$1.25\,\mathrm A$</li><li>$2.50\,\mathrm A$</li><li>$5.00\,\mathrm A$</li></ol>
+      <button class="solution-toggle">Show solution</button>
+      <div class="solution">
+        <div class="step"><span class="step-label">Step 1 — turn density</span><p>$n=\dfrac{N}{L}=\dfrac{1000}{0.50}=2000\,\mathrm{turns/m}$.</p></div>
+        <div class="step"><span class="step-label">Step 2 — solve B = μ₀ n I</span><p>$I=\dfrac{B}{\mu_0 n}=\dfrac{3.14\times10^{-3}}{(4\pi\times10^{-7})(2000)}=\dfrac{3.14\times10^{-3}}{2.512\times10^{-3}}=1.25\,\mathrm A$.</p></div>
+        <span class="answer"><span class="a-label">Answer — B</span>$I=1.25\,\mathrm A$</span>
+        <p class="why"><b>Why:</b> solenoid ⇒ $B=\mu_0 nI$ with $n=N/L$.</p>
+      </div>
+      <details class="original"><summary>View original exam photo (Q16)</summary><p class="scan-note">Page with Questions 14–17.</p><img src="../assets/exam/q14-17.jpg" alt="Original scan, Questions 14-17"></details>
+    </div>
+  </article>
+
+  <!-- ===================== UNIT D: INDUCTION ===================== -->
+  <h2>Electromagnetic Induction — Q17–Q20</h2>
+
+  <!-- Q17 -->
+  <article class="exam-q" id="q17">
+    <div class="eq-head"><span class="eq-n">Question 17</span><a class="eq-topic" href="10-induction.html">Topic 10 · Induction</a></div>
+    <div class="eq-body">
+      <p>The flux through a stationary loop is <strong>increasing</strong> with time. By Lenz's law, what is the direction of the field created by the induced current <em>inside the loop</em>?</p>
+      <div class="figure"><svg viewBox="0 0 220 140" role="img" aria-label="Loop opposing an increasing external field">
+        <ellipse cx="110" cy="80" rx="62" ry="24" fill="none" stroke="#1c2430" stroke-width="1.6"/>
+        <line x1="110" y1="80" x2="110" y2="24" stroke="#2563eb" stroke-width="2" marker-end="url(#ahb)"/><text x="116" y="34" font-size="11" fill="#1e40af">B_ext ↑</text>
+        <line x1="150" y1="80" x2="150" y2="120" stroke="#dc2626" stroke-width="2" marker-end="url(#ahr)"/><text x="156" y="112" font-size="11" fill="#dc2626">B_ind ↓</text>
+      </svg><span class="cap">Induced field fights the change.</span></div>
+      <div class="callout intuition"><p class="c-head">💡 What's really going on</p><p>Induced currents are contrarian: if the field through the loop is growing, the loop pushes back with a field in the <em>opposite</em> direction to slow the change.</p></div>
+      <ol class="choices"><li>It is in the same direction as the external field.</li><li class="correct">It is in the opposite direction to the external field.</li><li>It is perpendicular to the external field.</li><li>It is independent of the external field.</li></ol>
+      <button class="solution-toggle">Show solution</button>
+      <div class="solution">
+        <div class="step"><span class="step-label">Lenz's law</span><p>The induced effect always <em>opposes the change</em> in flux. The flux is increasing, so the induced field points opposite to $\vec B_\text{ext}$ to oppose the growth.</p></div>
+        <span class="answer"><span class="a-label">Answer — B</span>Opposite to the external field.</span>
+        <p class="why"><b>Why:</b> Lenz = "oppose the change"; rising flux ⇒ induced field opposes it.</p>
+      </div>
+      <details class="original"><summary>View original exam photo (Q17)</summary><p class="scan-note">Page with Questions 14–17.</p><img src="../assets/exam/q14-17.jpg" alt="Original scan, Questions 14-17"></details>
+    </div>
+  </article>
+
+  <!-- Q18 -->
+  <article class="exam-q" id="q18">
+    <div class="eq-head"><span class="eq-n">Question 18</span><a class="eq-topic" href="10-induction.html">Topic 10 · Induction</a></div>
+    <div class="eq-body">
+      <p>A conducting rod of length $0.50\,\mathrm m$ is pulled at a constant $10\,\mathrm{m/s}$ perpendicular to a uniform $0.80\,\mathrm T$ field. What emf appears between its ends?</p>
+      <div class="figure"><svg viewBox="0 0 240 150" role="img" aria-label="Rod moving through a field into the page">
+        <g fill="none" stroke="#7a8699"><path d="M40,40 l8,8 M48,40 l-8,8"/><path d="M180,40 l8,8 M188,40 l-8,8"/><path d="M40,110 l8,8 M48,110 l-8,8"/><path d="M180,110 l8,8 M188,110 l-8,8"/></g>
+        <text x="150" y="135" font-size="10" fill="#7a8699">B = 0.80 T (in)</text>
+        <line x1="110" y1="35" x2="110" y2="115" stroke="#2563eb" stroke-width="4"/><text x="86" y="32" font-size="10" fill="#1e40af">rod, L</text>
+        <line x1="118" y1="75" x2="168" y2="75" stroke="#1c2430" stroke-width="2" marker-end="url(#ah)"/><text x="130" y="68" font-size="11">v = 10 m/s</text>
+      </svg><span class="cap">Motional emf from sweeping field lines.</span></div>
+      <div class="callout intuition"><p class="c-head">💡 What's really going on</p><p>The rod sweeps through field lines; charges in it feel a magnetic push that piles up at the ends, creating a voltage $\varepsilon=BLv$.</p></div>
+      <ol class="choices"><li>$2.0\,\mathrm V$</li><li class="correct">$4.0\,\mathrm V$</li><li>$8.0\,\mathrm V$</li><li>$16.0\,\mathrm V$</li></ol>
+      <button class="solution-toggle">Show solution</button>
+      <div class="solution">
+        <div class="step"><span class="step-label">Step 1 — formula</span><p>$\varepsilon=BLv$.</p></div>
+        <div class="step"><span class="step-label">Step 2 — plug in</span><p>$\varepsilon=(0.80)(0.50)(10)=4.0\,\mathrm V$.</p></div>
+        <span class="answer"><span class="a-label">Answer — B</span>$\varepsilon=4.0\,\mathrm V$</span>
+        <p class="why"><b>Why:</b> straight motional emf ⇒ $\varepsilon=BLv$ (fields ⟂ motion).</p>
+      </div>
+      <details class="original"><summary>View original exam photo (Q18)</summary><p class="scan-note">Page with Questions 18–20.</p><img src="../assets/exam/q18-20.jpg" alt="Original scan, Questions 18-20"></details>
+    </div>
+  </article>
+
+  <!-- Q19 -->
+  <article class="exam-q" id="q19">
+    <div class="eq-head"><span class="eq-n">Question 19</span><a class="eq-topic" href="10-induction.html">Topic 10 · Induction</a></div>
+    <div class="eq-body">
+      <p>For a single-turn loop, the flux rises <strong>linearly</strong> from $0.10\,\mathrm{Wb}$ to $0.50\,\mathrm{Wb}$ between $t=0$ and $t=2.0\,\mathrm s$. What is the magnitude of the induced emf?</p>
+      <div class="figure"><svg viewBox="0 0 240 150" role="img" aria-label="Linear flux versus time graph">
+        <line x1="40" y1="120" x2="220" y2="120" stroke="#1c2430" marker-end="url(#ah)"/>
+        <line x1="40" y1="120" x2="40" y2="15" stroke="#1c2430" marker-end="url(#ah)"/>
+        <text x="210" y="135" font-size="10" fill="#48566a">t (s)</text><text x="14" y="20" font-size="10" fill="#48566a">Φ (Wb)</text>
+        <line x1="40" y1="100" x2="190" y2="40" stroke="#2563eb" stroke-width="2"/>
+        <circle cx="40" cy="100" r="3" fill="#2563eb"/><text x="46" y="98" font-size="9" fill="#1e40af">0.10</text>
+        <circle cx="190" cy="40" r="3" fill="#2563eb"/><text x="160" y="36" font-size="9" fill="#1e40af">0.50</text>
+        <text x="186" y="134" font-size="10" fill="#48566a">2.0</text>
+      </svg><span class="cap">Constant slope ⇒ constant emf.</span></div>
+      <div class="callout intuition"><p class="c-head">💡 What's really going on</p><p>emf is the <em>rate</em> the flux changes — the slope of the $\Phi$–$t$ line. A straight line means a steady emf.</p></div>
+      <ol class="choices"><li>$0.10\,\mathrm V$</li><li class="correct">$0.20\,\mathrm V$</li><li>$0.40\,\mathrm V$</li><li>$0.50\,\mathrm V$</li></ol>
+      <button class="solution-toggle">Show solution</button>
+      <div class="solution">
+        <div class="step"><span class="step-label">Step 1 — Faraday</span><p>$|\varepsilon|=\left|\dfrac{\Delta\Phi}{\Delta t}\right|$ for one turn.</p></div>
+        <div class="step"><span class="step-label">Step 2 — plug in</span><p>$|\varepsilon|=\dfrac{0.50-0.10}{2.0}=\dfrac{0.40}{2.0}=0.20\,\mathrm V$.</p></div>
+        <span class="answer"><span class="a-label">Answer — B</span>$|\varepsilon|=0.20\,\mathrm V$</span>
+        <p class="why"><b>Why:</b> emf = slope of $\Phi$ vs $t$ (times $N$, here $N=1$).</p>
+      </div>
+      <details class="original"><summary>View original exam photo (Q19)</summary><p class="scan-note">Page with Questions 18–20.</p><img src="../assets/exam/q18-20.jpg" alt="Original scan, Questions 18-20"></details>
+    </div>
+  </article>
+
+  <!-- Q20 -->
+  <article class="exam-q" id="q20">
+    <div class="eq-head"><span class="eq-n">Question 20</span><a class="eq-topic" href="10-induction.html">Topic 10 · Induction</a></div>
+    <div class="eq-body">
+      <p>A circular loop of radius $0.10\,\mathrm m$ and resistance $0.50\,\Omega$ sits perpendicular to a field that grows at $dB/dt=0.20\,\mathrm{T/s}$. What is the induced current? (Take $\pi\approx3.0$.)</p>
+      <div class="figure"><svg viewBox="0 0 200 150" role="img" aria-label="Circular loop in an increasing field out of the page">
+        <circle cx="90" cy="75" r="50" fill="none" stroke="#1c2430" stroke-width="1.6"/>
+        <g fill="#7a8699"><circle cx="70" cy="60" r="2"/><circle cx="90" cy="55" r="2"/><circle cx="110" cy="60" r="2"/><circle cx="65" cy="85" r="2"/><circle cx="90" cy="92" r="2"/><circle cx="113" cy="85" r="2"/></g>
+        <text x="135" y="60" font-size="10" fill="#48566a">dB/dt &gt; 0</text>
+        <text x="60" y="140" font-size="10" fill="#48566a">r = 0.10 m, R = 0.50 Ω</text>
+      </svg><span class="cap">Changing field drives a current around the loop.</span></div>
+      <div class="callout intuition"><p class="c-head">💡 What's really going on</p><p>A changing field makes an emf $=A\,dB/dt$; Ohm's law then turns that emf into a current through the loop's resistance.</p></div>
+      <ol class="choices"><li>$0.006\,\mathrm A$</li><li class="correct">$0.012\,\mathrm A$</li><li>$0.024\,\mathrm A$</li><li>$0.120\,\mathrm A$</li></ol>
+      <button class="solution-toggle">Show solution</button>
+      <div class="solution">
+        <div class="step"><span class="step-label">Step 1 — emf</span><p>$\varepsilon=A\dfrac{dB}{dt}=\pi r^2\dfrac{dB}{dt}=3.0(0.10)^2(0.20)=6.0\times10^{-3}\,\mathrm V$.</p></div>
+        <div class="step"><span class="step-label">Step 2 — Ohm's law</span><p>$I=\dfrac{\varepsilon}{R}=\dfrac{6.0\times10^{-3}}{0.50}=0.012\,\mathrm A$.</p></div>
+        <span class="answer"><span class="a-label">Answer — B</span>$I=0.012\,\mathrm A$</span>
+        <p class="why"><b>Why:</b> $\varepsilon=A\,dB/dt$, then $I=\varepsilon/R$.</p>
+      </div>
+      <details class="original"><summary>View original exam photo (Q20)</summary><p class="scan-note">Page with Questions 18–20.</p><img src="../assets/exam/q18-20.jpg" alt="Original scan, Questions 18-20"></details>
+    </div>
+  </article>
+
+  <div class="callout tip">
+    <p class="c-head">After you've worked through these</p>
+    <p>Every question above maps to a topic page (tap the chip on each card) where the same idea has more worked examples and a 10-question practice set. If a question stumped you, that topic is where to drill.</p>
+  </div>
+
+</div>
+</main>
+
+<script src="../assets/katex/katex.min.js"></script>
+<script src="../assets/katex/auto-render.min.js"></script>
+<script src="../assets/app.js"></script>
+</body>
+</html>
