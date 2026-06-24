@@ -55,29 +55,118 @@
 
   <h2>Practice</h2>
 
-  <div class="practice">
-    <div class="q">
-      <p><span class="qno">Practice 1</span></p>
-      <p>A $0.50\,\mathrm m$ rod slides at $4.0\,\mathrm{m/s}$ across a $0.20\,\mathrm T$ field, perpendicular to it. What EMF is generated?</p>
-      <button class="solution-toggle">Show solution</button>
-      <div class="solution">
-        <p>$\varepsilon=BLv=(0.20)(0.50)(4.0)=0.40\,\mathrm V$.</p>
-        <span class="answer"><span class="a-label">Answer</span>$\varepsilon=0.40\,\mathrm V$</span>
-      </div>
+  <div class="practice"><div class="q">
+    <p><span class="qno">Practice 1</span></p>
+    <p>A loop of area $0.20\,\mathrm m^2$ lies with its normal along a uniform $0.50\,\mathrm T$ field. Find the flux through it.</p>
+    <button class="solution-toggle">Show solution</button>
+    <div class="solution">
+      <p>$\Phi_B=BA\cos0^\circ=(0.50)(0.20)$.</p>
+      <span class="answer"><span class="a-label">Answer</span>$\Phi_B=0.10\,\mathrm{Wb}$.</span>
+      <p class="why"><b>Why:</b> $\Phi=BA\cos\theta$; here $\theta=0$.</p>
     </div>
-  </div>
+  </div></div>
 
-  <div class="practice">
-    <div class="q">
-      <p><span class="qno">Practice 2</span></p>
-      <p>A magnet is pushed toward a coil, increasing the flux. Which way does the induced current flow, and what does it do to the magnet?</p>
-      <button class="solution-toggle">Show solution</button>
-      <div class="solution">
-        <p>By Lenz's law the induced current opposes the increasing flux, so it creates a magnetic field that <em>repels</em> the incoming magnet (the coil face toward the magnet becomes the same pole). You must do work to push the magnet in — that work becomes the electrical energy.</p>
-        <span class="answer"><span class="a-label">Answer</span>Current opposes the change; the coil repels the approaching magnet.</span>
-      </div>
+  <div class="practice"><div class="q">
+    <p><span class="qno">Practice 2</span></p>
+    <p>A $0.50\,\mathrm m$ rod moves at $4.0\,\mathrm{m/s}$ perpendicular to a $0.20\,\mathrm T$ field. Find the motional emf.</p>
+    <button class="solution-toggle">Show solution</button>
+    <div class="solution">
+      <p>$\varepsilon=BLv=(0.20)(0.50)(4.0)$.</p>
+      <span class="answer"><span class="a-label">Answer</span>$\varepsilon=0.40\,\mathrm V$.</span>
+      <p class="why"><b>Why:</b> motional emf $\varepsilon=BLv$.</p>
     </div>
-  </div>
+  </div></div>
+
+  <div class="practice"><div class="q">
+    <p><span class="qno">Practice 3</span></p>
+    <p>The flux through a one-turn loop rises linearly from $0.20\,\mathrm{Wb}$ to $0.80\,\mathrm{Wb}$ in $0.30\,\mathrm s$. Find the induced emf.</p>
+    <button class="solution-toggle">Show solution</button>
+    <div class="solution">
+      <p>$|\varepsilon|=\dfrac{\Delta\Phi}{\Delta t}=\dfrac{0.80-0.20}{0.30}$.</p>
+      <span class="answer"><span class="a-label">Answer</span>$|\varepsilon|=2.0\,\mathrm V$.</span>
+      <p class="why"><b>Why:</b> emf is the rate of change of flux.</p>
+    </div>
+  </div></div>
+
+  <div class="practice"><div class="q">
+    <p><span class="qno">Practice 4</span></p>
+    <p>A field through a fixed $0.10\,\mathrm m^2$ loop changes at $0.50\,\mathrm{T/s}$. Find the induced emf (one turn).</p>
+    <button class="solution-toggle">Show solution</button>
+    <div class="solution">
+      <p>$\varepsilon=A\dfrac{dB}{dt}=(0.10)(0.50)$.</p>
+      <span class="answer"><span class="a-label">Answer</span>$\varepsilon=0.050\,\mathrm V$.</span>
+      <p class="why"><b>Why:</b> with area fixed, $\varepsilon=A\,dB/dt$.</p>
+    </div>
+  </div></div>
+
+  <div class="practice"><div class="q">
+    <p><span class="qno">Practice 5</span></p>
+    <p>A $0.20\,\mathrm m^2$ loop of resistance $0.30\,\Omega$ sits in a field changing at $0.30\,\mathrm{T/s}$. Find the induced current.</p>
+    <button class="solution-toggle">Show solution</button>
+    <div class="solution">
+      <p>$\varepsilon=A\dfrac{dB}{dt}=(0.20)(0.30)=0.06\,\mathrm V$.</p>
+      <p>$I=\dfrac{\varepsilon}{R}=\dfrac{0.06}{0.30}$.</p>
+      <span class="answer"><span class="a-label">Answer</span>$I=0.20\,\mathrm A$.</span>
+      <p class="why"><b>Why:</b> $\varepsilon=A\,dB/dt$, then $I=\varepsilon/R$.</p>
+    </div>
+  </div></div>
+
+  <div class="practice"><div class="q">
+    <p><span class="qno">Practice 6</span></p>
+    <p>The north pole of a bar magnet is pushed toward a conducting loop. Which way does the induced current flow, and why?</p>
+    <button class="solution-toggle">Show solution</button>
+    <div class="solution">
+      <p>By Lenz's law the loop opposes the approach.</p>
+      <p>It makes a north pole facing the magnet (to repel it), so the current flows to create that field.</p>
+      <span class="answer"><span class="a-label">Answer</span>In the direction that makes the loop repel the magnet (opposing the change).</span>
+      <p class="why"><b>Why:</b> Lenz: induced effects oppose what causes them.</p>
+    </div>
+  </div></div>
+
+  <div class="practice"><div class="q">
+    <p><span class="qno">Practice 7</span></p>
+    <p>A $100$-turn coil of area $0.010\,\mathrm m^2$ rotates at $\omega=60\,\mathrm{rad/s}$ in a $0.20\,\mathrm T$ field. Find the peak emf.</p>
+    <button class="solution-toggle">Show solution</button>
+    <div class="solution">
+      <p>$\varepsilon_0=NBA\omega=(100)(0.20)(0.010)(60)$.</p>
+      <span class="answer"><span class="a-label">Answer</span>$\varepsilon_0=12\,\mathrm V$.</span>
+      <p class="why"><b>Why:</b> a rotating loop gives $\varepsilon_0=NBA\omega$.</p>
+    </div>
+  </div></div>
+
+  <div class="practice"><div class="q">
+    <p><span class="qno">Practice 8</span></p>
+    <p>A loop in a constant $0.40\,\mathrm T$ field shrinks in area from $0.30\,\mathrm m^2$ to $0.10\,\mathrm m^2$ in $0.20\,\mathrm s$. Find the average induced emf.</p>
+    <button class="solution-toggle">Show solution</button>
+    <div class="solution">
+      <p>$|\varepsilon|=B\dfrac{\Delta A}{\Delta t}=(0.40)\dfrac{0.30-0.10}{0.20}$.</p>
+      <span class="answer"><span class="a-label">Answer</span>$|\varepsilon|=0.40\,\mathrm V$.</span>
+      <p class="why"><b>Why:</b> changing area also changes flux: $\varepsilon=B\,\Delta A/\Delta t$.</p>
+    </div>
+  </div></div>
+
+  <div class="practice"><div class="q">
+    <p><span class="qno">Practice 9</span></p>
+    <p>A loop of area $0.020\,\mathrm m^2$ in a $0.50\,\mathrm T$ field is rotated so its normal goes from parallel to perpendicular to $\vec B$ in $0.10\,\mathrm s$. Find the average emf.</p>
+    <button class="solution-toggle">Show solution</button>
+    <div class="solution">
+      <p>$\Delta\Phi=BA(\cos0^\circ-\cos90^\circ)=(0.50)(0.020)(1-0)=0.010\,\mathrm{Wb}$.</p>
+      <p>$|\varepsilon|=\dfrac{0.010}{0.10}$.</p>
+      <span class="answer"><span class="a-label">Answer</span>$|\varepsilon|=0.10\,\mathrm V$.</span>
+      <p class="why"><b>Why:</b> rotating changes $\cos\theta$, hence the flux.</p>
+    </div>
+  </div></div>
+
+  <div class="practice"><div class="q">
+    <p><span class="qno">Practice 10</span></p>
+    <p>A rod generates a $2.0\,\mathrm V$ motional emf and drives current through a $4.0\,\Omega$ resistance. Find the mechanical power you must supply to keep it moving steadily.</p>
+    <button class="solution-toggle">Show solution</button>
+    <div class="solution">
+      <p>At constant speed, your input power equals the power dissipated: $P=\dfrac{\varepsilon^2}{R}=\dfrac{(2.0)^2}{4.0}$.</p>
+      <span class="answer"><span class="a-label">Answer</span>$P=1.0\,\mathrm W$.</span>
+      <p class="why"><b>Why:</b> steady speed ⇒ input power = $\varepsilon^2/R$ dissipated.</p>
+    </div>
+  </div></div>
 
 </div>
 </main>

@@ -54,29 +54,118 @@
 
   <h2>Practice</h2>
 
-  <div class="practice">
-    <div class="q">
-      <p><span class="qno">Practice 1</span></p>
-      <p>What current in a long straight wire gives a field of $5.0\times10^{-5}\,\mathrm T$ at a distance of $4.0\,\mathrm{cm}$?</p>
-      <button class="solution-toggle">Show solution</button>
-      <div class="solution">
-        <p>Solve $B=\dfrac{\mu_0 I}{2\pi r}$ for $I$: $I=\dfrac{2\pi r B}{\mu_0}=\dfrac{2\pi(0.040)(5.0\times10^{-5})}{4\pi\times10^{-7}}=10\,\mathrm A$.</p>
-        <span class="answer"><span class="a-label">Answer</span>$I=10\,\mathrm A$</span>
-      </div>
+  <div class="practice"><div class="q">
+    <p><span class="qno">Practice 1</span></p>
+    <p>Find the magnetic field $0.10\,\mathrm m$ from a long straight wire carrying $5.0\,\mathrm A$.</p>
+    <button class="solution-toggle">Show solution</button>
+    <div class="solution">
+      <p>$B=\dfrac{\mu_0 I}{2\pi r}=(2\times10^{-7})\dfrac{5.0}{0.10}$.</p>
+      <span class="answer"><span class="a-label">Answer</span>$B=1.0\times10^{-5}\,\mathrm T$.</span>
+      <p class="why"><b>Why:</b> $\mu_0/2\pi=2\times10^{-7}$; field $\propto1/r$.</p>
     </div>
-  </div>
+  </div></div>
 
-  <div class="practice">
-    <div class="q">
-      <p><span class="qno">Practice 2</span></p>
-      <p>At the centre of a circular loop of radius $0.10\,\mathrm m$ carrying $5.0\,\mathrm A$, what is the magnetic field?</p>
-      <button class="solution-toggle">Show solution</button>
-      <div class="solution">
-        <p>$B=\dfrac{\mu_0 I}{2R}=\dfrac{(4\pi\times10^{-7})(5.0)}{2(0.10)}=3.1\times10^{-5}\,\mathrm T$.</p>
-        <span class="answer"><span class="a-label">Answer</span>$B\approx3.1\times10^{-5}\,\mathrm T$</span>
-      </div>
+  <div class="practice"><div class="q">
+    <p><span class="qno">Practice 2</span></p>
+    <p>A long vertical wire carries current upward. In which direction does its magnetic field point at a location due east of the wire?</p>
+    <button class="solution-toggle">Show solution</button>
+    <div class="solution">
+      <p>Right-hand rule: thumb up along $I$, fingers curl around the wire.</p>
+      <p>East of the wire, the field points into the page (i.e. toward the north–south line, here 'into the ground' / away from you).</p>
+      <span class="answer"><span class="a-label">Answer</span>Into the page (curling around the wire).</span>
+      <p class="why"><b>Why:</b> grip the wire with the right hand, thumb along $I$; fingers give $\vec B$.</p>
     </div>
-  </div>
+  </div></div>
+
+  <div class="practice"><div class="q">
+    <p><span class="qno">Practice 3</span></p>
+    <p>Find the field at the centre of a single circular loop of radius $0.050\,\mathrm m$ carrying $3.0\,\mathrm A$.</p>
+    <button class="solution-toggle">Show solution</button>
+    <div class="solution">
+      <p>$B=\dfrac{\mu_0 I}{2R}=\dfrac{(4\pi\times10^{-7})(3.0)}{2(0.050)}$.</p>
+      <span class="answer"><span class="a-label">Answer</span>$B\approx3.8\times10^{-5}\,\mathrm T$.</span>
+      <p class="why"><b>Why:</b> loop centre: $B=\mu_0 I/2R$.</p>
+    </div>
+  </div></div>
+
+  <div class="practice"><div class="q">
+    <p><span class="qno">Practice 4</span></p>
+    <p>A flat coil of $50$ turns and radius $0.10\,\mathrm m$ carries $2.0\,\mathrm A$. Find the field at its centre.</p>
+    <button class="solution-toggle">Show solution</button>
+    <div class="solution">
+      <p>$B=\dfrac{\mu_0 NI}{2R}=\dfrac{(4\pi\times10^{-7})(50)(2.0)}{2(0.10)}$.</p>
+      <span class="answer"><span class="a-label">Answer</span>$B\approx6.3\times10^{-4}\,\mathrm T$.</span>
+      <p class="why"><b>Why:</b> $N$ turns multiply the single-loop field.</p>
+    </div>
+  </div></div>
+
+  <div class="practice"><div class="q">
+    <p><span class="qno">Practice 5</span></p>
+    <p>A solenoid has $500$ turns per metre and carries $2.0\,\mathrm A$. Find the field inside.</p>
+    <button class="solution-toggle">Show solution</button>
+    <div class="solution">
+      <p>$B=\mu_0 nI=(4\pi\times10^{-7})(500)(2.0)$.</p>
+      <span class="answer"><span class="a-label">Answer</span>$B\approx1.3\times10^{-3}\,\mathrm T$.</span>
+      <p class="why"><b>Why:</b> solenoid: $B=\mu_0 nI$, uniform inside.</p>
+    </div>
+  </div></div>
+
+  <div class="practice"><div class="q">
+    <p><span class="qno">Practice 6</span></p>
+    <p>Two long parallel wires $0.10\,\mathrm m$ apart each carry $10\,\mathrm A$ in the same direction. Find the force per length, and state whether they attract or repel.</p>
+    <button class="solution-toggle">Show solution</button>
+    <div class="solution">
+      <p>$\dfrac{F}{L}=\dfrac{\mu_0 I_1 I_2}{2\pi d}=(2\times10^{-7})\dfrac{(10)(10)}{0.10}$.</p>
+      <p>Same direction ⇒ attraction.</p>
+      <span class="answer"><span class="a-label">Answer</span>$F/L=2.0\times10^{-4}\,\mathrm{N/m}$, attractive.</span>
+      <p class="why"><b>Why:</b> parallel currents attract; $F/L=\mu_0I_1I_2/2\pi d$.</p>
+    </div>
+  </div></div>
+
+  <div class="practice"><div class="q">
+    <p><span class="qno">Practice 7</span></p>
+    <p>An Ampèrian loop encircles a long wire carrying $8.0\,\mathrm A$. Evaluate $\oint\vec B\cdot d\vec\ell$.</p>
+    <button class="solution-toggle">Show solution</button>
+    <div class="solution">
+      <p>Ampère's law: $\oint\vec B\cdot d\vec\ell=\mu_0 I_\text{enc}=(4\pi\times10^{-7})(8.0)$.</p>
+      <span class="answer"><span class="a-label">Answer</span>$\oint\vec B\cdot d\vec\ell\approx1.0\times10^{-5}\,\mathrm{T\!\cdot\! m}$.</span>
+      <p class="why"><b>Why:</b> the line integral depends only on enclosed current.</p>
+    </div>
+  </div></div>
+
+  <div class="practice"><div class="q">
+    <p><span class="qno">Practice 8</span></p>
+    <p>In the Biot–Savart law, for what angle between $d\vec\ell$ and $\hat r$ is the contribution $dB$ largest?</p>
+    <button class="solution-toggle">Show solution</button>
+    <div class="solution">
+      <p>$dB\propto\sin\theta$, which is largest at $\theta=90^\circ$.</p>
+      <span class="answer"><span class="a-label">Answer</span>$90^\circ$ (perpendicular).</span>
+      <p class="why"><b>Why:</b> the $\sin\theta$ factor peaks at a right angle; it is zero when parallel.</p>
+    </div>
+  </div></div>
+
+  <div class="practice"><div class="q">
+    <p><span class="qno">Practice 9</span></p>
+    <p>Two long parallel wires $0.20\,\mathrm m$ apart carry $10\,\mathrm A$ in <strong>opposite</strong> directions. Find the field at the midpoint.</p>
+    <button class="solution-toggle">Show solution</button>
+    <div class="solution">
+      <p>Each wire is $0.10\,\mathrm m$ from the midpoint: $B=(2\times10^{-7})\dfrac{10}{0.10}=2.0\times10^{-5}\,\mathrm T$.</p>
+      <p>Opposite currents ⇒ the two fields point the same way at the midpoint and add.</p>
+      <span class="answer"><span class="a-label">Answer</span>$B=4.0\times10^{-5}\,\mathrm T$.</span>
+      <p class="why"><b>Why:</b> opposite currents reinforce between the wires (same currents would cancel).</p>
+    </div>
+  </div></div>
+
+  <div class="practice"><div class="q">
+    <p><span class="qno">Practice 10</span></p>
+    <p>A toroid has $N=1000$ turns and carries $I=2.0\,\mathrm A$; the field circle has radius $r=0.10\,\mathrm m$. Find $B$ inside.</p>
+    <button class="solution-toggle">Show solution</button>
+    <div class="solution">
+      <p>$B=\dfrac{\mu_0 NI}{2\pi r}=(2\times10^{-7})\dfrac{(1000)(2.0)}{0.10}$.</p>
+      <span class="answer"><span class="a-label">Answer</span>$B\approx4.0\times10^{-3}\,\mathrm T$.</span>
+      <p class="why"><b>Why:</b> toroid: $B=\mu_0 NI/2\pi r$.</p>
+    </div>
+  </div></div>
 
 </div>
 </main>

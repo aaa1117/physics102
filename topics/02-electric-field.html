@@ -57,31 +57,122 @@
 
   <h2>Practice</h2>
 
-  <div class="practice">
-    <div class="q">
-      <p><span class="qno">Practice 1</span></p>
-      <p>What is the magnitude of the electric field $0.50\,\mathrm m$ from a $+2.0\,\mu\mathrm C$ point charge? What force would a $-1.0\,\mathrm{nC}$ charge feel there?</p>
-      <button class="solution-toggle">Show solution</button>
-      <div class="solution">
-        <p>$E=k\dfrac{q}{r^2}=8.99\times10^{9}\dfrac{2.0\times10^{-6}}{0.25}=7.2\times10^{4}\,\mathrm{N/C}$ (away from the charge).</p>
-        <p>$F=|q|E=(1.0\times10^{-9})(7.2\times10^{4})=7.2\times10^{-5}\,\mathrm N$, directed <em>toward</em> the source (negative charge).</p>
-        <span class="answer"><span class="a-label">Answer</span>$E\approx7.2\times10^{4}\,\mathrm{N/C}$, $F\approx7.2\times10^{-5}\,\mathrm N$</span>
-      </div>
+  <div class="practice"><div class="q">
+    <p><span class="qno">Practice 1</span></p>
+    <p>Find the electric field $0.30\,\mathrm m$ from a $+5.0\,\mu\mathrm C$ point charge.</p>
+    <button class="solution-toggle">Show solution</button>
+    <div class="solution">
+      <p>$E=\dfrac{kq}{r^2}=\dfrac{9.0\times10^9(5.0\times10^{-6})}{(0.30)^2}=\dfrac{4.5\times10^4}{0.09}$.</p>
+      <span class="answer"><span class="a-label">Answer</span>$E=5.0\times10^5\,\mathrm{N/C}$, pointing away from the charge.</span>
+      <p class="why"><b>Why:</b> $E=kq/r^2$; direction is radially outward for $+q$.</p>
     </div>
-  </div>
+  </div></div>
 
-  <div class="practice">
-    <div class="q">
-      <p><span class="qno">Practice 2</span></p>
-      <p>Two equal charges $+q$ sit at $x=\pm a$. Explain why $\vec E=0$ at the origin, and where the field would <em>not</em> be zero.</p>
-      <button class="solution-toggle">Show solution</button>
-      <div class="solution">
-        <p>At the origin each charge produces a field of the same magnitude $kq/a^2$ but pointing in opposite directions (each points away from its source, i.e. toward the origin's opposite side). They cancel: $\vec E=0$.</p>
-        <p>Anywhere off the centre — e.g. on the y-axis — the two contributions no longer cancel; the x-components cancel by symmetry but the y-components add, giving a field pointing away from the axis.</p>
-        <span class="answer"><span class="a-label">Answer</span>Cancellation at the centre by symmetry; nonzero elsewhere (e.g. along $y$, pointing $\pm y$).</span>
-      </div>
+  <div class="practice"><div class="q">
+    <p><span class="qno">Practice 2</span></p>
+    <p>A uniform field $E=2000\,\mathrm{N/C}$ points in $+x$. Find the force (magnitude and direction) on an electron in it.</p>
+    <button class="solution-toggle">Show solution</button>
+    <div class="solution">
+      <p>$F=qE=(1.6\times10^{-19})(2000)=3.2\times10^{-16}\,\mathrm N$.</p>
+      <p>The charge is negative, so the force is opposite to $\vec E$.</p>
+      <span class="answer"><span class="a-label">Answer</span>$F=3.2\times10^{-16}\,\mathrm N$ in the $-x$ direction.</span>
+      <p class="why"><b>Why:</b> $\vec F=q\vec E$; negative charge ⇒ force opposite the field.</p>
     </div>
-  </div>
+  </div></div>
+
+  <div class="practice"><div class="q">
+    <p><span class="qno">Practice 3</span></p>
+    <p>A dipole has $+6.0\,\mu\mathrm C$ at $x=0$ and $-6.0\,\mu\mathrm C$ at $x=0.60\,\mathrm m$. Find the field at the midpoint.</p>
+    <button class="solution-toggle">Show solution</button>
+    <div class="solution">
+      <p>Each charge is $0.30\,\mathrm m$ away: $E=\dfrac{9.0\times10^9(6\times10^{-6})}{0.09}=6.0\times10^5\,\mathrm{N/C}$.</p>
+      <p>Both fields point toward the $-$ charge ($+x$), so they add.</p>
+      <span class="answer"><span class="a-label">Answer</span>$E=1.2\times10^6\,\mathrm{N/C}$ toward the negative charge.</span>
+      <p class="why"><b>Why:</b> between $+$ and $-$, the two fields reinforce.</p>
+    </div>
+  </div></div>
+
+  <div class="practice"><div class="q">
+    <p><span class="qno">Practice 4</span></p>
+    <p>$+Q$ is at $x=0$ and $+4Q$ is at $x=0.30\,\mathrm m$. Where between them is the field zero?</p>
+    <button class="solution-toggle">Show solution</button>
+    <div class="solution">
+      <p>$\dfrac{Q}{x^2}=\dfrac{4Q}{(0.30-x)^2}\Rightarrow\dfrac{0.30-x}{x}=2$.</p>
+      <p>$0.30-x=2x\Rightarrow x=0.10\,\mathrm m$.</p>
+      <span class="answer"><span class="a-label">Answer</span>$0.10\,\mathrm m$ from the smaller ($+Q$) charge.</span>
+      <p class="why"><b>Why:</b> set the two field magnitudes equal; null sits nearer the smaller charge.</p>
+    </div>
+  </div></div>
+
+  <div class="practice"><div class="q">
+    <p><span class="qno">Practice 5</span></p>
+    <p>Two equal positive charges sit a distance $2a$ apart. What is the field exactly at the midpoint, and why?</p>
+    <button class="solution-toggle">Show solution</button>
+    <div class="solution">
+      <p>The two fields have equal magnitude but point in opposite directions.</p>
+      <p>They cancel.</p>
+      <span class="answer"><span class="a-label">Answer</span>$E=0$ at the midpoint, by symmetry.</span>
+      <p class="why"><b>Why:</b> equal-and-opposite contributions cancel.</p>
+    </div>
+  </div></div>
+
+  <div class="practice"><div class="q">
+    <p><span class="qno">Practice 6</span></p>
+    <p>A dipole points from the $-$ charge toward the $+$ charge. In what direction does $\vec E$ point at a location on the perpendicular bisector?</p>
+    <button class="solution-toggle">Show solution</button>
+    <div class="solution">
+      <p>On the bisector the components toward each charge cancel; the surviving part points from $+$ to $-$.</p>
+      <p>That is, antiparallel to the dipole moment $\vec p$.</p>
+      <span class="answer"><span class="a-label">Answer</span>Antiparallel to $\vec p$ (from the $+$ charge toward the $-$ charge side).</span>
+      <p class="why"><b>Why:</b> on the bisector, $\vec E$ is opposite to the dipole moment.</p>
+    </div>
+  </div></div>
+
+  <div class="practice"><div class="q">
+    <p><span class="qno">Practice 7</span></p>
+    <p>True or false: electric field lines can cross one another. Explain.</p>
+    <button class="solution-toggle">Show solution</button>
+    <div class="solution">
+      <p>At any point the field has a single, well-defined direction.</p>
+      <p>Two crossing lines would give two directions there — impossible.</p>
+      <span class="answer"><span class="a-label">Answer</span>False — field lines never cross.</span>
+      <p class="why"><b>Why:</b> the field is single-valued at each point.</p>
+    </div>
+  </div></div>
+
+  <div class="practice"><div class="q">
+    <p><span class="qno">Practice 8</span></p>
+    <p>Find the acceleration of an electron in a uniform field of $500\,\mathrm{N/C}$.</p>
+    <button class="solution-toggle">Show solution</button>
+    <div class="solution">
+      <p>$a=\dfrac{qE}{m}=\dfrac{(1.6\times10^{-19})(500)}{9.11\times10^{-31}}=\dfrac{8.0\times10^{-17}}{9.11\times10^{-31}}$.</p>
+      <span class="answer"><span class="a-label">Answer</span>$a\approx8.8\times10^{13}\,\mathrm{m/s^2}$.</span>
+      <p class="why"><b>Why:</b> $a=qE/m$ — tiny mass ⇒ enormous acceleration.</p>
+    </div>
+  </div></div>
+
+  <div class="practice"><div class="q">
+    <p><span class="qno">Practice 9</span></p>
+    <p>A proton starts from rest and is pushed through $0.10\,\mathrm m$ by a uniform field $E=2.0\times10^4\,\mathrm{N/C}$. Find its final speed.</p>
+    <button class="solution-toggle">Show solution</button>
+    <div class="solution">
+      <p>$a=\dfrac{qE}{m}=\dfrac{(1.6\times10^{-19})(2.0\times10^4)}{1.67\times10^{-27}}=1.92\times10^{12}\,\mathrm{m/s^2}$.</p>
+      <p>$v=\sqrt{2as}=\sqrt{2(1.92\times10^{12})(0.10)}$.</p>
+      <span class="answer"><span class="a-label">Answer</span>$v\approx6.2\times10^5\,\mathrm{m/s}$.</span>
+      <p class="why"><b>Why:</b> $a=qE/m$, then kinematics $v^2=2as$.</p>
+    </div>
+  </div></div>
+
+  <div class="practice"><div class="q">
+    <p><span class="qno">Practice 10</span></p>
+    <p>At $0.10\,\mathrm m$ from a point charge the field is $3.0\times10^4\,\mathrm{N/C}$. Find the charge.</p>
+    <button class="solution-toggle">Show solution</button>
+    <div class="solution">
+      <p>$q=\dfrac{Er^2}{k}=\dfrac{(3.0\times10^4)(0.10)^2}{9.0\times10^9}=\dfrac{300}{9.0\times10^9}$.</p>
+      <span class="answer"><span class="a-label">Answer</span>$q\approx3.3\times10^{-8}\,\mathrm C$ (33 nC).</span>
+      <p class="why"><b>Why:</b> invert $E=kq/r^2$ for $q$.</p>
+    </div>
+  </div></div>
 
 </div>
 </main>

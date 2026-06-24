@@ -77,32 +77,123 @@
 
   <h2>Practice</h2>
 
-  <div class="practice">
-    <div class="q">
-      <p><span class="qno">Practice 1</span></p>
-      <p>Two charges $q_1=+3.0\,\mu\mathrm{C}$ and $q_2=-3.0\,\mu\mathrm{C}$ are $0.20\,\mathrm{m}$ apart. Find the magnitude of the force between them.</p>
-      <button class="solution-toggle">Show solution</button>
-      <div class="solution">
-        <p>$F=k\dfrac{|q_1q_2|}{r^2}=8.99\times10^{9}\dfrac{(3.0\times10^{-6})(3.0\times10^{-6})}{(0.20)^2}$</p>
-        <p>$=8.99\times10^{9}\cdot\dfrac{9.0\times10^{-12}}{0.04}=2.02\ \mathrm{N}$ (attractive).</p>
-        <span class="answer"><span class="a-label">Answer</span>$F\approx2.0\ \mathrm{N}$, attractive</span>
-      </div>
+  <div class="practice"><div class="q">
+    <p><span class="qno">Practice 1</span></p>
+    <p>Two point charges $q_1=+3.0\,\mu\mathrm C$ and $q_2=+2.0\,\mu\mathrm C$ are $0.20\,\mathrm m$ apart. Find the force between them. (Use $k\approx9.0\times10^9$.)</p>
+    <button class="solution-toggle">Show solution</button>
+    <div class="solution">
+      <p>$F=k\dfrac{q_1q_2}{r^2}=9.0\times10^9\dfrac{(3.0\times10^{-6})(2.0\times10^{-6})}{(0.20)^2}$.</p>
+      <p>$F=\dfrac{5.4\times10^{-2}}{0.04}=1.35\,\mathrm N$ (repulsive).</p>
+      <span class="answer"><span class="a-label">Answer</span>$F\approx1.35\,\mathrm N$, repulsive.</span>
+      <p class="why"><b>Why:</b> plug into $F=kq_1q_2/r^2$; like charges repel.</p>
     </div>
-  </div>
+  </div></div>
 
-  <div class="practice">
-    <div class="q">
-      <p><span class="qno">Practice 2</span></p>
-      <p>Three charges sit on the x-axis: $+2\,\mu\mathrm{C}$ at $x=0$, $+2\,\mu\mathrm{C}$ at $x=1.0\,\mathrm m$, and a test charge $+1\,\mu\mathrm{C}$ at $x=2.0\,\mathrm m$. What is the net force on the test charge?</p>
-      <button class="solution-toggle">Show solution</button>
-      <div class="solution">
-        <p>Force from the charge at $x=0$ (distance 2 m): $F_a=k\dfrac{(2\times10^{-6})(1\times10^{-6})}{2.0^2}=4.5\times10^{-3}\,\mathrm N$, toward $+x$.</p>
-        <p>Force from the charge at $x=1$ (distance 1 m): $F_b=k\dfrac{(2\times10^{-6})(1\times10^{-6})}{1.0^2}=1.8\times10^{-2}\,\mathrm N$, toward $+x$.</p>
-        <p>Both push the test charge in $+x$ (repulsion). Add: $F=4.5\times10^{-3}+1.8\times10^{-2}$.</p>
-        <span class="answer"><span class="a-label">Answer</span>$F\approx2.2\times10^{-2}\ \mathrm N$ in the $+x$ direction</span>
-      </div>
+  <div class="practice"><div class="q">
+    <p><span class="qno">Practice 2</span></p>
+    <p>Two equal charges repel each other with $2.5\,\mathrm N$ when $q=5.0\,\mu\mathrm C$. How far apart are they?</p>
+    <button class="solution-toggle">Show solution</button>
+    <div class="solution">
+      <p>$r=\sqrt{\dfrac{kq^2}{F}}=\sqrt{\dfrac{9.0\times10^9(5.0\times10^{-6})^2}{2.5}}$.</p>
+      <p>$r=\sqrt{0.09}=0.30\,\mathrm m$.</p>
+      <span class="answer"><span class="a-label">Answer</span>$r=0.30\,\mathrm m$.</span>
+      <p class="why"><b>Why:</b> solve $F=kq^2/r^2$ for $r$.</p>
     </div>
-  </div>
+  </div></div>
+
+  <div class="practice"><div class="q">
+    <p><span class="qno">Practice 3</span></p>
+    <p>Two charges exert a force $F$ on each other. If each charge is <strong>tripled</strong> and their separation is <strong>doubled</strong>, by what factor does the force change?</p>
+    <button class="solution-toggle">Show solution</button>
+    <div class="solution">
+      <p>$F\propto\dfrac{q_1q_2}{r^2}$, so the factor is $\dfrac{3\times3}{2^2}=\dfrac{9}{4}$.</p>
+      <span class="answer"><span class="a-label">Answer</span>It increases by a factor of $2.25$.</span>
+      <p class="why"><b>Why:</b> scale numerator by charges, denominator by distance².</p>
+    </div>
+  </div></div>
+
+  <div class="practice"><div class="q">
+    <p><span class="qno">Practice 4</span></p>
+    <p>Charges $+2.0\,\mu\mathrm C$ (at $x=0$) and $+2.0\,\mu\mathrm C$ (at $x=0.10\,\mathrm m$) lie on a line. Find the net force on $+1.0\,\mu\mathrm C$ placed at $x=0.20\,\mathrm m$.</p>
+    <button class="solution-toggle">Show solution</button>
+    <div class="solution">
+      <p>From the far charge ($r=0.20$): $F_1=\dfrac{9.0\times10^9(2\times10^{-6})(1\times10^{-6})}{0.04}=0.45\,\mathrm N$.</p>
+      <p>From the near charge ($r=0.10$): $F_2=\dfrac{0.018}{0.01}=1.8\,\mathrm N$. Both push in $+x$.</p>
+      <span class="answer"><span class="a-label">Answer</span>$F_\text{net}=2.25\,\mathrm N$ in the $+x$ direction.</span>
+      <p class="why"><b>Why:</b> superpose collinear forces (add since same direction).</p>
+    </div>
+  </div></div>
+
+  <div class="practice"><div class="q">
+    <p><span class="qno">Practice 5</span></p>
+    <p>Three $+4.0\,\mu\mathrm C$ charges sit at the corners of an equilateral triangle of side $0.30\,\mathrm m$. Find the magnitude of the net force on one charge.</p>
+    <button class="solution-toggle">Show solution</button>
+    <div class="solution">
+      <p>Each neighbour: $F=\dfrac{9.0\times10^9(4\times10^{-6})^2}{(0.30)^2}=1.6\,\mathrm N$.</p>
+      <p>Two such forces $60^\circ$ apart: $F_\text{net}=2F\cos30^\circ=1.6\sqrt3\approx2.8\,\mathrm N$.</p>
+      <span class="answer"><span class="a-label">Answer</span>$F_\text{net}\approx2.8\,\mathrm N$, directed away from the triangle's centre.</span>
+      <p class="why"><b>Why:</b> add the two equal forces as vectors ($60^\circ$ between them).</p>
+    </div>
+  </div></div>
+
+  <div class="practice"><div class="q">
+    <p><span class="qno">Practice 6</span></p>
+    <p>$+9.0\,\mu\mathrm C$ is at $x=0$ and $+4.0\,\mu\mathrm C$ is at $x=1.0\,\mathrm m$. Where on the line between them is the net force on a test charge zero?</p>
+    <button class="solution-toggle">Show solution</button>
+    <div class="solution">
+      <p>Set fields equal: $\dfrac{9}{x^2}=\dfrac{4}{(1-x)^2}\Rightarrow\dfrac{3}{x}=\dfrac{2}{1-x}$.</p>
+      <p>$3(1-x)=2x\Rightarrow x=0.60\,\mathrm m$.</p>
+      <span class="answer"><span class="a-label">Answer</span>$x=0.60\,\mathrm m$ from the $9.0\,\mu\mathrm C$ charge.</span>
+      <p class="why"><b>Why:</b> balance the two repulsions; the null point sits closer to the smaller charge.</p>
+    </div>
+  </div></div>
+
+  <div class="practice"><div class="q">
+    <p><span class="qno">Practice 7</span></p>
+    <p>Two identical metal spheres carry $+6.0\,\mu\mathrm C$ and $+2.0\,\mu\mathrm C$. They are touched together and then separated to $0.20\,\mathrm m$. Find the new force.</p>
+    <button class="solution-toggle">Show solution</button>
+    <div class="solution">
+      <p>On contact, charge shares equally: each $=\dfrac{6+2}{2}=4.0\,\mu\mathrm C$.</p>
+      <p>$F=\dfrac{9.0\times10^9(4\times10^{-6})^2}{(0.20)^2}=\dfrac{0.144}{0.04}=3.6\,\mathrm N$.</p>
+      <span class="answer"><span class="a-label">Answer</span>Each sphere holds $4.0\,\mu\mathrm C$; $F=3.6\,\mathrm N$.</span>
+      <p class="why"><b>Why:</b> identical conductors split total charge equally on contact.</p>
+    </div>
+  </div></div>
+
+  <div class="practice"><div class="q">
+    <p><span class="qno">Practice 8</span></p>
+    <p>Estimate the ratio of the electric to the gravitational force between a proton and an electron (it is independent of separation).</p>
+    <button class="solution-toggle">Show solution</button>
+    <div class="solution">
+      <p>$\dfrac{F_e}{F_g}=\dfrac{kq^2}{Gm_pm_e}=\dfrac{9.0\times10^9(1.6\times10^{-19})^2}{(6.67\times10^{-11})(1.67\times10^{-27})(9.11\times10^{-31})}$.</p>
+      <p>$\approx\dfrac{2.3\times10^{-28}}{1.0\times10^{-67}}$.</p>
+      <span class="answer"><span class="a-label">Answer</span>$\dfrac{F_e}{F_g}\approx2\times10^{39}$.</span>
+      <p class="why"><b>Why:</b> both go as $1/r^2$, so $r$ cancels; electricity is vastly stronger.</p>
+    </div>
+  </div></div>
+
+  <div class="practice"><div class="q">
+    <p><span class="qno">Practice 9</span></p>
+    <p>Two equal charges $0.50\,\mathrm m$ apart repel with $0.90\,\mathrm N$. Find the charge.</p>
+    <button class="solution-toggle">Show solution</button>
+    <div class="solution">
+      <p>$q=\sqrt{\dfrac{Fr^2}{k}}=\sqrt{\dfrac{0.90(0.50)^2}{9.0\times10^9}}=\sqrt{2.5\times10^{-11}}$.</p>
+      <span class="answer"><span class="a-label">Answer</span>$q=5.0\times10^{-6}\,\mathrm C=5.0\,\mu\mathrm C$.</span>
+      <p class="why"><b>Why:</b> invert $F=kq^2/r^2$ for $q$.</p>
+    </div>
+  </div></div>
+
+  <div class="practice"><div class="q">
+    <p><span class="qno">Practice 10</span></p>
+    <p>$+Q$ is at the origin and $-Q$ is at $x=d$. In which direction is the force on a small <strong>positive</strong> test charge placed midway between them?</p>
+    <button class="solution-toggle">Show solution</button>
+    <div class="solution">
+      <p>The $+Q$ repels it toward $+x$; the $-Q$ attracts it toward $+x$.</p>
+      <p>Both contributions point the same way, so they add.</p>
+      <span class="answer"><span class="a-label">Answer</span>In the $+x$ direction (toward the negative charge).</span>
+      <p class="why"><b>Why:</b> sketch both forces — for a positive test charge they both point toward the $-$ charge.</p>
+    </div>
+  </div></div>
 
 </div>
 </main>

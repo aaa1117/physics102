@@ -55,29 +55,118 @@
 
   <h2>Practice</h2>
 
-  <div class="practice">
-    <div class="q">
-      <p><span class="qno">Practice 1</span></p>
-      <p>The current in a $0.20\,\mathrm H$ inductor changes at $50\,\mathrm{A/s}$. What is the magnitude of the self-induced EMF?</p>
-      <button class="solution-toggle">Show solution</button>
-      <div class="solution">
-        <p>$|\varepsilon|=L\left|\dfrac{dI}{dt}\right|=(0.20)(50)=10\,\mathrm V$.</p>
-        <span class="answer"><span class="a-label">Answer</span>$|\varepsilon|=10\,\mathrm V$</span>
-      </div>
+  <div class="practice"><div class="q">
+    <p><span class="qno">Practice 1</span></p>
+    <p>An inductor of $0.50\,\mathrm H$ has its current changing at $4.0\,\mathrm{A/s}$. Find the induced emf.</p>
+    <button class="solution-toggle">Show solution</button>
+    <div class="solution">
+      <p>$|\varepsilon|=L\dfrac{dI}{dt}=(0.50)(4.0)$.</p>
+      <span class="answer"><span class="a-label">Answer</span>$|\varepsilon|=2.0\,\mathrm V$.</span>
+      <p class="why"><b>Why:</b> $\varepsilon=-L\,dI/dt$ (magnitude $L\,dI/dt$).</p>
     </div>
-  </div>
+  </div></div>
 
-  <div class="practice">
-    <div class="q">
-      <p><span class="qno">Practice 2</span></p>
-      <p>How much energy is stored in a $2.0\,\mathrm H$ inductor carrying $3.0\,\mathrm A$? Compare conceptually with a charged capacitor.</p>
-      <button class="solution-toggle">Show solution</button>
-      <div class="solution">
-        <p>$U=\tfrac12 LI^2=\tfrac12(2.0)(3.0)^2=9.0\,\mathrm J$. Like a capacitor stores energy in its electric field ($\tfrac12 CV^2$), an inductor stores it in its magnetic field — released when the current is interrupted.</p>
-        <span class="answer"><span class="a-label">Answer</span>$U=9.0\,\mathrm J$</span>
-      </div>
+  <div class="practice"><div class="q">
+    <p><span class="qno">Practice 2</span></p>
+    <p>Find the energy stored in a $2.0\,\mathrm H$ inductor carrying $3.0\,\mathrm A$.</p>
+    <button class="solution-toggle">Show solution</button>
+    <div class="solution">
+      <p>$U=\tfrac12LI^2=\tfrac12(2.0)(3.0)^2$.</p>
+      <span class="answer"><span class="a-label">Answer</span>$U=9.0\,\mathrm J$.</span>
+      <p class="why"><b>Why:</b> $U=\tfrac12LI^2$.</p>
     </div>
-  </div>
+  </div></div>
+
+  <div class="practice"><div class="q">
+    <p><span class="qno">Practice 3</span></p>
+    <p>A solenoid has $N=500$ turns, cross-section $1.0\times10^{-4}\,\mathrm m^2$, and length $0.20\,\mathrm m$. Find its self-inductance.</p>
+    <button class="solution-toggle">Show solution</button>
+    <div class="solution">
+      <p>$L=\dfrac{\mu_0 N^2 A}{l}=\dfrac{(4\pi\times10^{-7})(500)^2(1.0\times10^{-4})}{0.20}$.</p>
+      <span class="answer"><span class="a-label">Answer</span>$L\approx1.6\times10^{-4}\,\mathrm H$.</span>
+      <p class="why"><b>Why:</b> $L=\mu_0N^2A/l$ — note it grows as $N^2$.</p>
+    </div>
+  </div></div>
+
+  <div class="practice"><div class="q">
+    <p><span class="qno">Practice 4</span></p>
+    <p>An RL circuit has $L=4.0\,\mathrm H$ and $R=2.0\,\Omega$. Find the time constant.</p>
+    <button class="solution-toggle">Show solution</button>
+    <div class="solution">
+      <p>$\tau=\dfrac{L}{R}=\dfrac{4.0}{2.0}$.</p>
+      <span class="answer"><span class="a-label">Answer</span>$\tau=2.0\,\mathrm s$.</span>
+      <p class="why"><b>Why:</b> RL time constant $\tau=L/R$.</p>
+    </div>
+  </div></div>
+
+  <div class="practice"><div class="q">
+    <p><span class="qno">Practice 5</span></p>
+    <p>In an RL circuit, $\varepsilon=12\,\mathrm V$ and $R=6.0\,\Omega$. Find the final current, and the current after one time constant.</p>
+    <button class="solution-toggle">Show solution</button>
+    <div class="solution">
+      <p>Final: $I_\infty=\dfrac{\varepsilon}{R}=\dfrac{12}{6.0}=2.0\,\mathrm A$.</p>
+      <p>After one $\tau$: $I=0.63\,I_\infty=0.63(2.0)$.</p>
+      <span class="answer"><span class="a-label">Answer</span>$I_\infty=2.0\,\mathrm A$; $I(\tau)\approx1.26\,\mathrm A$.</span>
+      <p class="why"><b>Why:</b> current grows toward $\varepsilon/R$, reaching 63% in one $\tau$.</p>
+    </div>
+  </div></div>
+
+  <div class="practice"><div class="q">
+    <p><span class="qno">Practice 6</span></p>
+    <p>Two coils have mutual inductance $M=2.0\,\mathrm{mH}$. The current in coil 1 changes at $500\,\mathrm{A/s}$. Find the emf induced in coil 2.</p>
+    <button class="solution-toggle">Show solution</button>
+    <div class="solution">
+      <p>$\varepsilon_2=M\dfrac{dI_1}{dt}=(2.0\times10^{-3})(500)$.</p>
+      <span class="answer"><span class="a-label">Answer</span>$\varepsilon_2=1.0\,\mathrm V$.</span>
+      <p class="why"><b>Why:</b> $\varepsilon_2=M\,dI_1/dt$.</p>
+    </div>
+  </div></div>
+
+  <div class="practice"><div class="q">
+    <p><span class="qno">Practice 7</span></p>
+    <p>An LC circuit has $L=2.0\,\mathrm H$ and $C=8.0\,\mu\mathrm F$. Find the angular frequency of oscillation.</p>
+    <button class="solution-toggle">Show solution</button>
+    <div class="solution">
+      <p>$\omega=\dfrac{1}{\sqrt{LC}}=\dfrac{1}{\sqrt{(2.0)(8.0\times10^{-6})}}=\dfrac{1}{\sqrt{1.6\times10^{-5}}}$.</p>
+      <span class="answer"><span class="a-label">Answer</span>$\omega=250\,\mathrm{rad/s}$ ($f\approx40\,\mathrm{Hz}$).</span>
+      <p class="why"><b>Why:</b> $\omega=1/\sqrt{LC}$.</p>
+    </div>
+  </div></div>
+
+  <div class="practice"><div class="q">
+    <p><span class="qno">Practice 8</span></p>
+    <p>In an LC circuit, at the instant the capacitor is fully discharged, where is the energy stored?</p>
+    <button class="solution-toggle">Show solution</button>
+    <div class="solution">
+      <p>With $q=0$ the capacitor holds no energy; the current is then maximum.</p>
+      <p>So all the energy is in the inductor's magnetic field.</p>
+      <span class="answer"><span class="a-label">Answer</span>Entirely in the inductor (as $\tfrac12LI^2$).</span>
+      <p class="why"><b>Why:</b> LC energy sloshes between $C$ and $L$ a quarter-cycle apart.</p>
+    </div>
+  </div></div>
+
+  <div class="practice"><div class="q">
+    <p><span class="qno">Practice 9</span></p>
+    <p>An inductor develops $6.0\,\mathrm V$ when its current changes at $3.0\,\mathrm{A/s}$. Find its inductance.</p>
+    <button class="solution-toggle">Show solution</button>
+    <div class="solution">
+      <p>$L=\dfrac{|\varepsilon|}{dI/dt}=\dfrac{6.0}{3.0}$.</p>
+      <span class="answer"><span class="a-label">Answer</span>$L=2.0\,\mathrm H$.</span>
+      <p class="why"><b>Why:</b> invert $\varepsilon=L\,dI/dt$.</p>
+    </div>
+  </div></div>
+
+  <div class="practice"><div class="q">
+    <p><span class="qno">Practice 10</span></p>
+    <p>Just after a switch closes in an RL circuit, how does the inductor behave? And long afterward?</p>
+    <button class="solution-toggle">Show solution</button>
+    <div class="solution">
+      <p>It resists the sudden change, so initially $I=0$ — like an open circuit.</p>
+      <p>Long after, $dI/dt\to0$ so it has no voltage — like a plain wire.</p>
+      <span class="answer"><span class="a-label">Answer</span>Open circuit at $t=0$; plain wire (short) at steady state.</span>
+      <p class="why"><b>Why:</b> inductors oppose current <em>changes</em>, not steady current.</p>
+    </div>
+  </div></div>
 
 </div>
 </main>

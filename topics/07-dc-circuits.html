@@ -63,31 +63,121 @@
 
   <h2>Practice</h2>
 
-  <div class="practice">
-    <div class="q">
-      <p><span class="qno">Practice 1</span></p>
-      <p>Three $9\,\Omega$ resistors are connected in parallel across a $6\,\mathrm V$ battery. Find the equivalent resistance and the total current.</p>
-      <button class="solution-toggle">Show solution</button>
-      <div class="solution">
-        <p>$\dfrac1{R_\text{eq}}=\dfrac19+\dfrac19+\dfrac19=\dfrac39=\dfrac13\Rightarrow R_\text{eq}=3\,\Omega$.</p>
-        <p>$I=\dfrac{V}{R_\text{eq}}=\dfrac{6}{3}=2.0\,\mathrm A$.</p>
-        <span class="answer"><span class="a-label">Answer</span>$R_\text{eq}=3\,\Omega$, $I=2.0\,\mathrm A$</span>
-      </div>
+  <div class="practice"><div class="q">
+    <p><span class="qno">Practice 1</span></p>
+    <p>Resistors of $4.0\,\Omega$, $6.0\,\Omega$, and $2.0\,\Omega$ are in series across a $12\,\mathrm V$ battery. Find the equivalent resistance and the current.</p>
+    <button class="solution-toggle">Show solution</button>
+    <div class="solution">
+      <p>$R_\text{eq}=4+6+2=12\,\Omega$.</p>
+      <p>$I=\dfrac{V}{R_\text{eq}}=\dfrac{12}{12}$.</p>
+      <span class="answer"><span class="a-label">Answer</span>$R_\text{eq}=12\,\Omega$, $I=1.0\,\mathrm A$.</span>
+      <p class="why"><b>Why:</b> series ⇒ add resistances, same current everywhere.</p>
     </div>
-  </div>
+  </div></div>
 
-  <div class="practice">
-    <div class="q">
-      <p><span class="qno">Practice 2</span></p>
-      <p>A $2.0\,\mu\mathrm F$ capacitor charges through a $1.0\,\mathrm{M}\Omega$ resistor. What is the time constant, and roughly how long until the capacitor is essentially fully charged?</p>
-      <button class="solution-toggle">Show solution</button>
-      <div class="solution">
-        <p>$\tau=RC=(1.0\times10^{6})(2.0\times10^{-6})=2.0\,\mathrm s$.</p>
-        <p>"Fully" charged $\approx 5\tau=10\,\mathrm s$.</p>
-        <span class="answer"><span class="a-label">Answer</span>$\tau=2.0\,\mathrm s$; fully charged after $\approx10\,\mathrm s$</span>
-      </div>
+  <div class="practice"><div class="q">
+    <p><span class="qno">Practice 2</span></p>
+    <p>Find the equivalent resistance of $6.0\,\Omega$ and $12.0\,\Omega$ in parallel.</p>
+    <button class="solution-toggle">Show solution</button>
+    <div class="solution">
+      <p>$R_\text{eq}=\dfrac{R_1R_2}{R_1+R_2}=\dfrac{6\times12}{18}$.</p>
+      <span class="answer"><span class="a-label">Answer</span>$R_\text{eq}=4.0\,\Omega$.</span>
+      <p class="why"><b>Why:</b> parallel ⇒ product/sum (two resistors); result below the smaller.</p>
     </div>
-  </div>
+  </div></div>
+
+  <div class="practice"><div class="q">
+    <p><span class="qno">Practice 3</span></p>
+    <p>A $24\,\mathrm V$ battery feeds an $8.0\,\Omega$ resistor in series with two $4.0\,\Omega$ resistors that are in parallel. Find the total current.</p>
+    <button class="solution-toggle">Show solution</button>
+    <div class="solution">
+      <p>Parallel pair: $\dfrac{4\times4}{8}=2.0\,\Omega$.</p>
+      <p>$R_\text{eq}=8.0+2.0=10\,\Omega$, so $I=\dfrac{24}{10}$.</p>
+      <span class="answer"><span class="a-label">Answer</span>$I=2.4\,\mathrm A$.</span>
+      <p class="why"><b>Why:</b> reduce the parallel block first, then it is one series loop.</p>
+    </div>
+  </div></div>
+
+  <div class="practice"><div class="q">
+    <p><span class="qno">Practice 4</span></p>
+    <p>A battery has emf $12\,\mathrm V$ and internal resistance $0.50\,\Omega$. When it delivers $4.0\,\mathrm A$, find the terminal voltage.</p>
+    <button class="solution-toggle">Show solution</button>
+    <div class="solution">
+      <p>$V=\varepsilon-Ir=12-(4.0)(0.50)$.</p>
+      <span class="answer"><span class="a-label">Answer</span>$V_\text{term}=10\,\mathrm V$.</span>
+      <p class="why"><b>Why:</b> internal resistance drops $Ir$ from the emf.</p>
+    </div>
+  </div></div>
+
+  <div class="practice"><div class="q">
+    <p><span class="qno">Practice 5</span></p>
+    <p>Two batteries, $9\,\mathrm V$ and $3\,\mathrm V$, are connected in series <strong>aiding</strong> (same direction) with $2.0\,\Omega$ and $4.0\,\Omega$ in series. Find the current.</p>
+    <button class="solution-toggle">Show solution</button>
+    <div class="solution">
+      <p>Aiding emfs add: $\varepsilon=9+3=12\,\mathrm V$. $R=2+4=6\,\Omega$.</p>
+      <p>$I=\dfrac{12}{6}$.</p>
+      <span class="answer"><span class="a-label">Answer</span>$I=2.0\,\mathrm A$.</span>
+      <p class="why"><b>Why:</b> aiding emfs add (opposing would subtract).</p>
+    </div>
+  </div></div>
+
+  <div class="practice"><div class="q">
+    <p><span class="qno">Practice 6</span></p>
+    <p>A single loop has a $10\,\mathrm V$ battery with $2.0\,\Omega$ and $3.0\,\Omega$ in series. Find the voltage across the $3.0\,\Omega$ resistor.</p>
+    <button class="solution-toggle">Show solution</button>
+    <div class="solution">
+      <p>$I=\dfrac{10}{2+3}=2.0\,\mathrm A$.</p>
+      <p>$V_{3\Omega}=IR=(2.0)(3.0)$.</p>
+      <span class="answer"><span class="a-label">Answer</span>$V_{3\Omega}=6.0\,\mathrm V$.</span>
+      <p class="why"><b>Why:</b> find loop current, then $V=IR$ on that resistor.</p>
+    </div>
+  </div></div>
+
+  <div class="practice"><div class="q">
+    <p><span class="qno">Practice 7</span></p>
+    <p>A circuit dissipates power in a single $6.0\,\Omega$ resistor across $12\,\mathrm V$. Find the power.</p>
+    <button class="solution-toggle">Show solution</button>
+    <div class="solution">
+      <p>$P=\dfrac{V^2}{R}=\dfrac{(12)^2}{6.0}$.</p>
+      <span class="answer"><span class="a-label">Answer</span>$P=24\,\mathrm W$.</span>
+      <p class="why"><b>Why:</b> $P=V^2/R$ when you know the voltage across $R$.</p>
+    </div>
+  </div></div>
+
+  <div class="practice"><div class="q">
+    <p><span class="qno">Practice 8</span></p>
+    <p>In an RC circuit, $R=2.0\times10^3\,\Omega$ and $C=5.0\,\mu\mathrm F$. Find the time constant.</p>
+    <button class="solution-toggle">Show solution</button>
+    <div class="solution">
+      <p>$\tau=RC=(2.0\times10^3)(5.0\times10^{-6})$.</p>
+      <span class="answer"><span class="a-label">Answer</span>$\tau=0.010\,\mathrm s$ (10 ms).</span>
+      <p class="why"><b>Why:</b> $\tau=RC$.</p>
+    </div>
+  </div></div>
+
+  <div class="practice"><div class="q">
+    <p><span class="qno">Practice 9</span></p>
+    <p>A $2.0\,\mu\mathrm F$ capacitor charges through a resistor from a $10\,\mathrm V$ source. How much charge does it hold after one time constant?</p>
+    <button class="solution-toggle">Show solution</button>
+    <div class="solution">
+      <p>Full charge: $Q_\text{max}=CV=(2.0\times10^{-6})(10)=20\,\mu\mathrm C$.</p>
+      <p>After one $\tau$: $q=0.63\,Q_\text{max}=0.63(20)$.</p>
+      <span class="answer"><span class="a-label">Answer</span>$q\approx12.6\,\mu\mathrm C$.</span>
+      <p class="why"><b>Why:</b> one $\tau$ ⇒ 63% of the final charge.</p>
+    </div>
+  </div></div>
+
+  <div class="practice"><div class="q">
+    <p><span class="qno">Practice 10</span></p>
+    <p>At steady state in a DC circuit, a $12\,\mathrm V$ battery drives $2.0\,\Omega$ in series, then a capacitor sits in parallel with a $4.0\,\Omega$ resistor. Find the current through the capacitor and the voltage across it.</p>
+    <button class="solution-toggle">Show solution</button>
+    <div class="solution">
+      <p>At steady state the capacitor is fully charged, so no current flows into it.</p>
+      <p>All current goes through the $2$–$4\,\Omega$ path: $I=\dfrac{12}{6}=2.0\,\mathrm A$, and $V_C=V_{4\Omega}=IR=2.0(4.0)=8.0\,\mathrm V$.</p>
+      <span class="answer"><span class="a-label">Answer</span>$I_\text{cap}=0$; $V_C=8.0\,\mathrm V$.</span>
+      <p class="why"><b>Why:</b> steady-state capacitor = open branch; its voltage matches what it parallels.</p>
+    </div>
+  </div></div>
 
 </div>
 </main>

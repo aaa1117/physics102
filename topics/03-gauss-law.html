@@ -68,30 +68,120 @@
 
   <h2>Practice</h2>
 
-  <div class="practice">
-    <div class="q">
-      <p><span class="qno">Practice 1</span></p>
-      <p>A charge of $+8.85\,\mathrm{nC}$ is enclosed by a closed surface. What is the total electric flux through that surface?</p>
-      <button class="solution-toggle">Show solution</button>
-      <div class="solution">
-        <p>$\Phi_E=\dfrac{q_\text{enc}}{\varepsilon_0}=\dfrac{8.85\times10^{-9}}{8.85\times10^{-12}}=1.0\times10^{3}\,\mathrm{N\cdot m^2/C}$. The shape of the surface doesn't matter.</p>
-        <span class="answer"><span class="a-label">Answer</span>$\Phi_E=1.0\times10^{3}\ \mathrm{N\cdot m^2/C}$</span>
-      </div>
+  <div class="practice"><div class="q">
+    <p><span class="qno">Practice 1</span></p>
+    <p>A charge $q=2.0\,\mu\mathrm C$ is enclosed by a closed surface. Find the electric flux through it.</p>
+    <button class="solution-toggle">Show solution</button>
+    <div class="solution">
+      <p>$\Phi_E=\dfrac{q_\text{in}}{\varepsilon_0}=\dfrac{2.0\times10^{-6}}{8.85\times10^{-12}}$.</p>
+      <span class="answer"><span class="a-label">Answer</span>$\Phi_E\approx2.3\times10^5\,\mathrm{N\!\cdot\! m^2/C}$.</span>
+      <p class="why"><b>Why:</b> Gauss: flux depends only on enclosed charge.</p>
     </div>
-  </div>
+  </div></div>
 
-  <div class="practice">
-    <div class="q">
-      <p><span class="qno">Practice 2</span></p>
-      <p>A solid conducting sphere carries a charge $+Q$. What is the field at a point inside the metal, and just outside the surface (radius $R$)?</p>
-      <button class="solution-toggle">Show solution</button>
-      <div class="solution">
-        <p>Inside the conductor: $E=0$ (all charge lives on the surface, and equilibrium demands zero internal field).</p>
-        <p>Just outside: a Gaussian sphere of radius $R$ encloses all $+Q$, so $E=k\dfrac{Q}{R^2}$, pointing radially outward — exactly as if all the charge were a point at the centre.</p>
-        <span class="answer"><span class="a-label">Answer</span>$E_\text{inside}=0$; &nbsp; $E_\text{surface}=kQ/R^2$</span>
-      </div>
+  <div class="practice"><div class="q">
+    <p><span class="qno">Practice 2</span></p>
+    <p>A charge $q=6.0\,\mu\mathrm C$ sits at the centre of a cube. Find the flux through <strong>one</strong> face.</p>
+    <button class="solution-toggle">Show solution</button>
+    <div class="solution">
+      <p>Total flux $=\dfrac{q}{\varepsilon_0}=6.78\times10^5\,\mathrm{N\!\cdot\! m^2/C}$.</p>
+      <p>By symmetry each of the 6 faces gets $1/6$: $1.13\times10^5$.</p>
+      <span class="answer"><span class="a-label">Answer</span>$\Phi_\text{face}\approx1.1\times10^5\,\mathrm{N\!\cdot\! m^2/C}$.</span>
+      <p class="why"><b>Why:</b> symmetry ⇒ each face carries $q/6\varepsilon_0$.</p>
     </div>
-  </div>
+  </div></div>
+
+  <div class="practice"><div class="q">
+    <p><span class="qno">Practice 3</span></p>
+    <p>Find the field $0.20\,\mathrm m$ from the centre of a sphere carrying $Q=4.0\,\mu\mathrm C$ (point outside).</p>
+    <button class="solution-toggle">Show solution</button>
+    <div class="solution">
+      <p>Outside, the sphere acts like a point charge: $E=\dfrac{kQ}{r^2}=\dfrac{9.0\times10^9(4\times10^{-6})}{0.04}$.</p>
+      <span class="answer"><span class="a-label">Answer</span>$E=9.0\times10^5\,\mathrm{N/C}$.</span>
+      <p class="why"><b>Why:</b> outside any spherical charge, treat all charge as at the centre.</p>
+    </div>
+  </div></div>
+
+  <div class="practice"><div class="q">
+    <p><span class="qno">Practice 4</span></p>
+    <p>An infinite line carries $\lambda=3.0\times10^{-6}\,\mathrm{C/m}$. Find the field $0.20\,\mathrm m$ away.</p>
+    <button class="solution-toggle">Show solution</button>
+    <div class="solution">
+      <p>$E=\dfrac{\lambda}{2\pi\varepsilon_0 r}=\dfrac{2k\lambda}{r}=\dfrac{2(9.0\times10^9)(3.0\times10^{-6})}{0.20}$.</p>
+      <span class="answer"><span class="a-label">Answer</span>$E=2.7\times10^5\,\mathrm{N/C}$.</span>
+      <p class="why"><b>Why:</b> line charge ⇒ $E\propto1/r$ (not $1/r^2$).</p>
+    </div>
+  </div></div>
+
+  <div class="practice"><div class="q">
+    <p><span class="qno">Practice 5</span></p>
+    <p>Find the field from an infinite sheet of charge with $\sigma=2.0\times10^{-6}\,\mathrm{C/m^2}$.</p>
+    <button class="solution-toggle">Show solution</button>
+    <div class="solution">
+      <p>$E=\dfrac{\sigma}{2\varepsilon_0}=\dfrac{2.0\times10^{-6}}{2(8.85\times10^{-12})}$.</p>
+      <span class="answer"><span class="a-label">Answer</span>$E\approx1.1\times10^5\,\mathrm{N/C}$ (uniform, independent of distance).</span>
+      <p class="why"><b>Why:</b> infinite sheet ⇒ $E=\sigma/2\varepsilon_0$, same everywhere.</p>
+    </div>
+  </div></div>
+
+  <div class="practice"><div class="q">
+    <p><span class="qno">Practice 6</span></p>
+    <p>A conductor has surface charge density $\sigma=4.0\times10^{-6}\,\mathrm{C/m^2}$. Find the field just outside, and the field inside.</p>
+    <button class="solution-toggle">Show solution</button>
+    <div class="solution">
+      <p>Just outside a conductor: $E=\dfrac{\sigma}{\varepsilon_0}=\dfrac{4.0\times10^{-6}}{8.85\times10^{-12}}=4.5\times10^5\,\mathrm{N/C}$.</p>
+      <p>Inside a conductor (electrostatics): $E=0$.</p>
+      <span class="answer"><span class="a-label">Answer</span>Outside $E\approx4.5\times10^5\,\mathrm{N/C}$; inside $E=0$.</span>
+      <p class="why"><b>Why:</b> note the conductor value is $\sigma/\varepsilon_0$, twice the lone-sheet value.</p>
+    </div>
+  </div></div>
+
+  <div class="practice"><div class="q">
+    <p><span class="qno">Practice 7</span></p>
+    <p>A solid conducting sphere of radius $0.10\,\mathrm m$ carries $Q=5.0\,\mu\mathrm C$. Find $E$ at $r=0.05\,\mathrm m$ and at the surface.</p>
+    <button class="solution-toggle">Show solution</button>
+    <div class="solution">
+      <p>Inside a conductor $E=0$, so at $r=0.05\,\mathrm m$, $E=0$.</p>
+      <p>At the surface: $E=\dfrac{kQ}{R^2}=\dfrac{9.0\times10^9(5\times10^{-6})}{0.01}=4.5\times10^6\,\mathrm{N/C}$.</p>
+      <span class="answer"><span class="a-label">Answer</span>$E=0$ inside; $E=4.5\times10^6\,\mathrm{N/C}$ at the surface.</span>
+      <p class="why"><b>Why:</b> all charge sits on the surface ⇒ interior field zero.</p>
+    </div>
+  </div></div>
+
+  <div class="practice"><div class="q">
+    <p><span class="qno">Practice 8</span></p>
+    <p>A closed surface encloses $+5.0\,\mu\mathrm C$ and $-2.0\,\mu\mathrm C$; a $+10\,\mu\mathrm C$ charge lies outside it. Find the net flux.</p>
+    <button class="solution-toggle">Show solution</button>
+    <div class="solution">
+      <p>Only enclosed charge counts: $q_\text{in}=5.0-2.0=3.0\,\mu\mathrm C$.</p>
+      <p>$\Phi_E=\dfrac{3.0\times10^{-6}}{8.85\times10^{-12}}$.</p>
+      <span class="answer"><span class="a-label">Answer</span>$\Phi_E\approx3.4\times10^5\,\mathrm{N\!\cdot\! m^2/C}$ (outside charge contributes nothing).</span>
+      <p class="why"><b>Why:</b> external charges give zero net flux.</p>
+    </div>
+  </div></div>
+
+  <div class="practice"><div class="q">
+    <p><span class="qno">Practice 9</span></p>
+    <p>A flat sheet of area $2.0\,\mathrm m^2$ sits in a uniform $500\,\mathrm{N/C}$ field; its normal makes $60^\circ$ with the field. Find the flux.</p>
+    <button class="solution-toggle">Show solution</button>
+    <div class="solution">
+      <p>$\Phi_E=EA\cos\theta=500(2.0)\cos60^\circ=500(2.0)(0.5)$.</p>
+      <span class="answer"><span class="a-label">Answer</span>$\Phi_E=500\,\mathrm{N\!\cdot\! m^2/C}$.</span>
+      <p class="why"><b>Why:</b> open surface in a uniform field: $\Phi=EA\cos\theta$.</p>
+    </div>
+  </div></div>
+
+  <div class="practice"><div class="q">
+    <p><span class="qno">Practice 10</span></p>
+    <p>A point charge $+3.0\,\mu\mathrm C$ sits at the centre of a neutral hollow conducting shell. What charge appears on the inner and outer surfaces?</p>
+    <button class="solution-toggle">Show solution</button>
+    <div class="solution">
+      <p>The inner surface must cancel the enclosed field: it holds $-3.0\,\mu\mathrm C$.</p>
+      <p>The shell is neutral overall, so the outer surface holds $+3.0\,\mu\mathrm C$.</p>
+      <span class="answer"><span class="a-label">Answer</span>Inner surface $-3.0\,\mu\mathrm C$; outer surface $+3.0\,\mu\mathrm C$.</span>
+      <p class="why"><b>Why:</b> induced inner charge cancels enclosed; outer keeps the shell neutral.</p>
+    </div>
+  </div></div>
 
 </div>
 </main>
