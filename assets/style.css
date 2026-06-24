@@ -167,6 +167,66 @@ a.topic-card p{color:var(--ink-soft);font-size:14px;margin:0}
 /* ---- Backdrop for mobile sidebar ---- */
 .backdrop{display:none;position:fixed;inset:var(--topbar-h) 0 0 0;background:rgba(15,23,42,.4);z-index:25}
 
+/* ===== Final-exam & practice additions ===== */
+
+/* "What's really going on" intuition callout */
+.callout.intuition{border-left-color:var(--warn);background:var(--warn-soft)}
+.callout.intuition .c-head{color:var(--warn)}
+
+/* One-line "why this approach" cue under a solution */
+.why{font-size:14px;color:var(--ink-soft);margin:10px 0 0;padding-top:10px;border-top:1px dashed var(--line)}
+.why b{color:var(--brand-dark)}
+
+/* Inline SVG figure wrapper */
+.figure{margin:16px 0;padding:14px;border:1px solid var(--line);border-radius:10px;background:#fbfcfe;text-align:center;overflow-x:auto}
+.figure svg{max-width:100%;height:auto}
+.figure .cap{display:block;margin-top:8px;font-size:13px;color:var(--muted)}
+
+/* Exam question card */
+.exam-q{border:1px solid var(--line);border-radius:var(--radius);background:var(--surface);box-shadow:var(--shadow);margin:22px 0;overflow:hidden;scroll-margin-top:calc(var(--topbar-h) + 16px)}
+.exam-q .eq-head{background:linear-gradient(135deg,var(--brand),var(--accent));color:#fff;padding:11px 18px;font-weight:700;display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+.exam-q .eq-head .eq-n{font-size:15px}
+.exam-q .eq-head .eq-topic{margin-left:auto;background:rgba(255,255,255,.2);padding:3px 11px;border-radius:999px;font-size:12px;font-weight:600;text-decoration:none;color:#fff}
+.exam-q .eq-head .eq-topic:hover{background:rgba(255,255,255,.34)}
+.exam-q .eq-body{padding:16px 20px}
+.exam-q .eq-body > p:first-child{margin-top:0}
+
+/* A–D answer choices; correct one lights up only after the solution is revealed */
+.choices{list-style:none;margin:14px 0;padding:0;counter-reset:ch}
+.choices li{position:relative;margin:8px 0;padding:11px 16px 11px 48px;border:1px solid var(--line);border-radius:10px;background:var(--surface);font-size:15.5px}
+.choices li::before{counter-increment:ch;content:counter(ch,upper-alpha);position:absolute;left:13px;top:10px;width:24px;height:24px;border-radius:50%;display:grid;place-items:center;background:#eef1f6;color:var(--ink-soft);font-weight:700;font-size:12.5px}
+.exam-q.revealed .choices li.correct{border-color:#b7e4ce;background:var(--ok-soft);font-weight:600}
+.exam-q.revealed .choices li.correct::before{background:var(--ok);color:#fff}
+.exam-q.revealed .choices li.correct::after{content:"✓ correct";position:absolute;right:14px;top:13px;color:var(--ok);font-weight:700;font-size:11.5px;letter-spacing:.03em}
+
+/* Collapsible original scan */
+details.original{margin:16px 0 0;border:1px dashed var(--line);border-radius:10px;background:var(--bg)}
+details.original > summary{cursor:pointer;padding:10px 14px;font-weight:600;font-size:14px;color:var(--ink-soft);list-style:none}
+details.original > summary::-webkit-details-marker{display:none}
+details.original > summary::before{content:"📷 "}
+details.original[open] > summary{border-bottom:1px solid var(--line)}
+details.original img{display:block;max-width:100%;height:auto;margin:12px auto;border-radius:8px;box-shadow:var(--shadow)}
+details.original .scan-note{padding:0 14px 12px;margin:0;font-size:13px;color:var(--muted)}
+
+/* Exam-page toolbar: jump grid + reveal-all */
+.exam-toolbar{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);padding:16px 18px;margin:18px 0 28px}
+.exam-toolbar .tb-row{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-bottom:10px}
+.exam-toolbar .tb-row p{margin:0;font-weight:700;color:var(--ink)}
+.qjump{display:grid;grid-template-columns:repeat(10,1fr);gap:6px}
+.qjump a{display:block;text-align:center;padding:8px 0;border:1px solid var(--line);border-radius:8px;background:var(--bg);color:var(--ink-soft);text-decoration:none;font-weight:700;font-size:13.5px;font-variant-numeric:tabular-nums}
+.qjump a:hover{border-color:var(--brand);color:var(--brand-dark);background:var(--brand-soft)}
+.reveal-all{appearance:none;border:1px solid var(--brand);background:var(--brand);color:#fff;font-weight:700;font-size:14px;padding:9px 16px;border-radius:8px;cursor:pointer;white-space:nowrap}
+.reveal-all:hover{filter:brightness(1.06)}
+
+/* Home call-to-action card */
+.cta{display:flex;gap:18px;align-items:center;justify-content:space-between;flex-wrap:wrap;background:linear-gradient(135deg,#0f766e,#0e7490);color:#fff;border-radius:16px;padding:22px 26px;margin:24px 0;box-shadow:var(--shadow);text-decoration:none}
+.cta:hover{filter:brightness(1.04)}
+.cta:hover .cta-btn{background:#ecfeff}
+.cta .cta-text h3{color:#fff;margin:0 0 4px;font-size:20px;font-family:var(--serif)}
+.cta .cta-text p{color:#d7f2ee;margin:0;font-size:15px;max-width:52ch}
+.cta .cta-btn{background:#fff;color:#0f766e;font-weight:700;padding:12px 22px;border-radius:10px;text-decoration:none;white-space:nowrap}
+.cta .cta-btn:hover{background:#ecfeff}
+
 /* ---- Responsive ---- */
 @media (max-width:980px){
   :root{--sidebar-w:264px}
@@ -182,14 +242,19 @@ a.topic-card p{color:var(--ink-soft);font-size:14px;margin:0}
   .content{margin-left:0;padding:24px 16px 90px}
   .hero{padding:32px 24px}
   h2{font-size:22px}
+  .qjump{grid-template-columns:repeat(5,1fr)}
+  .cta{padding:20px}
 }
 
 /* ---- Print (study packet) ---- */
 @media print{
-  .topbar,.sidebar,.backdrop,.pager,.menu-btn,.solution-toggle{display:none!important}
+  .topbar,.sidebar,.backdrop,.pager,.menu-btn,.solution-toggle,.exam-toolbar,details.original{display:none!important}
   .content{margin:0;padding:0}
   body{background:#fff;font-size:12pt}
   .solution{display:block!important}
-  .card,.example,.practice,.callout,table{box-shadow:none;break-inside:avoid}
+  .card,.example,.practice,.callout,.exam-q,table{box-shadow:none;break-inside:avoid}
   a{color:inherit;text-decoration:none}
+  /* reveal the correct choice on paper */
+  .exam-q .choices li.correct{border-color:#b7e4ce;background:var(--ok-soft);font-weight:600}
+  .exam-q .choices li.correct::after{content:"✓ correct";position:absolute;right:14px;top:13px;color:var(--ok);font-weight:700;font-size:10pt}
 }

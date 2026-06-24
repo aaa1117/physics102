@@ -25,13 +25,19 @@
     ]},
   ];
 
-  // Flat ordered list for prev/next.
-  var FLAT = [];
-  UNITS.forEach(function (u) { u.topics.forEach(function (t) { FLAT.push(t); }); });
-
   function fileFor(t) {
     return "topics/" + String(t.n).padStart(2, "0") + "-" + t.slug + ".html";
   }
+
+  // Special trailing page — the solved final exam (not a numbered topic).
+  var FINAL = { slug: "final-exam", title: "Final Exam — May 2026", file: "topics/final-exam.html", star: true };
+
+  // Flat ordered list for prev/next: every topic in order, then the final exam.
+  var FLAT = [];
+  UNITS.forEach(function (u) { u.topics.forEach(function (t) { t.file = fileFor(t); FLAT.push(t); }); });
+  FLAT.push(FINAL);
+
+  function label(t) { return t.star ? t.title : (t.n + ". " + t.title); }
 
   var root = document.body.getAttribute("data-root") || "";   // "" on home, "../" on topic pages
   var current = document.body.getAttribute("data-topic") || "home";
@@ -62,6 +68,9 @@
     });
     html += "</div>";
   });
+  html += '<div class="unit"><p class="unit-title">Exam</p>' +
+    '<a class="navlink' + (FINAL.slug === current ? " active" : "") + '" href="' + href(FINAL.file) + '">' +
+      '<span class="num">★</span><span>' + FINAL.title + "</span></a></div>";
   sidebar.innerHTML = html;
   topbar.after(sidebar);
 
@@ -86,10 +95,10 @@
     pager.className = "pager";
     pager.innerHTML =
       (prev
-        ? '<a class="prev" href="' + href(fileFor(prev)) + '"><span class="dir">← Previous</span><br><span class="ttl">' + prev.n + ". " + prev.title + "</span></a>"
+        ? '<a class="prev" href="' + href(prev.file) + '"><span class="dir">← Previous</span><br><span class="ttl">' + label(prev) + "</span></a>"
         : '<a class="prev" href="' + href("index.html") + '"><span class="dir">← Home</span><br><span class="ttl">Overview &amp; formula sheet</span></a>') +
       (next
-        ? '<a class="next" href="' + href(fileFor(next)) + '"><span class="dir">Next →</span><br><span class="ttl">' + next.n + ". " + next.title + "</span></a>"
+        ? '<a class="next" href="' + href(next.file) + '"><span class="dir">Next →</span><br><span class="ttl">' + label(next) + "</span></a>"
         : '<span class="empty"></span>');
     page.appendChild(pager);
   }
@@ -104,8 +113,33 @@
       var open = sol.classList.toggle("open");
       btn.setAttribute("aria-expanded", open ? "true" : "false");
       btn.textContent = open ? "Hide solution" : "Show solution";
+      var card = btn.closest(".exam-q");
+      if (card) card.classList.toggle("revealed", open);   // light up the correct choice
     });
   });
+
+  /* ---------- Exam page: reveal / hide every solution at once ---------- */
+  var revealAll = document.getElementById("reveal-all");
+  if (revealAll) {
+    revealAll.addEventListener("click", function () {
+      var toggles = document.querySelectorAll(".solution-toggle");
+      // If anything is still closed, the action is "reveal"; otherwise "hide".
+      var reveal = Array.prototype.some.call(toggles, function (b) {
+        var s = b.parentElement.querySelector(".solution");
+        return s && !s.classList.contains("open");
+      });
+      toggles.forEach(function (b) {
+        var s = b.parentElement.querySelector(".solution");
+        if (!s) return;
+        s.classList.toggle("open", reveal);
+        b.setAttribute("aria-expanded", reveal ? "true" : "false");
+        b.textContent = reveal ? "Hide solution" : "Show solution";
+        var card = b.closest(".exam-q");
+        if (card) card.classList.toggle("revealed", reveal);
+      });
+      revealAll.textContent = reveal ? "Hide all solutions" : "Reveal all solutions";
+    });
+  }
 
   /* ---------- Render math (offline KaTeX auto-render) ---------- */
   function renderMath() {
